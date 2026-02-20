@@ -96,7 +96,7 @@
                 pdf.setTextColor(255, 255, 255); pdf.setFontSize(10);
                 pdf.text(`ACTIVO: ${n}`, 20, 50);
                 pdf.text(`HASH SHA-256: ${h}`, 20, 60);
-                pdf.text("LICENCIA: CC BY-NC-ND 4.0 INTERNATIONAL", 20, 70);
+                pdf.text("LICENCIA: Atribución/Reconocimiento-NoComercial-SinDerivados 4.0 Internacional", 20, 70);
                 pdf.addImage(qrImg, 'PNG', 160, 20, 30, 30);
                 
                 const zip = new JSZip();
