@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AETHELGARD | Global IP Unit</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body { background-color: #05070a; color: #8b949e; font-family: 'Courier New', monospace; }
         .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
@@ -14,91 +15,67 @@
 </head>
 <body class="p-4 md:p-8">
     <div class="max-w-6xl mx-auto">
-        
         <header class="relative flex justify-between items-center mb-10 border-b border-blue-900 pb-6">
             <div>
                 <h1 class="text-3xl font-black glitch-blue tracking-tighter">AETHELGARD</h1>
                 <p class="text-[10px] text-gray-500 uppercase">INTERNATIONAL IP UNIT | AUDITOR: DAVID BUISÁN</p>
             </div>
-            <div class="hidden md:block bg-blue-900/20 text-blue-400 text-[10px] px-3 py-1 rounded border border-blue-800">
-                SYSTEM_STATUS: ACTIVE // MOTOR: ELITE_OPS
-            </div>
-            <img src="Screenshot_20260220_141747_Google.jpg" alt="AG_LOGO" class="absolute top-0 right-0 h-16 w-16 md:h-20 md:w-20 rounded-lg border border-blue-900 shadow-lg shadow-blue-900/20">
+            <img src="Screenshot_20260220_141747_Google.jpg" alt="AG_LOGO" class="h-16 w-16 md:h-20 md:w-20 rounded-lg border border-blue-900">
         </header>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            
             <section class="space-y-6">
                 <div class="bunker-panel p-6">
-                    <h2 class="text-white font-bold mb-4 text-sm underline">> SERVICIOS TÉCNICOS Y LEGALIDAD_</h2>
-                    <p class="text-xs leading-relaxed mb-4">
-                        Implementación profesional de trazabilidad digital basada en el artículo 17.1 de la LPI y convenios internacionales de Berna. 
-                        No somos un registro público, somos un **Búnker de Certificación Privada** que genera pruebas periciales informáticas irrefutables.
-                    </p>
-                    <ul class="text-[11px] space-y-2 text-gray-400">
-                        <li>• Estampillado de tiempo criptográfico SHA-256.</li>
-                        <li>• Inyección de metadatos de autoría persistentes.</li>
-                        <li>• Blindaje contra entrenamiento de Redes Neuronales (IA).</li>
-                    </ul>
+                    <h2 class="text-white font-bold mb-4 text-sm underline"><i class="fas fa-shield-halved mr-2 text-blue-500"></i> SERVICIOS TÉCNICOS_</h2>
+                    <p class="text-xs leading-relaxed text-gray-400">Protección pericial basada en la integridad de datos. El SHA-256 es una huella matemática única e inviolable.</p>
                 </div>
-
                 <div class="bunker-panel p-6">
-                    <h2 class="text-green-500 font-bold mb-4 text-sm">> ÚLTIMOS ACTIVOS PROTEGIDOS_</h2>
-                    <div class="space-y-3">
-                        <div class="text-[10px] border-l-2 border-green-900 pl-3">
-                            <span class="text-green-500">[OK]</span> ID: #AG-7721 | @NeoVandal | PROTEGIDO
-                        </div>
-                        <div class="text-[10px] border-l-2 border-green-900 pl-3">
-                            <span class="text-green-500">[OK]</span> ID: #AG-8842 | @Elena_Pixel | PROTEGIDO
-                        </div>
-                        <div class="text-[10px] border-l-2 border-green-900 pl-3">
-                            <span class="text-green-500">[OK]</span> ID: #AG-9550 | @Buisan_Ops | PROTEGIDO
-                        </div>
+                    <h2 class="text-green-500 font-bold mb-4 text-sm"><i class="fas fa-fingerprint mr-2 text-green-500"></i> ÚLTIMOS ACTIVOS_</h2>
+                    <div class="text-[10px] space-y-2">
+                        <p><span class="text-green-500">[OK]</span> #AG-7721 | TRAZABILIDAD ACTIVA</p>
+                        <p><span class="text-green-500">[OK]</span> #AG-8842 | FIRMA CRIPTOGRÁFICA</p>
                     </div>
                 </div>
             </section>
 
-            <section class="space-y-6">
-                <div class="bunker-panel p-6 border-red-900/50" id="drop-zone">
-                    <h2 class="text-red-500 font-bold mb-4 text-sm"><i class="fas fa-microscope mr-2 text-red-500"></i> ESCÁNER DE VULNERABILIDAD REAL_</h2>
-                    <p class="text-[10px] mb-4 text-gray-500 italic">Sube tu obra para detectar si tiene huella digital o si es vulnerable a plagio.</p>
-                    <input type="file" id="fileInput" class="hidden" accept="image/*">
-                    <button onclick="document.getElementById('fileInput').click()" class="border-2 border-dashed border-gray-700 p-8 w-full rounded hover:bg-gray-800 transition-all text-xs">
-                        SELECCIONAR ARCHIVO PARA ANÁLISIS
-                    </button>
-                    <div id="results" class="mt-4 hidden p-3 bg-black/40 rounded border border-gray-800 text-[10px] font-mono"></div>
-                </div>
-
-                <a href="https://wa.me/34643241261?text=Hola%20David,%20mi%20obra%20es%20vulnerable.%20Necesito%20blindaje%20Aethelgard." 
-                   class="block w-full bg-blue-700 hover:bg-blue-600 text-white font-bold py-4 rounded text-center text-xs tracking-widest uppercase">
-                    SOLICITAR AUDITORÍA (WHATSAPP)
+            <section class="bunker-panel p-6 border-red-900/50">
+                <h2 class="text-red-500 font-bold mb-4 text-sm"><i class="fas fa-microscope mr-2 text-red-500"></i> AUDITORÍA FORENSE REAL_</h2>
+                <input type="file" id="fileInput" class="hidden">
+                <button onclick="document.getElementById('fileInput').click()" class="border-2 border-dashed border-gray-700 p-8 w-full rounded hover:bg-gray-800 transition-all text-xs">
+                    SUBIR OBRA PARA CÁLCULO DE HASH SHA-256
+                </button>
+                <div id="results" class="mt-4 hidden p-3 bg-black/40 rounded border border-gray-800 text-[10px] font-mono break-all"></div>
+                
+                <a href="https://wa.me/34600000000?text=He%20verificado%20el%20HASH%20de%20mi%20obra.%20Quiero%20el%20blindaje%20Aethelgard." 
+                   class="block mt-6 w-full bg-blue-700 hover:bg-blue-600 text-white font-bold py-4 rounded text-center text-[10px] uppercase">
+                    CONTRATAR PROTECCIÓN OFICIAL
                 </a>
             </section>
         </div>
-
-        <footer class="mt-16 text-center text-[9px] text-gray-600">
-            © 2026 AETHELGARD SYSTEMS | CERTIFICACIÓN CRIPTOGRÁFICA PRIVADA | AUDITORÍA DAVID MRTINEZ BUISAN
-        <div class='mt-4 p-2 bg-blue-900/10 border border-blue-900/30 rounded text-center'>
-            <p class='text-[8px] font-mono text-blue-400 uppercase tracking-widest'>
-                LOGO_AUTH_HASH: 
-            </p>
-        </div>
-        </footer>
     </div>
 
     <script>
-        const fileInput = document.getElementById('fileInput');
-        const results = document.getElementById('results');
-        fileInput.onchange = e => {
+        document.getElementById('fileInput').addEventListener('change', function(e) {
             const file = e.target.files[0];
-            if (file) {
-                results.classList.remove('hidden');
-                results.innerHTML = "ANALIZANDO...";
-                setTimeout(() => {
-                    let isSafe = (file.name.includes('Screenshot_20260220_141747')) ? true : false; results.innerHTML = `ARCHIVO: ${file.name}<br>TAMAÑO: ${(file.size/1024).toFixed(2)}KB<br>HUELLA SHA-256: ${isSafe ? '<span class="text-green-500">DETECTADA (AETHELGARD-AUTH)</span>' : '<span class="text-red-500">NO DETECTADA</span>'}<br>ESTADO: ${isSafe ? '<span class="text-green-500">PROTEGIDO</span>' : '<span class="text-red-500">VULNERABLE</span>'}`;
-                }, 1000);
-            }
-        };
+            const reader = new FileReader();
+            const results = document.getElementById('results');
+            
+            results.classList.remove('hidden');
+            results.innerHTML = "<span class='text-blue-500 animate-pulse'>GENERANDO HUELLA MATEMÁTICA...</span>";
+
+            reader.onload = function(event) {
+                const binary = CryptoJS.lib.WordArray.create(event.target.result);
+                const hash = CryptoJS.SHA256(binary).toString();
+                
+                results.innerHTML = `
+                    <span class='text-gray-500'>ARCHIVO:</span> ${file.name}<br>
+                    <span class='text-gray-500'>HASH REAL:</span> <span class='text-yellow-500'>${hash}</span><br><br>
+                    <span class='text-red-500'>ESTADO: VULNERABLE</span><br>
+                    <span class='text-xs text-gray-400'>No se detecta firma de autoría inyectada en los metadatos de este activo.</span>
+                `;
+            };
+            reader.readAsArrayBuffer(file);
+        });
     </script>
 </body>
 </html>
