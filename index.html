@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AETHELGARD | Sistema de Blindaje de Activos</title>
+    <title>AETHELGARD | Entrega Blindada</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
@@ -11,58 +11,48 @@
     <style>
         body { background-color: #050505; color: #a0a0a0; font-family: 'Courier New', monospace; }
         .bunker-panel { background: #0d1117; border: 1px solid #21262d; border-radius: 4px; }
-        .status-danger { color: #ff4d4d; border-color: #ff4d4d; }
-        .status-safe { color: #3fb950; border-color: #3fb950; }
         .btn-gold { background: #d4af37; color: black; font-weight: 900; }
+        .locked { opacity: 0.2; pointer-events: none; }
     </style>
 </head>
 <body class="p-4">
     <div class="max-w-5xl mx-auto">
         <header class="flex justify-between items-center border-b border-gray-800 pb-4 mb-8">
-            <div class="text-left">
-                <h1 class="text-2xl font-bold text-blue-500 tracking-widest">AETHELGARD_CORE_v2.0</h1>
-                <p class="text-[9px]">SISTEMA DE AUDITORÍA FORENSE - AUDITOR PRINCIPAL: DAVID BUISÁN</p>
-            </div>
+            <h1 class="text-xl font-bold text-blue-500 uppercase tracking-widest">AETHELGARD_DELIVERY_SYSTEM</h1>
             <img src="Screenshot_20260220_141747_Google.jpg" class="h-12 w-12 border border-blue-900 rounded">
         </header>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            
             <div class="bunker-panel p-5">
-                <h2 class="text-xs font-bold mb-4 border-l-2 border-red-600 pl-2">CARGA DE ACTIVO PARA PROCESAMIENTO_</h2>
+                <h2 class="text-xs font-bold mb-4 text-red-500 uppercase">1. Análisis de Activo</h2>
                 <input type="file" id="fileInput" class="hidden">
-                <div onclick="document.getElementById('fileInput').click()" class="border border-dashed border-gray-600 p-10 text-center cursor-pointer hover:bg-white/5 transition">
-                    <i class="fas fa-upload text-xl mb-2"></i>
-                    <p class="text-[10px]">SOLTAR ARCHIVO O HACER CLIC</p>
-                </div>
-                <div id="results" class="mt-4 p-3 bg-black text-[10px] hidden"></div>
+                <button onclick="document.getElementById('fileInput').click()" class="w-full border border-gray-600 p-6 text-[10px] uppercase hover:bg-white/5 mb-4">
+                    Subir Obra para Auditoría
+                </button>
+                <div id="results" class="p-3 bg-black text-[10px] hidden border border-gray-800"></div>
             </div>
 
             <div class="bunker-panel p-5">
-                <h2 class="text-xs font-bold mb-4 border-l-2 border-blue-600 pl-2">CENTRO DE BLINDAJE DIGITAL_</h2>
-                <div id="actionPanel" class="opacity-30 pointer-events-none">
-                    <p class="text-[10px] mb-4">MÓDULO DE INYECCIÓN DE HASH SHA-256 ACTIVO.</p>
-                    <button onclick="startBlindaje()" class="w-full btn-gold py-4 text-xs uppercase mb-3">
-                        EJECUTAR BLINDAJE Y GENERAR PACK PERICIAL
+                <h2 class="text-xs font-bold mb-4 text-yellow-500 uppercase">2. Pago y Descarga de Pack</h2>
+                <a href="https://revolut.me/daviddmmi/50" target="_blank" class="block w-full btn-gold py-4 text-center text-[10px] uppercase mb-4 shadow-lg shadow-yellow-900/20">
+                    Realizar Pago Express (50€)
+                </a>
+                
+                <div id="unlockZone" class="locked">
+                    <p class="text-[9px] mb-2 text-gray-500 italic">Introduce el código de desbloqueo proporcionado tras el pago:</p>
+                    <input type="text" id="passCode" placeholder="CÓDIGO DE ACCESO" class="w-full bg-black border border-gray-700 p-3 text-xs text-white mb-3 text-center">
+                    <button onclick="checkAndDownload()" class="w-full bg-blue-700 text-white py-4 text-[10px] font-bold uppercase">
+                        Generar y Descargar Pack Blindado
                     </button>
-                    <a href="https://revolut.me/daviddmmi/50" class="block w-full border border-yellow-500 text-yellow-500 py-3 text-center text-[10px] uppercase hover:bg-yellow-500/10">
-                        REGISTRAR PAGO DE AUDITORÍA (50€)
-                    </a>
-                </div>
-                <div class="mt-6 border-t border-gray-800 pt-4">
-                    <a href="https://wa.me/34600000000" class="text-green-500 text-[10px] font-bold"><i class="fab fa-whatsapp"></i> SOPORTE TÉCNICO DIRECTO</a>
                 </div>
             </div>
-        </div>
-
-        <div class="mt-10 bunker-panel p-4 text-[9px] opacity-50 italic">
-            <p>AVISO LEGAL: El sistema Aethelgard certifica la integridad del activo mediante algoritmos de hash SHA-256. El auditor David Buisán garantiza que la firma inyectada es prueba de autoría según los protocolos de propiedad intelectual vigentes.</p>
         </div>
     </div>
 
     <script>
         let currentFile = null;
         let currentHash = "";
+        const MASTER_KEY = "AETHEL2026"; 
 
         document.getElementById('fileInput').addEventListener('change', function(e) {
             currentFile = e.target.files[0];
@@ -70,47 +60,28 @@
             reader.onload = function(event) {
                 const binary = CryptoJS.lib.WordArray.create(event.target.result);
                 currentHash = CryptoJS.SHA256(binary).toString();
-                
-                const res = document.getElementById('results');
-                res.classList.remove('hidden');
-                res.innerHTML = `ID: AG-${Math.floor(Math.random()*9999)}<br>SHA-256: ${currentHash}<br><span class="text-red-500">ESTADO: SIN FIRMA DE AUTORÍA</span>`;
-                
-                document.getElementById('actionPanel').style.opacity = "1";
-                document.getElementById('actionPanel').style.pointerEvents = "auto";
+                document.getElementById('results').classList.remove('hidden');
+                document.getElementById('results').innerHTML = `FILE: ${currentFile.name}<br>HASH: ${currentHash}<br><span class="text-red-500">STATUS: UNAUTHORIZED</span>`;
+                document.getElementById('unlockZone').classList.remove('locked');
             };
             reader.readAsArrayBuffer(currentFile);
         });
 
-        async function startBlindaje() {
-            if(!currentFile) return;
-            const zip = new JSZip();
-            const timestamp = new Date().toLocaleString();
-            
-            // Certificado Real de Auditoría
-            const certificado = `
-========================================
-    CERTIFICADO DE BLINDAJE AETHELGARD
-========================================
-AUDITOR: David Buisán
-ID ACTIVO: AG-${Math.floor(Math.random()*10000)}
-FECHA REGISTRO: ${timestamp}
-NOMBRE ORIGINAL: ${currentFile.name}
-HUELLA DIGITAL (SHA-256): ${currentHash}
-========================================
-Este activo ha sido auditado y su huella
-ha sido registrada para protección legal.
-========================================`;
-
-            zip.file(`CERTIFICADO_AUDITORIA_${currentFile.name}.txt`, certificado);
-            zip.file(`ACTIVO_ORIGINAL_${currentFile.name}`, currentFile);
-            
-            const content = await zip.generateAsync({type:"blob"});
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(content);
-            link.download = `PACK_BLINDAJE_AETHELGARD.zip`;
-            link.click();
-            
-            alert("BLINDAJE COMPLETADO. Pack pericial generado.");
+        async function checkAndDownload() {
+            const input = document.getElementById('passCode').value;
+            if(input === MASTER_KEY) {
+                const zip = new JSZip();
+                zip.file(`CERTIFICADO_AUDITORIA_${currentFile.name}.txt`, `AETHELGARD AUTHENTICATION\n--------------------\nHASH: ${currentHash}\nAUDITOR: DAVID BUISAN`);
+                zip.file(`OBRA_PROTEGIDA_${currentFile.name}`, currentFile);
+                
+                const content = await zip.generateAsync({type:"blob"});
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(content);
+                link.download = `AETHELGARD_PACK_${currentFile.name}.zip`;
+                link.click();
+            } else {
+                alert("CÓDIGO DE ACCESO INVÁLIDO.");
+            }
         }
     </script>
 </body>
