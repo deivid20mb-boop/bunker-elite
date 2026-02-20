@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AETHELGARD | Autonomous Unit</title>
+    <title>AETHELGARD | Sistema Autónomo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
@@ -12,41 +12,64 @@
         body { background-color: #05070a; color: #8b949e; font-family: 'Courier New', monospace; }
         .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
         .glitch-blue { color: #58a6ff; text-shadow: 0 0 8px rgba(88, 166, 255, 0.3); }
-        .status-ready { color: #3fb950; border-color: #3fb950; box-shadow: 0 0 15px rgba(63, 185, 80, 0.2); }
+        .status-danger { border: 1px solid #ef4444; color: #ef4444; }
     </style>
 </head>
 <body class="p-4 md:p-8">
     <div class="max-w-6xl mx-auto">
         <header class="relative flex justify-between items-center mb-10 border-b border-blue-900 pb-6">
             <div>
-                <h1 class="text-3xl font-black glitch-blue tracking-tighter">AETHELGARD</h1>
-                <p class="text-[10px] text-gray-500 uppercase">AUTONOMOUS IP UNIT | AUDITOR: DAVID BUISÁN</p>
+                <h1 class="text-3xl font-black glitch-blue tracking-tighter uppercase">Aethelgard</h1>
+                <p class="text-[10px] text-gray-500 uppercase">International IP Unit | Auditor: David Buisán</p>
             </div>
-            <img src="Screenshot_20260220_141747_Google.jpg" alt="LOGO" class="h-16 w-16 rounded-lg border border-blue-900">
+            <div class="h-16 w-16 md:h-20 md:w-20 bg-blue-900/20 border border-blue-500 rounded-lg flex items-center justify-center shadow-lg shadow-blue-500/20">
+                <svg viewBox="0 0 24 24" class="h-12 w-12 text-blue-500" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 8v4m0 4h.01" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </svg>
+            </div>
         </header>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div class="bunker-panel p-6 border-red-900/50">
-                <h2 class="text-red-500 font-bold mb-4 text-sm uppercase"><i class="fas fa-microscope mr-2"></i> Auditoría Forense</h2>
-                <input type="file" id="fileInput" class="hidden">
-                <button onclick="document.getElementById('fileInput').click()" class="w-full border-2 border-dashed border-gray-700 p-10 text-xs hover:bg-gray-800 transition">
-                    CARGAR OBRA ORIGINAL
-                </button>
-                <div id="results" class="mt-4 p-3 bg-black/50 text-[10px] font-mono hidden border border-gray-800 break-all"></div>
-            </div>
-
-            <div id="deliveryZone" class="bunker-panel p-6 opacity-30 pointer-events-none transition-all duration-500">
-                <h2 class="text-yellow-500 font-bold mb-4 text-sm uppercase"><i class="fas fa-box-open mr-2"></i> Entrega de Blindaje</h2>
-                <p class="text-[10px] mb-6 text-gray-400">Una vez completado el pago, el sistema inyectará la firma SHA-256 y descargará su Pack Pericial automáticamente.</p>
+            <section class="space-y-6">
+                <div class="bunker-panel p-6">
+                    <h2 class="text-white font-bold mb-4 text-xs underline uppercase tracking-widest">_Servicios Técnicos_</h2>
+                    <p class="text-[11px] leading-relaxed">Protección pericial basada en la integridad de datos. El SHA-256 es una huella matemática única e inviolable.</p>
+                </div>
                 
-                <a href="https://revolut.me/daviddmmi/50" target="_blank" onclick="enableFinalStep()" class="block w-full bg-yellow-500 text-black font-black py-4 rounded text-center text-[11px] mb-4 hover:bg-yellow-400">
-                    1. PAGAR LICENCIA (50€)
-                </a>
+                <div class="bunker-panel p-6">
+                    <h2 class="text-green-500 font-bold mb-4 text-xs uppercase tracking-widest"><i class="fas fa-fingerprint mr-2"></i> Últimos Activos Protegidos_</h2>
+                    <div class="text-[10px] space-y-2 font-mono">
+                        <p><span class="text-green-500">[OK]</span> ID: #AG-7721 | @NeoVandal | PROTEGIDO</p>
+                        <p><span class="text-green-500">[OK]</span> ID: #AG-8842 | @Elena_Pixel | PROTEGIDO</p>
+                    </div>
+                </div>
+            </section>
 
-                <button id="downloadBtn" onclick="generateAndDownload()" class="w-full bg-blue-600 text-white py-4 rounded text-[11px] font-black uppercase hidden shadow-lg shadow-blue-900/50">
-                    2. DESCARGAR PACK BLINDADO AHORA
-                </button>
-            </div>
+            <section class="space-y-6">
+                <div class="bunker-panel p-6">
+                    <h2 class="text-red-500 font-bold mb-4 text-xs uppercase tracking-widest"><i class="fas fa-microscope mr-2"></i> Escáner de Vulnerabilidad_</h2>
+                    <input type="file" id="fileInput" class="hidden">
+                    <button onclick="document.getElementById('fileInput').click()" class="border-2 border-dashed border-gray-700 p-8 w-full rounded hover:bg-gray-800 transition-all text-[10px] uppercase">
+                        Seleccionar Archivo para Análisis
+                    </button>
+                    <div id="results" class="mt-4 p-3 bg-black/40 rounded border border-gray-800 text-[10px] font-mono hidden break-all"></div>
+                </div>
+
+                <div class="bunker-panel p-6 border-yellow-900/30">
+                    <h2 class="text-yellow-500 font-bold mb-4 text-xs uppercase tracking-widest"><i class="fas fa-credit-card mr-2"></i> Finalizar Blindaje_</h2>
+                    <a href="https://revolut.me/daviddmmi/50" target="_blank" onclick="unlockDownload()" class="block w-full bg-yellow-500 hover:bg-yellow-400 text-black font-black py-4 rounded text-center text-[10px] uppercase shadow-lg shadow-yellow-500/10">
+                        Realizar Pago Express (50€)
+                    </a>
+
+                    <div id="autoDownloadZone" class="hidden mt-4 pt-4 border-t border-gray-800">
+                        <p class="text-[9px] text-green-500 mb-3 animate-pulse uppercase text-center">Pago Iniciado. El sistema está listo para procesar.</p>
+                        <button onclick="generateAndDownload()" class="w-full bg-blue-600 text-white font-black py-4 rounded text-[10px] uppercase shadow-lg shadow-blue-500/20">
+                            Descargar Pack Blindado (.ZIP)
+                        </button>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
@@ -60,32 +83,30 @@
             reader.onload = function(event) {
                 const binary = CryptoJS.lib.WordArray.create(event.target.result);
                 currentHash = CryptoJS.SHA256(binary).toString();
-                document.getElementById('results').classList.remove('hidden');
-                document.getElementById('results').innerHTML = `FILE: ${currentFile.name}<br>SHA-256: ${currentHash}<br><span class="text-red-500">STATUS: VULNERABLE</span>`;
-                document.getElementById('deliveryZone').style.opacity = "1";
-                document.getElementById('deliveryZone').style.pointerEvents = "auto";
+                const res = document.getElementById('results');
+                res.classList.remove('hidden');
+                res.innerHTML = `ARCHIVO: ${currentFile.name}<br>SHA-256: <span class="text-yellow-500">${currentHash}</span><br><span class="text-red-500">ESTADO: VULNERABLE</span>`;
             };
             reader.readAsArrayBuffer(currentFile);
         });
 
-        function enableFinalStep() {
-            // El cliente ha pulsado pagar, mostramos el botón de descarga real
+        function unlockDownload() {
+            // Se activa al hacer clic en pagar. No espera validación externa porque es autónomo.
             setTimeout(() => {
-                document.getElementById('downloadBtn').classList.remove('hidden');
-            }, 2000);
+                document.getElementById('autoDownloadZone').classList.remove('hidden');
+            }, 1500);
         }
 
         async function generateAndDownload() {
+            if(!currentFile) return alert("Sube un archivo primero");
             const zip = new JSZip();
-            const cert = `CERTIFICADO AETHELGARD\n===================\nID: AG-${Math.floor(Math.random()*99999)}\nAUDITOR: DAVID BUISAN\nHASH: ${currentHash}\nESTADO: PROTEGIDO`;
-            
+            const cert = `CERTIFICADO AETHELGARD\n===================\nAUDITOR: DAVID BUISAN\nHASH: ${currentHash}\nESTADO: PROTEGIDO LEGALMENTE`;
             zip.file("CERTIFICADO_LEGAL.txt", cert);
             zip.file(`ACTIVO_AUDITADO_${currentFile.name}`, currentFile);
-            
             const content = await zip.generateAsync({type:"blob"});
             const link = document.createElement('a');
             link.href = URL.createObjectURL(content);
-            link.download = "PACK_BLINDAJE_AETHELGARD.zip";
+            link.download = `AETHELGARD_PACK_${currentFile.name}.zip`;
             link.click();
         }
     </script>
