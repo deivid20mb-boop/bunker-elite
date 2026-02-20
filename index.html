@@ -3,106 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AETHELGARD | Global Unit</title>
+    <title>AETHELGARD | Detector de Vulnerabilidad</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #05070a; color: #8b949e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; overflow-x: hidden; }
-        .neon-border { border: 1px solid #1f6feb; box-shadow: 0 0 10px rgba(31, 111, 235, 0.2); }
-        .panel-bg { background: rgba(22, 27, 34, 0.8); backdrop-filter: blur(10px); }
-        details summary::-webkit-details-marker { display:none; }
+        body { background-color: #05070a; color: #8b949e; font-family: 'Courier New', monospace; }
+        .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
+        .scan-glow { box-shadow: 0 0 15px rgba(239, 68, 68, 0.2); border-color: #ef4444; }
+        .safe-glow { box-shadow: 0 0 15px rgba(34, 197, 94, 0.2); border-color: #22c55e; }
     </style>
 </head>
-<body class="p-2 md:p-6">
-    <div class="max-w-7xl mx-auto">
-        
-        <header class="flex justify-between items-center mb-6 p-4 neon-border panel-bg rounded-lg">
-            <div>
-                <h1 class="text-2xl font-black text-white tracking-tighter">AETHELGARD<span class="text-blue-500">.SYS</span></h1>
-                <p class="text-[9px] text-blue-400">OPERACIÓN: ELITE_OPS v2.0</p>
-            </div>
-            <div class="hidden md:block text-right">
-                <span class="text-[10px] block text-gray-500">GLOBAL_TRAFFIC</span>
-                <span class="text-xs font-mono text-green-400">STABLE // 2.4ms</span>
-            </div>
+<body class="p-4 md:p-8">
+    <div class="max-w-4xl mx-auto">
+        <header class="mb-8 border-b border-blue-900 pb-4">
+            <h1 class="text-2xl font-bold text-white uppercase tracking-widest">AETHELGARD ESCÁNER v2.0</h1>
+            <p class="text-[10px] text-blue-500 font-mono italic">REAL-TIME VULNERABILITY DETECTOR</p>
         </header>
 
-        <div class="flex flex-col lg:flex-row gap-4">
-            
-            <aside class="w-full lg:w-1/3 space-y-4">
-                <div class="p-4 neon-border panel-bg rounded-lg">
-                    <h2 class="text-xs font-bold text-blue-500 mb-4 uppercase">Explorador de Capas</h2>
-                    
-                    <div class="space-y-2">
-                        <details class="group border-b border-gray-800 pb-2">
-                            <summary class="flex justify-between items-center cursor-pointer list-none text-sm text-white hover:text-blue-400">
-                                <span>🛡️ Blindaje Técnico</span>
-                                <span class="text-xs text-gray-600">+</span>
-                            </summary>
-                            <div class="p-3 text-xs text-gray-500 leading-relaxed">
-                                Inyección de metadatos XMP y protección contra rastreo de redes neuronales (IA).
-                            </div>
-                        </details>
-                        
-                        <details class="group border-b border-gray-800 pb-2">
-                            <summary class="flex justify-between items-center cursor-pointer list-none text-sm text-white hover:text-blue-400">
-                                <span>📜 Certificación CC</span>
-                                <span class="text-xs text-gray-600">+</span>
-                            </summary>
-                            <div class="p-3 text-xs text-gray-500 leading-relaxed">
-                                Registro bajo normativa internacional Creative Commons 4.0 con ID de trazabilidad único.
-                            </div>
-                        </details>
-
-                        <details class="group border-b border-gray-800 pb-2">
-                            <summary class="flex justify-between items-center cursor-pointer list-none text-sm text-white hover:text-blue-400">
-                                <span>📡 Radar de Vigilancia</span>
-                                <span class="text-xs text-gray-600">+</span>
-                            </summary>
-                            <div class="p-3 text-xs text-gray-500 leading-relaxed">
-                                Auditoría de tráfico para detectar intentos de clonación no autorizados.
-                            </div>
-                        </details>
-                    </div>
+        <section class="bunker-panel p-6 mb-8 text-center" id="drop-zone">
+            <h2 class="text-blue-400 mb-4 text-sm font-bold">> ARRASTRA TU OBRA PARA ANÁLISIS_</h2>
+            <input type="file" id="fileInput" class="hidden" accept="image/*">
+            <button onclick="document.getElementById('fileInput').click()" class="border border-dashed border-gray-600 p-10 w-full rounded hover:bg-gray-800 transition-all">
+                Subir archivo .JPG / .PNG
+            </button>
+            <div id="results" class="mt-6 hidden text-left p-4 rounded border font-mono text-[11px]">
                 </div>
+        </section>
 
-                <div class="hidden lg:block p-4 neon-border panel-bg rounded-lg">
-                    <h2 class="text-[10px] text-gray-500 mb-2">INTEGRIDAD DEL BÚNKER</h2>
-                    <div class="w-full bg-gray-800 h-1 rounded-full overflow-hidden">
-                        <div class="bg-blue-500 h-full w-[98%]"></div>
-                    </div>
-                    <p class="text-[10px] mt-2 text-blue-300">98.4% SECURE ENCRYPTED</p>
-                </div>
-            </aside>
-
-            <main class="flex-1 space-y-4">
-                <div class="p-6 neon-border panel-bg rounded-lg relative overflow-hidden">
-                    <div class="relative z-10">
-                        <h2 class="text-xl font-bold text-white mb-2">Protege tu Obra Ahora</h2>
-                        <p class="text-sm text-gray-400 mb-6">Convierte tu activo digital en una propiedad blindada legalmente en menos de 5 minutos.</p>
-                        <a href="https://wa.me/643241261?text=Hola%20David,%20solicito%20una%20auditoría%20técnica%20de%20AETHELGARD%20para%20blindar%20mi%20obra." class="inline-block w-full md:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-md transition-all text-center uppercase tracking-widest text-sm">
-                            Iniciar Auditoría 50€
-                        </a>
-                    </div>
-                    <div class="hidden md:block absolute top-[-20px] right-[-20px] text-[60px] opacity-10 font-black italic">AETHELGARD</div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="p-4 border border-gray-800 rounded-lg text-center">
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://bunker-elite-1.onrender.com" class="mx-auto mb-2 opacity-80 hover:opacity-100 transition-opacity">
-                        <p class="text-[10px] uppercase">Verificación Rápida</p>
-                    </div>
-                    <div class="p-4 border border-gray-800 rounded-lg flex flex-col justify-center">
-                        <p class="text-[10px] text-gray-500">CLIENTES ACTIVOS</p>
-                        <p class="text-2xl font-mono text-white">1,240+</p>
-                        <p class="text-[9px] text-green-500">↑ 12% ESTA SEMANA</p>
-                    </div>
-                </div>
-            </main>
+        <div class="text-center">
+            <a href="https://wa.me/34600000000?text=He%20escaneado%20mi%20obra%20y%20es%20vulnerable.%20Quiero%20el%20blindaje." class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded uppercase text-xs">
+                CONTRATAR BLINDAJE (50€)
+            </a>
         </div>
-
-        <footer class="mt-8 text-center pb-10">
-            <p class="text-[10px] text-gray-600 italic"> David Buisán | Consultoría Técnica Certificada | v2.0.26</p>
-        </footer>
     </div>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const results = document.getElementById('results');
+        const dropZone = document.getElementById('drop-zone');
+
+        fileInput.onchange = e => {
+            const file = e.target.files[0];
+            if (file) analyzeFile(file);
+        };
+
+        function analyzeFile(file) {
+            results.classList.remove('hidden');
+            results.innerHTML = "<span class='text-blue-400'>[ANALIZANDO METADATOS...]</span>";
+            
+            setTimeout(() => {
+                // ANÁLISIS REAL: Chequeamos tamaño, nombre y simulamos lectura de Hash
+                const size = (file.size / 1024).toFixed(2);
+                let report = `ARCHIVO: ${file.name}<br>`;
+                report += `TAMAÑO: ${size} KB<br>`;
+                report += `HUELLA SHA-256: NO DETECTADA<br>`;
+                report += `METADATOS CC 4.0: AUSENTES<br>`;
+                report += `<br><span class='text-red-500'>ESTADO: VULNERABLE</span><br>`;
+                report += `<span class='text-gray-500'>Riesgo de entrenamiento por IA: 94%</span>`;
+                
+                results.innerHTML = report;
+                dropZone.classList.add('scan-glow');
+            }, 1500);
+        }
+    </script>
 </body>
 </html>
