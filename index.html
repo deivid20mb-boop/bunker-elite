@@ -3,68 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AETHELGARD | Detector de Vulnerabilidad</title>
+    <title>AETHELGARD | Global IP Unit</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #05070a; color: #8b949e; font-family: 'Courier New', monospace; }
         .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
-        .scan-glow { box-shadow: 0 0 15px rgba(239, 68, 68, 0.2); border-color: #ef4444; }
-        .safe-glow { box-shadow: 0 0 15px rgba(34, 197, 94, 0.2); border-color: #22c55e; }
+        .glitch-blue { color: #58a6ff; text-shadow: 0 0 8px rgba(88, 166, 255, 0.3); }
     </style>
 </head>
 <body class="p-4 md:p-8">
-    <div class="max-w-4xl mx-auto">
-        <header class="mb-8 border-b border-blue-900 pb-4">
-            <h1 class="text-2xl font-bold text-white uppercase tracking-widest">AETHELGARD ESCÁNER v2.0</h1>
-            <p class="text-[10px] text-blue-500 font-mono italic">REAL-TIME VULNERABILITY DETECTOR</p>
+    <div class="max-w-6xl mx-auto">
+        
+        <header class="flex justify-between items-center mb-10 border-b border-blue-900 pb-6">
+            <div>
+                <h1 class="text-3xl font-black glitch-blue tracking-tighter">AETHELGARD</h1>
+                <p class="text-[10px] text-gray-500 uppercase">INTERNATIONAL IP UNIT | AUDITOR: DAVID BUISÁN</p>
+            </div>
+            <div class="hidden md:block bg-blue-900/20 text-blue-400 text-[10px] px-3 py-1 rounded border border-blue-800">
+                SYSTEM_STATUS: ACTIVE // MOTOR: ELITE_OPS
+            </div>
         </header>
 
-        <section class="bunker-panel p-6 mb-8 text-center" id="drop-zone">
-            <h2 class="text-blue-400 mb-4 text-sm font-bold">> ARRASTRA TU OBRA PARA ANÁLISIS_</h2>
-            <input type="file" id="fileInput" class="hidden" accept="image/*">
-            <button onclick="document.getElementById('fileInput').click()" class="border border-dashed border-gray-600 p-10 w-full rounded hover:bg-gray-800 transition-all">
-                Subir archivo .JPG / .PNG
-            </button>
-            <div id="results" class="mt-6 hidden text-left p-4 rounded border font-mono text-[11px]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <section class="space-y-6">
+                <div class="bunker-panel p-6">
+                    <h2 class="text-white font-bold mb-4 text-sm underline">> SERVICIOS TÉCNICOS Y LEGALIDAD_</h2>
+                    <p class="text-xs leading-relaxed mb-4">
+                        Implementación profesional de trazabilidad digital basada en el artículo 17.1 de la LPI y convenios internacionales de Berna. 
+                        No somos un registro público, somos un **Búnker de Certificación Privada** que genera pruebas periciales informáticas irrefutables.
+                    </p>
+                    <ul class="text-[11px] space-y-2 text-gray-400">
+                        <li>• Estampillado de tiempo criptográfico SHA-256.</li>
+                        <li>• Inyección de metadatos de autoría persistentes.</li>
+                        <li>• Blindaje contra entrenamiento de Redes Neuronales (IA).</li>
+                    </ul>
                 </div>
-        </section>
 
-        <div class="text-center">
-            <a href="https://wa.me/34600000000?text=He%20escaneado%20mi%20obra%20y%20es%20vulnerable.%20Quiero%20el%20blindaje." class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded uppercase text-xs">
-                CONTRATAR BLINDAJE (50€)
-            </a>
+                <div class="bunker-panel p-6">
+                    <h2 class="text-green-500 font-bold mb-4 text-sm">> ÚLTIMOS ACTIVOS PROTEGIDOS_</h2>
+                    <div class="space-y-3">
+                        <div class="text-[10px] border-l-2 border-green-900 pl-3">
+                            <span class="text-green-500">[OK]</span> ID: #AG-7721 | @NeoVandal | PROTEGIDO
+                        </div>
+                        <div class="text-[10px] border-l-2 border-green-900 pl-3">
+                            <span class="text-green-500">[OK]</span> ID: #AG-8842 | @Elena_Pixel | PROTEGIDO
+                        </div>
+                        <div class="text-[10px] border-l-2 border-green-900 pl-3">
+                            <span class="text-green-500">[OK]</span> ID: #AG-9550 | @Buisan_Ops | PROTEGIDO
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="space-y-6">
+                <div class="bunker-panel p-6 border-red-900/50" id="drop-zone">
+                    <h2 class="text-red-500 font-bold mb-4 text-sm">> ESCÁNER DE VULNERABILIDAD REAL_</h2>
+                    <p class="text-[10px] mb-4 text-gray-500 italic">Sube tu obra para detectar si tiene huella digital o si es vulnerable a plagio.</p>
+                    <input type="file" id="fileInput" class="hidden" accept="image/*">
+                    <button onclick="document.getElementById('fileInput').click()" class="border-2 border-dashed border-gray-700 p-8 w-full rounded hover:bg-gray-800 transition-all text-xs">
+                        SELECCIONAR ARCHIVO PARA ANÁLISIS
+                    </button>
+                    <div id="results" class="mt-4 hidden p-3 bg-black/40 rounded border border-gray-800 text-[10px] font-mono"></div>
+                </div>
+
+                <a href="https://wa.me/34643241261?text=Hola%20David,%20mi%20obra%20es%20vulnerable.%20Necesito%20blindaje%20Aethelgard." 
+                   class="block w-full bg-blue-700 hover:bg-blue-600 text-white font-bold py-4 rounded text-center text-xs tracking-widest uppercase">
+                    SOLICITAR AUDITORÍA (WHATSAPP)
+                </a>
+            </section>
         </div>
+
+        <footer class="mt-16 text-center text-[9px] text-gray-600">
+            © 2026 AETHELGARD SYSTEMS | CERTIFICACIÓN CRIPTOGRÁFICA PRIVADA | AUDITORÍA DAVID MRTINEZ BUISAN
+        </footer>
     </div>
 
     <script>
         const fileInput = document.getElementById('fileInput');
         const results = document.getElementById('results');
-        const dropZone = document.getElementById('drop-zone');
-
         fileInput.onchange = e => {
             const file = e.target.files[0];
-            if (file) analyzeFile(file);
+            if (file) {
+                results.classList.remove('hidden');
+                results.innerHTML = "ANALIZANDO...";
+                setTimeout(() => {
+                    results.innerHTML = "ARCHIVO: " + file.name + "<br>TAMAÑO: " + (file.size/1024).toFixed(2) + "KB<br>HUELLA SHA-256: <span class='text-red-500'>NO DETECTADA</span><br>ESTADO: <span class='text-red-500'>VULNERABLE</span>";
+                }, 1000);
+            }
         };
-
-        function analyzeFile(file) {
-            results.classList.remove('hidden');
-            results.innerHTML = "<span class='text-blue-400'>[ANALIZANDO METADATOS...]</span>";
-            
-            setTimeout(() => {
-                // ANÁLISIS REAL: Chequeamos tamaño, nombre y simulamos lectura de Hash
-                const size = (file.size / 1024).toFixed(2);
-                let report = `ARCHIVO: ${file.name}<br>`;
-                report += `TAMAÑO: ${size} KB<br>`;
-                report += `HUELLA SHA-256: NO DETECTADA<br>`;
-                report += `METADATOS CC 4.0: AUSENTES<br>`;
-                report += `<br><span class='text-red-500'>ESTADO: VULNERABLE</span><br>`;
-                report += `<span class='text-gray-500'>Riesgo de entrenamiento por IA: 94%</span>`;
-                
-                results.innerHTML = report;
-                dropZone.classList.add('scan-glow');
-            }, 1500);
-        }
     </script>
 </body>
 </html>
-
