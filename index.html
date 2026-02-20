@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body { background-color: #05070a; color: #8b949e; font-family: 'Courier New', monospace; }
-        .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; margin-bottom: 24px; }
+        .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; margin-bottom: 25px; }
         .glitch-blue { color: #58a6ff; text-shadow: 0 0 8px rgba(88, 166, 255, 0.3); }
+        .status-ok { color: #3fb950; font-weight: bold; }
     </style>
 </head>
-<body class="p-4 md:p-8" onload="checkRecovery()">
+<body class="p-4 md:p-8" onload="restoreSession()">
     <div class="max-w-4xl mx-auto">
-        <header class="flex justify-between items-center mb-8 border-b border-blue-900 pb-6">
+        <header class="flex justify-between items-center mb-10 border-b border-blue-900 pb-6">
             <div>
                 <h1 class="text-3xl font-black glitch-blue tracking-tighter uppercase">AETHELGARD</h1>
                 <p class="text-[10px] text-gray-500 uppercase">INTERNATIONAL IP UNIT | AUDITOR: DAVID BUISÁN</p>
@@ -24,80 +25,84 @@
             <img src="Screenshot_20260220_141747_Google.jpg" alt="LOGO" class="h-16 w-16 rounded border border-blue-900" onerror="this.src='https://img.icons8.com/neon/96/shield.png'">
         </header>
 
-        <div class="bunker-panel p-6 border-blue-900/20">
+        <div class="bunker-panel p-6 shadow-lg shadow-blue-900/5">
             <h2 class="text-white font-bold mb-4 text-xs underline uppercase tracking-widest">_SERVICIOS TÉCNICOS_</h2>
-            <p class="text-[11px] leading-relaxed">Protección pericial basada en la integridad de datos. El SHA-256 es una huella matemática única e inviolable.</p>
+            <p class="text-[11px] leading-relaxed text-gray-400">Protección pericial basada en la integridad de datos. El SHA-256 es una huella matemática única e inviolable.</p>
         </div>
 
         <div class="bunker-panel p-6 border-green-900/20">
             <h2 class="text-green-500 font-bold mb-4 text-xs uppercase tracking-widest"><i class="fas fa-fingerprint mr-2"></i> ÚLTIMOS ACTIVOS PROTEGIDOS_</h2>
             <div class="text-[10px] space-y-2 font-mono">
-                <p><span class="text-green-500">[OK]</span> ID: #AG-7721 | @NeoVandal | PROTEGIDO</p>
-                <p><span class="text-green-500">[OK]</span> ID: #AG-8842 | @Elena_Pixel | PROTEGIDO</p>
+                <p><span class="status-ok">[OK]</span> ID: #AG-7721 | @NeoVandal | PROTEGIDO</p>
+                <p><span class="status-ok">[OK]</span> ID: #AG-8842 | @Elena_Pixel | PROTEGIDO</p>
             </div>
         </div>
 
         <div class="bunker-panel p-6 border-red-900/30">
             <h2 class="text-red-500 font-bold mb-4 text-xs uppercase tracking-widest"><i class="fas fa-microscope mr-2"></i> ESCÁNER DE VULNERABILIDAD REAL_</h2>
-            <input type="file" id="fileInput" class="hidden">
-            <button onclick="document.getElementById('fileInput').click()" class="border-2 border-dashed border-gray-700 p-8 w-full rounded hover:bg-gray-800 text-[10px] uppercase">SELECCIONAR ARCHIVO PARA ANÁLISIS</button>
+            <input type="file" id="fileInput" class="hidden" onchange="processFile(this.files[0])">
+            <button onclick="document.getElementById('fileInput').click()" class="border-2 border-dashed border-gray-700 p-10 w-full rounded hover:border-blue-500 transition-all text-[10px] uppercase">
+                SELECCIONAR ARCHIVO PARA ANÁLISIS
+            </button>
             <div id="results" class="mt-4 p-3 bg-black/40 rounded border border-gray-800 text-[10px] font-mono hidden break-all text-yellow-500"></div>
         </div>
 
         <div class="bunker-panel p-6 border-yellow-900/50">
             <h2 class="text-yellow-500 font-bold mb-4 text-xs uppercase tracking-widest"><i class="fas fa-credit-card mr-2"></i> FINALIZAR BLINDAJE_</h2>
-            <a href="https://revolut.me/daviddmmi/50" target="_blank" onclick="prePay()" class="block w-full bg-yellow-500 hover:bg-yellow-400 text-black font-black py-4 rounded text-center text-[10px] uppercase mb-4 shadow-lg">REALIZAR PAGO EXPRESS (50€)</a>
+            <a href="https://revolut.me/daviddmmi/50" target="_blank" onclick="markAsPaying()" class="block w-full bg-yellow-600 hover:bg-yellow-500 text-black font-black py-4 rounded text-center text-[10px] uppercase mb-4 shadow-xl">REALIZAR PAGO EXPRESS (50€)</a>
             
-            <div id="readyZone" class="hidden border-t border-gray-800 pt-4 text-center">
-                <p class="text-[9px] text-green-500 mb-2 uppercase">Pago iniciado. El sistema está listo.</p>
-                <button onclick="generatePack()" class="w-full bg-blue-600 text-white font-black py-4 rounded text-[10px] uppercase shadow-lg shadow-blue-900/30">DESCARGAR PACK BLINDADO (.ZIP)</button>
+            <div id="downloadArea" class="hidden border-t border-gray-800 pt-6 mt-4">
+                <p class="text-[9px] text-green-500 mb-3 text-center uppercase animate-pulse">✓ VERIFICACIÓN DE PAGO LISTA</p>
+                <button onclick="generateDownload()" class="w-full bg-blue-700 hover:bg-blue-600 text-white font-black py-4 rounded text-[10px] uppercase transition-all shadow-lg shadow-blue-900/40">GENERAR Y DESCARGAR PACK BLINDADO</button>
             </div>
         </div>
     </div>
 
     <script>
-        function checkRecovery() {
-            if(localStorage.getItem('activeHash') && localStorage.getItem('paidStatus') === 'true') {
-                document.getElementById('readyZone').classList.remove('hidden');
+        function restoreSession() {
+            if(localStorage.getItem('paying') === 'true' && localStorage.getItem('fileHash')) {
+                document.getElementById('downloadArea').classList.remove('hidden');
+                document.getElementById('results').classList.remove('hidden');
+                document.getElementById('results').innerHTML = `SESIÓN RECUPERADA<br>HASH: ${localStorage.getItem('fileHash')}`;
             }
         }
 
-        document.getElementById('fileInput').addEventListener('change', function(e) {
-            const file = e.target.files[0];
+        function processFile(file) {
+            if(!file) return;
             const reader = new FileReader();
-            reader.onload = function(event) {
-                const binary = CryptoJS.lib.WordArray.create(event.target.result);
+            reader.onload = function(e) {
+                const binary = CryptoJS.lib.WordArray.create(e.target.result);
                 const hash = CryptoJS.SHA256(binary).toString();
-                localStorage.setItem('activeHash', hash);
+                localStorage.setItem('fileHash', hash);
                 localStorage.setItem('fileName', file.name);
-                localStorage.setItem('paidStatus', 'false');
+                localStorage.setItem('paying', 'false');
+                
                 document.getElementById('results').classList.remove('hidden');
-                document.getElementById('results').innerHTML = `FILE: ${file.name}<br>SHA-256: ${hash}`;
+                document.getElementById('results').innerHTML = `FILE: ${file.name}<br>SHA-256: ${hash}<br><span class="text-red-500">ESTADO: VULNERABLE</span>`;
             };
             reader.readAsArrayBuffer(file);
-        });
-
-        function prePay() {
-            if(!localStorage.getItem('activeHash')) {
-                alert("Sube un archivo primero");
-                return;
-            }
-            localStorage.setItem('paidStatus', 'true');
-            setTimeout(() => {
-                document.getElementById('readyZone').classList.remove('hidden');
-            }, 1000);
         }
 
-        async function generatePack() {
+        function markAsPaying() {
+            if(!localStorage.getItem('fileHash')) {
+                alert("Primero debes subir un archivo en el Panel 3.");
+                return;
+            }
+            localStorage.setItem('paying', 'true');
+            document.getElementById('downloadArea').classList.remove('hidden');
+        }
+
+        async function generateDownload() {
             const zip = new JSZip();
-            const h = localStorage.getItem('activeHash');
-            zip.file("CERTIFICADO.txt", `AETHELGARD AUTH\nAUDITOR: DAVID BUISAN\nHASH: ${h}`);
+            const hash = localStorage.getItem('fileHash');
+            zip.file("CERTIFICADO_LEGAL.txt", `AETHELGARD AUTH\nAUDITOR: DAVID BUISAN\nHASH: ${hash}\nFECHA: ${new Date().toLocaleString()}`);
             const content = await zip.generateAsync({type:"blob"});
             const link = document.createElement('a');
             link.href = URL.createObjectURL(content);
-            link.download = "AETHELGARD_PACK.zip";
+            link.download = `PACK_AETHELGARD_${localStorage.getItem('fileName')}.zip`;
             link.click();
             localStorage.clear();
+            setTimeout(() => location.reload(), 1000);
         }
     </script>
 </body>
