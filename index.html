@@ -3,85 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AETHELGARD | Entrega Blindada</title>
+    <title>AETHELGARD | Global IP Unit</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { background-color: #050505; color: #a0a0a0; font-family: 'Courier New', monospace; }
-        .bunker-panel { background: #0d1117; border: 1px solid #21262d; border-radius: 4px; }
-        .btn-gold { background: #d4af37; color: black; font-weight: 900; }
-        .locked { opacity: 0.2; pointer-events: none; }
+        body { background-color: #05070a; color: #8b949e; font-family: 'Courier New', monospace; }
+        .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
+        .glitch-blue { color: #58a6ff; text-shadow: 0 0 8px rgba(88, 166, 255, 0.3); }
+        .locked { opacity: 0.3; pointer-events: none; }
     </style>
 </head>
-<body class="p-4">
-    <div class="max-w-5xl mx-auto">
-        <header class="flex justify-between items-center border-b border-gray-800 pb-4 mb-8">
-            <h1 class="text-xl font-bold text-blue-500 uppercase tracking-widest">AETHELGARD_DELIVERY_SYSTEM</h1>
-            <img src="Screenshot_20260220_141747_Google.jpg" class="h-12 w-12 border border-blue-900 rounded">
+<body class="p-4 md:p-8">
+    <div class="max-w-6xl mx-auto">
+        <header class="relative flex justify-between items-center mb-10 border-b border-blue-900 pb-6">
+            <div>
+                <h1 class="text-3xl font-black glitch-blue tracking-tighter">AETHELGARD</h1>
+                <p class="text-[10px] text-gray-500 uppercase">INTERNATIONAL IP UNIT | AUDITOR: DAVID BUISÁN</p>
+            </div>
+            <img src="Screenshot_20260220_141747_Google.jpg" alt="LOGO" class="h-16 w-16 md:h-20 md:w-20 rounded-lg border border-blue-900 shadow-lg shadow-blue-900/20">
         </header>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <div class="bunker-panel p-5">
-                <h2 class="text-xs font-bold mb-4 text-red-500 uppercase">1. Análisis de Activo</h2>
-                <input type="file" id="fileInput" class="hidden">
-                <button onclick="document.getElementById('fileInput').click()" class="w-full border border-gray-600 p-6 text-[10px] uppercase hover:bg-white/5 mb-4">
-                    Subir Obra para Auditoría
-                </button>
-                <div id="results" class="p-3 bg-black text-[10px] hidden border border-gray-800"></div>
-            </div>
-
-            <div class="bunker-panel p-5">
-                <h2 class="text-xs font-bold mb-4 text-yellow-500 uppercase">2. Pago y Descarga de Pack</h2>
-                <a href="https://revolut.me/daviddmmi/50" target="_blank" class="block w-full btn-gold py-4 text-center text-[10px] uppercase mb-4 shadow-lg shadow-yellow-900/20">
-                    Realizar Pago Express (50€)
-                </a>
-                
-                <div id="unlockZone" class="locked">
-                    <p class="text-[9px] mb-2 text-gray-500 italic">Introduce el código de desbloqueo proporcionado tras el pago:</p>
-                    <input type="text" id="passCode" placeholder="CÓDIGO DE ACCESO" class="w-full bg-black border border-gray-700 p-3 text-xs text-white mb-3 text-center">
-                    <button onclick="checkAndDownload()" class="w-full bg-blue-700 text-white py-4 text-[10px] font-bold uppercase">
-                        Generar y Descargar Pack Blindado
-                    </button>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <section class="space-y-6">
+                <div class="bunker-panel p-6">
+                    <h2 class="text-white font-bold mb-4 text-sm underline"><i class="fas fa-shield-halved mr-2 text-blue-500"></i> SERVICIOS TÉCNICOS_</h2>
+                    <p class="text-[11px] leading-relaxed text-gray-400">Protección pericial basada en la integridad de datos. El SHA-256 es una huella matemática única e inviolable.</p>
                 </div>
-            </div>
+                
+                <div class="bunker-panel p-6">
+                    <h2 class="text-green-500 font-bold mb-4 text-sm"><i class="fas fa-fingerprint mr-2 text-green-500"></i> ÚLTIMOS ACTIVOS PROTEGIDOS_</h2>
+                    <div class="text-[10px] space-y-2">
+                        <p><span class="text-green-500">[OK]</span> ID: #AG-7721 | @NeoVandal | PROTEGIDO</p>
+                        <p><span class="text-green-500">[OK]</span> ID: #AG-8842 | @Elena_Pixel | PROTEGIDO</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="space-y-6">
+                <div class="bunker-panel p-6 border-red-900/50">
+                    <h2 class="text-red-500 font-bold mb-4 text-sm"><i class="fas fa-microscope mr-2 text-red-500"></i> ESCÁNER DE VULNERABILIDAD REAL_</h2>
+                    <input type="file" id="fileInput" class="hidden">
+                    <button onclick="document.getElementById('fileInput').click()" class="border-2 border-dashed border-gray-700 p-8 w-full rounded hover:bg-gray-800 transition-all text-xs mb-4">
+                        SELECCIONAR ARCHIVO PARA ANÁLISIS
+                    </button>
+                    <div id="results" class="p-3 bg-black/40 rounded border border-gray-800 text-[10px] font-mono hidden break-all"></div>
+                </div>
+
+                <div id="paymentSection" class="bunker-panel p-6 border-yellow-900/50 locked">
+                    <h2 class="text-yellow-500 font-bold mb-4 text-sm"><i class="fas fa-credit-card mr-2"></i> FINALIZAR BLINDAJE_</h2>
+                    <a href="https://revolut.me/daviddmmi/50" target="_blank" onclick="showForm()" class="block w-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-4 rounded text-center text-[10px] uppercase mb-4">
+                        REALIZAR PAGO EXPRESS (50€)
+                    </a>
+                    
+                    <div id="formAuto" class="hidden animate-pulse">
+                        <p class="text-[9px] text-blue-400 mb-2 font-bold">INTRODUCE TU EMAIL PARA RECIBIR EL PACK CERTIFICADO:</p>
+                        <form action="https://formspree.io/f/xpzvkyon" method="POST">
+                            <input type="email" name="email" placeholder="tu@email.com" class="w-full bg-black border border-gray-700 p-2 text-white text-[10px] mb-2" required>
+                            <input type="hidden" name="hash_detectado" id="hashField">
+                            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded text-[10px] font-bold uppercase">ENVIAR SOLICITUD DE ENTREGA</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
     <script>
-        let currentFile = null;
         let currentHash = "";
-        const MASTER_KEY = "AETHEL2026"; 
-
         document.getElementById('fileInput').addEventListener('change', function(e) {
-            currentFile = e.target.files[0];
+            const file = e.target.files[0];
             const reader = new FileReader();
             reader.onload = function(event) {
                 const binary = CryptoJS.lib.WordArray.create(event.target.result);
                 currentHash = CryptoJS.SHA256(binary).toString();
-                document.getElementById('results').classList.remove('hidden');
-                document.getElementById('results').innerHTML = `FILE: ${currentFile.name}<br>HASH: ${currentHash}<br><span class="text-red-500">STATUS: UNAUTHORIZED</span>`;
-                document.getElementById('unlockZone').classList.remove('locked');
+                document.getElementById('hashField').value = currentHash;
+                const res = document.getElementById('results');
+                res.classList.remove('hidden');
+                res.innerHTML = `ARCHIVO: ${file.name}<br>SHA-256: ${currentHash}<br><span class="text-red-500">ESTADO: VULNERABLE</span>`;
+                document.getElementById('paymentSection').classList.remove('locked');
             };
-            reader.readAsArrayBuffer(currentFile);
+            reader.readAsArrayBuffer(file);
         });
 
-        async function checkAndDownload() {
-            const input = document.getElementById('passCode').value;
-            if(input === MASTER_KEY) {
-                const zip = new JSZip();
-                zip.file(`CERTIFICADO_AUDITORIA_${currentFile.name}.txt`, `AETHELGARD AUTHENTICATION\n--------------------\nHASH: ${currentHash}\nAUDITOR: DAVID BUISAN`);
-                zip.file(`OBRA_PROTEGIDA_${currentFile.name}`, currentFile);
-                
-                const content = await zip.generateAsync({type:"blob"});
-                const link = document.createElement('a');
-                link.href = URL.createObjectURL(content);
-                link.download = `AETHELGARD_PACK_${currentFile.name}.zip`;
-                link.click();
-            } else {
-                alert("CÓDIGO DE ACCESO INVÁLIDO.");
-            }
+        function showForm() {
+            document.getElementById('formAuto').classList.remove('hidden');
         }
     </script>
 </body>
