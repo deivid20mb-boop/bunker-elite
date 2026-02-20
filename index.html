@@ -20,17 +20,8 @@
     <div id="qr-gen"></div>
     <div class="max-w-4xl mx-auto">
         <header class="flex justify-between items-center mb-10 border-b border-blue-900 pb-6">
-            <div>
-                <h1 class="text-3xl font-black glitch-blue tracking-tighter uppercase">AETHELGARD</h1>
-                <p class="text-[10px] text-gray-500 uppercase">INTERNATIONAL IP UNIT | AUDITOR: DAVID BUISÁN</p>
-            </div>
-            <img src="Screenshot_20260220_141747_Google.jpg" alt="LOGO" class="h-16 w-16 rounded border border-blue-900" onerror="this.src='https://img.icons8.com/neon/96/shield.png'">
+            <h1 class="text-3xl font-black glitch-blue tracking-tighter uppercase">AETHELGARD</h1>
         </header>
-
-        <div class="bunker-panel p-6">
-            <h2 class="text-white font-bold mb-4 text-xs underline uppercase tracking-widest">_PROTOCOLO DE CERTIFICACIÓN IP_</h2>
-            <p class="text-[11px] text-gray-400">CC BY-NC-ND 4.0 INTERNATIONAL. Registro de inmutabilidad pericial mediante Hashing SHA-256.</p>
-        </div>
 
         <div class="bunker-panel p-6 border-red-900/30">
             <h2 class="text-red-500 font-bold mb-4 text-xs uppercase tracking-widest">_CARGA DE ACTIVO_</h2>
@@ -40,30 +31,25 @@
         </div>
 
         <div id="readyZone" class="hidden bunker-panel p-6 border-blue-900/50">
-            <h2 class="text-blue-500 font-bold mb-4 text-xs uppercase tracking-widest">_EXPEDIENTE PERICIAL LISTO_</h2>
-            <button id="dlBtn" onclick="oneTouchDownload()" class="w-full bg-blue-700 text-white font-black py-4 rounded text-[10px] uppercase shadow-lg shadow-blue-900/30">DESCARGAR PACK PROTEGIDO (ZIP)</button>
+            <button id="dlBtn" onclick="oneTouchDownload()" class="w-full bg-blue-700 text-white font-black py-4 rounded text-[10px] uppercase shadow-lg shadow-blue-900/30">DESCARGAR PACK PROTEGIDO (.ZIP)</button>
         </div>
     </div>
 
     <script>
         const { jsPDF } = window.jspdf;
-
         function processFile(f) {
             const r = new FileReader();
             r.onload = (e) => {
                 const h = CryptoJS.SHA256(CryptoJS.lib.WordArray.create(e.target.result)).toString();
                 localStorage.setItem('h', h); localStorage.setItem('n', f.name);
                 document.getElementById('status').classList.remove('hidden');
-                document.getElementById('status').innerText = `HASH SHA-256: ${h}`;
+                document.getElementById('status').innerText = `HASH: ${h}`;
                 document.getElementById('readyZone').classList.remove('hidden');
             };
             r.readAsArrayBuffer(f);
         }
 
         async function oneTouchDownload() {
-            const btn = document.getElementById('dlBtn');
-            btn.disabled = true; btn.innerText = "GENERANDO CERTIFICADO...";
-            
             const h = localStorage.getItem('h'); const n = localStorage.getItem('n');
             const qrDiv = document.getElementById("qr-gen");
             qrDiv.innerHTML = "";
@@ -72,26 +58,19 @@
             setTimeout(async () => {
                 const qrImg = qrDiv.querySelector("img").src;
                 const pdf = new jsPDF();
-                pdf.setFillColor(15, 15, 15); pdf.rect(0, 0, 210, 297, 'F');
-                pdf.setTextColor(88, 166, 255); pdf.setFontSize(20); pdf.text("AETHELGARD IP UNIT", 20, 30);
-                pdf.setTextColor(255, 255, 255); pdf.setFontSize(10);
+                pdf.text("AETHELGARD IP UNIT", 20, 30);
                 pdf.text(`ACTIVO: ${n}`, 20, 50);
-                pdf.text(`HASH SHA-256: ${h}`, 20, 60);
-                pdf.text("LICENCIA: CC BY-NC-ND 4.0 (Atribución-NoComercial-SinDerivados)", 20, 70);
+                pdf.text(`HASH: ${h}`, 20, 60);
                 pdf.addImage(qrImg, 'PNG', 160, 20, 30, 30);
 
                 const zip = new JSZip();
-                zip.file("CERTIFICADO_LEGAL.pdf", pdf.output('blob'));
-                zip.file("AUDIT_LOG.txt", `AUDITOR: DAVID BUISAN\nDATE: ${new Date().toISOString()}\nHASH: ${h}`);
-
+                zip.file("CERTIFICADO.pdf", pdf.output('blob'));
                 const blob = await zip.generateAsync({type:"blob"});
                 const link = document.createElement('a');
                 link.href = URL.createObjectURL(blob);
-                link.download = `AETHELGARD_PROTECTED_${n}.zip`;
+                link.download = `PROYECTO_PROTEGIDO.zip`;
                 link.click();
-                
-                localStorage.clear();
-                setTimeout(() => location.reload(), 1000);
+                location.reload();
             }, 800);
         }
     </script>
