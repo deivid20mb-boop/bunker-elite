@@ -9,56 +9,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body { background-color: #05070a; color: #8b949e; font-family: 'Courier New', monospace; }
         .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; margin-bottom: 25px; }
-        .glitch-blue { color: #58a6ff; text-shadow: 0 0 8px rgba(88, 166, 255, 0.3); cursor: pointer; }
+        .glitch-blue { color: #58a6ff; text-shadow: 0 0 8px rgba(88, 166, 255, 0.3); }
         #qr-gen { display: none; }
     </style>
 </head>
-<body class="p-4 md:p-8" onload="checkStatus()">
+<body class="p-4 md:p-8">
     <div id="qr-gen"></div>
     <div class="max-w-4xl mx-auto">
         <header class="flex justify-between items-center mb-10 border-b border-blue-900 pb-6">
             <div>
-                <h1 class="text-3xl font-black glitch-blue tracking-tighter uppercase" onclick="masterUnlock()">AETHELGARD</h1>
+                <h1 class="text-3xl font-black glitch-blue tracking-tighter uppercase">AETHELGARD</h1>
                 <p class="text-[10px] text-gray-500 uppercase">INTERNATIONAL IP UNIT | AUDITOR: DAVID BUISÁN</p>
             </div>
             <img src="Screenshot_20260220_141747_Google.jpg" alt="LOGO" class="h-16 w-16 rounded border border-blue-900" onerror="this.src='https://img.icons8.com/neon/96/shield.png'">
         </header>
 
-        <div class="bunker-panel p-6">
-            <h2 class="text-white font-bold mb-4 text-xs underline uppercase tracking-widest">_PROTOCOLO DE CERTIFICACIÓN IP_</h2>
-            <p class="text-[11px] text-gray-400">CC BY-NC-ND 4.0 INTERNATIONAL. Registro de inmutabilidad pericial mediante Hashing SHA-256.</p>
-        </div>
-
-        <div class="bunker-panel p-6 border-green-900/20">
-            <h2 class="text-green-500 font-bold mb-4 text-xs uppercase tracking-widest">_REGISTRO ANTI-COPYRIGHT_</h2>
-            <div class="text-[10px] space-y-2 font-mono">
-                <p><span class="text-green-500">[OK]</span> ID: #AG-9905 | VERIFIED</p>
-            </div>
-        </div>
-
         <div class="bunker-panel p-6 border-red-900/30">
-            <h2 class="text-red-500 font-bold mb-4 text-xs uppercase tracking-widest">_UNIDAD DE ESCANEO FORENSE_</h2>
+            <h2 class="text-red-500 font-bold mb-4 text-xs uppercase tracking-widest">_CARGA DE ACTIVO_</h2>
             <input type="file" id="fileIn" class="hidden" onchange="processFile(this.files[0])">
-            <button onclick="document.getElementById('fileIn').click()" class="border-2 border-dashed border-gray-700 p-8 w-full rounded text-[10px] uppercase hover:border-blue-500">CARGAR ACTIVO</button>
+            <button onclick="document.getElementById('fileIn').click()" class="border-2 border-dashed border-gray-700 p-8 w-full rounded text-[10px] uppercase hover:border-blue-500">SELECCIONAR ARCHIVO</button>
             <div id="status" class="mt-4 p-3 bg-black/40 rounded text-[10px] font-mono hidden text-yellow-500 break-all"></div>
         </div>
 
-        <div class="bunker-panel p-6 border-yellow-900/50">
-            <h2 class="text-yellow-500 font-bold mb-4 text-xs uppercase tracking-widest">_FINALIZAR PROTECCIÓN_</h2>
-            <a href="https://revolut.me/daviddmmi/50" target="_blank" onclick="enableDownload()" class="block w-full bg-yellow-600 text-black font-black py-4 rounded text-center text-[10px] uppercase mb-4 shadow-xl">PAGAR LICENCIA (50€)</a>
-            <div id="readyZone" class="hidden border-t border-gray-800 pt-4">
-                <button id="dlBtn" onclick="oneTouchDownload()" class="w-full bg-blue-700 text-white font-black py-4 rounded text-[10px] uppercase shadow-lg shadow-blue-900/30">DESCARGAR PACK PERICIAL PDF</button>
-            </div>
+        <div id="readyZone" class="hidden bunker-panel p-6 border-blue-900/50">
+            <h2 class="text-blue-500 font-bold mb-4 text-xs uppercase tracking-widest">_EXPEDIENTE PERICIAL LISTO_</h2>
+            <button id="dlBtn" onclick="oneTouchDownload()" class="w-full bg-blue-700 text-white font-black py-4 rounded text-[10px] uppercase shadow-lg shadow-blue-900/30">DESCARGAR PACK PROTEGIDO (ZIP)</button>
         </div>
     </div>
 
     <script>
         const { jsPDF } = window.jspdf;
-        function checkStatus() { if(localStorage.getItem('ready') === 'true') document.getElementById('readyZone').classList.remove('hidden'); }
 
         function processFile(f) {
             const r = new FileReader();
@@ -66,26 +49,16 @@
                 const h = CryptoJS.SHA256(CryptoJS.lib.WordArray.create(e.target.result)).toString();
                 localStorage.setItem('h', h); localStorage.setItem('n', f.name);
                 document.getElementById('status').classList.remove('hidden');
-                document.getElementById('status').innerText = `HASH: ${h}`;
+                document.getElementById('status').innerText = `HASH SHA-256: ${h}`;
+                document.getElementById('readyZone').classList.remove('hidden');
             };
             r.readAsArrayBuffer(f);
         }
 
-        function masterUnlock() {
-            if(!localStorage.getItem('h')) return alert("Carga un archivo primero");
-            enableDownload();
-            alert("MODO AUDITOR: DESCARGA HABILITADA");
-        }
-
-        function enableDownload() {
-            if(!localStorage.getItem('h')) return;
-            localStorage.setItem('ready', 'true');
-            document.getElementById('readyZone').classList.remove('hidden');
-        }
-
         async function oneTouchDownload() {
             const btn = document.getElementById('dlBtn');
-            btn.disabled = true; btn.innerText = "GENERANDO...";
+            btn.disabled = true; btn.innerText = "GENERANDO CERTIFICADO...";
+            
             const h = localStorage.getItem('h'); const n = localStorage.getItem('n');
             const qrDiv = document.getElementById("qr-gen");
             qrDiv.innerHTML = "";
@@ -99,13 +72,13 @@
                 pdf.setTextColor(255, 255, 255); pdf.setFontSize(10);
                 pdf.text(`ACTIVO: ${n}`, 20, 50);
                 pdf.text(`HASH SHA-256: ${h}`, 20, 60);
-                pdf.text("LICENCIA: CC BY-NC-ND 4.0 INTERNATIONAL", 20, 70);
+                pdf.text("LICENCIA: CC BY-NC-ND 4.0 (Atribución-NoComercial-SinDerivados)", 20, 70);
                 pdf.addImage(qrImg, 'PNG', 160, 20, 30, 30);
-                
+
                 const zip = new JSZip();
                 zip.file("CERTIFICADO_LEGAL.pdf", pdf.output('blob'));
                 zip.file("AUDIT_LOG.txt", `AUDITOR: DAVID BUISAN\nDATE: ${new Date().toISOString()}\nHASH: ${h}`);
-                
+
                 const blob = await zip.generateAsync({type:"blob"});
                 const link = document.createElement('a');
                 link.href = URL.createObjectURL(blob);
