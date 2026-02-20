@@ -12,8 +12,8 @@
         body { background-color: #05070a; color: #8b949e; font-family: 'Courier New', monospace; }
         .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; margin-bottom: 25px; }
         .glitch-blue { color: #58a6ff; text-shadow: 0 0 8px rgba(88, 166, 255, 0.3); }
-        .legal-text { font-size: 9px; line-height: 1.4; color: #6e7681; }
-        .highlight-green { color: #3fb950; font-weight: bold; }
+        .legal-header { color: #f85149; font-weight: bold; font-size: 10px; border-bottom: 1px solid #30363d; padding-bottom: 5px; margin-bottom: 10px; }
+        .info-cell { background: rgba(0,0,0,0.2); border: 1px solid #30363d; padding: 10px; border-radius: 4px; }
     </style>
 </head>
 <body class="p-4 md:p-8" onload="restoreSession()">
@@ -27,54 +27,50 @@
         </header>
 
         <div class="bunker-panel p-6 shadow-lg shadow-blue-900/5">
-            <h2 class="text-white font-bold mb-4 text-xs underline uppercase tracking-widest">_SERVICIOS TÉCNICOS Y CERTIFICACIÓN_</h2>
-            <p class="text-[11px] leading-relaxed text-gray-300 mb-4">La Unidad Aetheshgard emplea protocolos de sellado de tiempo y **Hashing SHA-256** para garantizar la inmutabilidad de la propiedad intelectual. Cada activo procesado recibe una firma digital única que sirve como prueba pericial ante tribunales internacionales.</p>
-            <div class="grid grid-cols-2 gap-4 legal-text">
-                <div class="border-l border-blue-900 pl-3">
-                    <p class="text-blue-400 font-bold uppercase mb-1">Protección de Datos:</p>
-                    <p>Encriptación de grado militar para la trazabilidad de autoría original.</p>
+            <h2 class="text-white font-bold mb-4 text-xs underline uppercase tracking-widest">_PROTOCOLO DE CERTIFICACIÓN IP_</h2>
+            <div class="legal-header uppercase tracking-tighter">PROTOCOL: CC BY-NC-ND 4.0 INTERNATIONAL</div>
+            <p class="text-[11px] leading-relaxed text-gray-300 mb-4">La Unidad Aetheshgard implementa el estándar de Atribución/Reconocimiento-NoComercial-SinDerivados 4.0. Este blindaje prohíbe explícitamente el uso comercial y la creación de obras derivadas sin autorización pericial expresa.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-[9px] font-mono">
+                <div class="info-cell">
+                    <p class="text-blue-400 font-bold mb-1">[PERMITS]</p>
+                    <p>● Distribution / Reproduction</p>
                 </div>
-                <div class="border-l border-blue-900 pl-3">
-                    <p class="text-blue-400 font-bold uppercase mb-1">Validez Legal:</p>
-                    <p>Certificados compatibles con normativas WIPO y tratados de Berna.</p>
+                <div class="info-cell">
+                    <p class="text-red-500 font-bold mb-1">[PROHIBITS]</p>
+                    <p>● CommercialUse / Derivatives</p>
                 </div>
             </div>
         </div>
 
         <div class="bunker-panel p-6 border-green-900/20">
-            <h2 class="text-green-500 font-bold mb-4 text-xs uppercase tracking-widest"><i class="fas fa-fingerprint mr-2"></i> REGISTRO DE TRAZABILIDAD ANTI-COPYRIGHT_</h2>
+            <h2 class="text-green-500 font-bold mb-4 text-xs uppercase tracking-widest"><i class="fas fa-gavel mr-2"></i> BLINDAJE ANTI-COPYRIGHT_</h2>
             <div class="text-[10px] space-y-3 font-mono">
-                <div class="flex justify-between border-b border-gray-800 pb-1">
-                    <span class="highlight-green">[PROTEGIDO]</span> <span>ID: #AG-7721 | Hash: 4e9a...f21a</span> <span class="text-gray-600">Verified</span>
-                </div>
-                <div class="flex justify-between border-b border-gray-800 pb-1">
-                    <span class="highlight-green">[PROTEGIDO]</span> <span>ID: #AG-8842 | Hash: 92c1...33e9</span> <span class="text-gray-600">Verified</span>
-                </div>
-                <div class="flex justify-between border-b border-gray-800 pb-1">
-                    <span class="highlight-green">[PROTEGIDO]</span> <span>ID: #AG-9905 | Hash: f3d0...11bc</span> <span class="text-gray-600">Verified</span>
+                <p class="text-gray-400">Cada certificado emitido vincula el activo al **DCTERMS:Identifier** del autor original, asegurando validez legal ante entidades de registro internacional.</p>
+                <div class="p-3 bg-black/40 border border-green-900/30 rounded">
+                    <p class="text-green-500 font-bold mb-1">> VERIFICACIÓN ACTIVA:</p>
+                    <p class="text-gray-500">Hash Registry Sync: CC-BY-NC-ND-4.0-LEGALCODE-ES</p>
                 </div>
             </div>
-            <p class="legal-text mt-4 italic">* El sistema monitorea el uso no autorizado de hashes registrados en la red global de Aetheshgard.</p>
         </div>
 
         <div class="bunker-panel p-6 border-red-900/30">
-            <h2 class="text-red-500 font-bold mb-4 text-xs uppercase tracking-widest"><i class="fas fa-microscope mr-2"></i> UNIDAD DE ANÁLISIS DE VULNERABILIDAD_</h2>
-            <p class="text-[11px] mb-4">Cargue su activo para realizar una auditoría de integridad y generar la huella digital criptográfica.</p>
+            <h2 class="text-red-500 font-bold mb-4 text-xs uppercase tracking-widest"><i class="fas fa-microscope mr-2"></i> ESCÁNER DE INTEGRIDAD DE ACTIVO_</h2>
+            <p class="text-[11px] mb-4">Cargue su obra para el sellado criptográfico SHA-256 y la vinculación automática al protocolo de protección de autor.</p>
             <input type="file" id="fileInput" class="hidden" onchange="processFile(this.files[0])">
             <button onclick="document.getElementById('fileInput').click()" class="border-2 border-dashed border-gray-700 p-10 w-full rounded hover:border-blue-500 transition-all text-[10px] uppercase font-bold text-gray-500">
-                INICIAR ESCANEO DE PROPIEDAD INTELECTUAL
+                INICIAR ESCANEO Y VINCULACIÓN LEGAL
             </button>
             <div id="results" class="mt-4 p-3 bg-black/40 rounded border border-gray-800 text-[10px] font-mono hidden break-all text-yellow-500"></div>
         </div>
 
         <div class="bunker-panel p-6 border-yellow-900/50">
-            <h2 class="text-yellow-500 font-bold mb-4 text-xs uppercase tracking-widest"><i class="fas fa-gavel mr-2"></i> EJECUCIÓN DE BLINDAJE LEGAL_</h2>
-            <p class="text-[11px] mb-4 italic text-gray-400">Al finalizar el pago, el sistema generará un Pack Pericial (.zip) que incluye el certificado de autoría y el activo sellado.</p>
-            <a href="https://revolut.me/daviddmmi/50" target="_blank" onclick="markAsPaying()" class="block w-full bg-yellow-600 hover:bg-yellow-500 text-black font-black py-4 rounded text-center text-[10px] uppercase mb-4 shadow-xl transition-all">PAGAR LICENCIA DE PROTECCIÓN (50€)</a>
+            <h2 class="text-yellow-500 font-bold mb-4 text-xs uppercase tracking-widest"><i class="fas fa-shield-alt mr-2"></i> FINALIZAR PROCESO DE BLINDAJE_</h2>
+            <p class="text-[11px] mb-4 italic text-gray-400">Certificación pericial de 50€ para el sellado permanente de propiedad intelectual.</p>
+            <a href="https://revolut.me/daviddmmi/50" target="_blank" onclick="markAsPaying()" class="block w-full bg-yellow-600 hover:bg-yellow-500 text-black font-black py-4 rounded text-center text-[10px] uppercase mb-4 shadow-xl">ADQUIRIR CERTIFICADO LEGAL (50€)</a>
             
             <div id="downloadArea" class="hidden border-t border-gray-800 pt-6 mt-4">
-                <p class="text-[9px] text-green-500 mb-3 text-center uppercase font-bold animate-pulse">✓ CERTIFICACIÓN LISTA PARA DESCARGA</p>
-                <button onclick="generateDownload()" class="w-full bg-blue-700 hover:bg-blue-600 text-white font-black py-4 rounded text-[10px] uppercase shadow-lg shadow-blue-900/40">DESCARGAR EXPEDIENTE PERICIAL (.ZIP)</button>
+                <p class="text-[9px] text-green-500 mb-3 text-center uppercase font-bold animate-pulse">✓ DOCUMENTACIÓN PERICIAL GENERADA</p>
+                <button onclick="generateDownload()" class="w-full bg-blue-700 hover:bg-blue-600 text-white font-black py-4 rounded text-[10px] uppercase shadow-lg shadow-blue-900/40">DESCARGAR EXPEDIENTE COMPLETO (.ZIP)</button>
             </div>
         </div>
     </div>
@@ -84,7 +80,7 @@
             if(localStorage.getItem('paying') === 'true' && localStorage.getItem('fileHash')) {
                 document.getElementById('downloadArea').classList.remove('hidden');
                 document.getElementById('results').classList.remove('hidden');
-                document.getElementById('results').innerHTML = `RESTAURANDO ANÁLISIS...<br>HASH: ${localStorage.getItem('fileHash')}`;
+                document.getElementById('results').innerHTML = `SESIÓN RECUPERADA: LISTO PARA SELLADO LEGAL<br>SHA-256: ${localStorage.getItem('fileHash')}`;
             }
         }
 
@@ -98,14 +94,14 @@
                 localStorage.setItem('fileName', file.name);
                 localStorage.setItem('paying', 'false');
                 document.getElementById('results').classList.remove('hidden');
-                document.getElementById('results').innerHTML = `ACTIVO: ${file.name}<br>SHA-256: ${hash}<br><span class="text-red-500 font-bold uppercase mt-2 block">STATUS: SIN PROTECCIÓN LEGAL</span>`;
+                document.getElementById('results').innerHTML = `ACTIVO: ${file.name}<br>SHA-256: ${hash}<br><span class="text-red-500 font-bold uppercase mt-2 block">STATUS: PENDIENTE DE VINCULACIÓN CC-BY-NC-ND</span>`;
             };
             reader.readAsArrayBuffer(file);
         }
 
         function markAsPaying() {
             if(!localStorage.getItem('fileHash')) {
-                alert("ERROR: Debe escanear un archivo antes de proceder al pago.");
+                alert("ALERTA: Debe escanear un activo para vincular la licencia.");
                 return;
             }
             localStorage.setItem('paying', 'true');
@@ -114,13 +110,13 @@
 
         async function generateDownload() {
             const zip = new JSZip();
-            const hash = localStorage.getItem('fileHash');
-            const certText = `--------------------------------------------------\nCERTIFICADO DE PROPIEDAD INTELECTUAL AETHELGARD\n--------------------------------------------------\nID DE AUDITORÍA: AG-${Math.floor(Math.random()*100000)}\nHASH ORIGEN (SHA-256): ${hash}\nAUTORIDAD: DAVID BUISÁN\nESTADO: REGISTRADO Y PROTEGIDO\n--------------------------------------------------`;
-            zip.file("CERTIFICADO_LEGAL.txt", certText);
+            const h = localStorage.getItem('fileHash');
+            const legalBody = `--------------------------------------------------\nCERTIFICADO DE PROPIEDAD INTELECTUAL AETHELGARD\n--------------------------------------------------\nLICENCIA: CC BY-NC-ND 4.0 INTERNATIONAL\nIDENTIFIER: http://creativecommons.org/licenses/by-nc-nd/4.0/\nHASH SELLADO: ${h}\nAUDITOR: DAVID BUISÁN\n--------------------------------------------------\nPERMITS: Distribution, Reproduction\nPROHIBITS: CommercialUse, DerivativeWorks\n--------------------------------------------------`;
+            zip.file("CERTIFICADO_LEGAL_AETHELGARD.txt", legalBody);
             const content = await zip.generateAsync({type:"blob"});
             const link = document.createElement('a');
             link.href = URL.createObjectURL(content);
-            link.download = `AETHELGARD_PROTECTED_${localStorage.getItem('fileName')}.zip`;
+            link.download = `EXPEDIENTE_IP_${localStorage.getItem('fileName')}.zip`;
             link.click();
             localStorage.clear();
             setTimeout(() => location.reload(), 1500);
