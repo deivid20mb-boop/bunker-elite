@@ -24,16 +24,15 @@
             <p class="text-[10px] text-gray-500 uppercase">AUDITOR: DAVID BUISÁN</p>
         </header>
 
-        <div class="bunker-panel p-6 border-red-900/30">
-            <h2 class="text-red-500 font-bold mb-4 text-xs uppercase tracking-widest">_ESCÁNER FORENSE_</h2>
+        <div class="bunker-panel p-8 text-center border-red-900/40">
+            <h2 class="text-red-500 font-bold mb-6 text-xs uppercase tracking-widest">_CARGA DE ACTIVO_</h2>
             <input type="file" id="fileIn" class="hidden" onchange="processFile(this.files[0])">
-            <button onclick="document.getElementById('fileIn').click()" class="border-2 border-dashed border-gray-700 p-8 w-full rounded text-[10px] uppercase hover:border-blue-500">CARGAR ACTIVO PARA BLINDAR</button>
+            <button onclick="document.getElementById('fileIn').click()" class="border-2 border-dashed border-blue-900/50 p-12 w-full rounded text-[11px] uppercase hover:bg-blue-900/10">SUBIR ARCHIVO PARA VALIDAR</button>
             <div id="status" class="mt-4 p-3 bg-black/40 rounded text-[10px] font-mono hidden text-yellow-500 break-all"></div>
         </div>
 
-        <div id="readyZone" class="hidden bunker-panel p-6 border-blue-900/50">
-            <h2 class="text-blue-400 font-bold mb-4 text-xs uppercase tracking-widest">_EXPEDIENTE PERICIAL LISTO_</h2>
-            <button id="dlBtn" onclick="oneTouchDownload()" class="w-full bg-blue-700 text-white font-black py-4 rounded text-[10px] uppercase shadow-lg shadow-blue-900/30">DESCARGAR PACK PROTEGIDO (.ZIP)</button>
+        <div id="readyZone" class="hidden bunker-panel p-6 border-green-900/50">
+            <button id="dlBtn" onclick="oneTouchDownload()" class="w-full bg-blue-700 hover:bg-blue-600 text-white font-black py-5 rounded text-[11px] uppercase shadow-xl transition-all">GENERAR Y DESCARGAR ZIP PERICIAL</button>
         </div>
     </div>
 
@@ -53,7 +52,7 @@
 
         async function oneTouchDownload() {
             const btn = document.getElementById('dlBtn');
-            btn.disabled = true; btn.innerText = "GENERANDO...";
+            btn.disabled = true; btn.innerText = "PROCESANDO PACK...";
             const h = localStorage.getItem('h'); const n = localStorage.getItem('n');
             const qrDiv = document.getElementById("qr-gen");
             qrDiv.innerHTML = "";
@@ -66,19 +65,18 @@
                 pdf.setTextColor(88, 166, 255); pdf.text("AETHELGARD IP UNIT", 20, 30);
                 pdf.setTextColor(255, 255, 255); pdf.setFontSize(10);
                 pdf.text(`ACTIVO: ${n}`, 20, 50);
-                pdf.text(`HASH: ${h}`, 20, 60);
+                pdf.text(`SHA-256: ${h}`, 20, 60);
                 pdf.addImage(qrImg, 'PNG', 160, 20, 30, 30);
                 
                 const zip = new JSZip();
-                zip.file("CERTIFICADO.pdf", pdf.output('blob'));
+                zip.file("CERTIFICADO_AUDITORIA.pdf", pdf.output('blob'));
                 const blob = await zip.generateAsync({type:"blob"});
                 const link = document.createElement('a');
                 link.href = URL.createObjectURL(blob);
-                link.download = `AETHELGARD_PROTECTED_${n}.zip`;
+                link.download = `PROYECTO_PROTEGIDO_${n}.zip`;
                 link.click();
                 
-                localStorage.clear();
-                setTimeout(() => location.reload(), 1000);
+                setTimeout(() => location.reload(), 1500);
             }, 800);
         }
     </script>
