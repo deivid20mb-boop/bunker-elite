@@ -18,6 +18,7 @@ ID DE CERTIFICACIÓN: {id_activo}
 PROPIETARIO LEGAL: {cliente}
 ACTIVO PROTEGIDO: {obra}
 
+CLAUSULA LEGAL: Este certificado actúa como prueba técnica de autoría en la fecha indicada. El cliente acepta que AETHELGARD es un servicio de certificación y no una aseguradora contra robos digitales.
 ESTADO DE PROTECCIÓN:
 [✔] Cifrado de Autoría Inyectado
 [✔] Licencia Internacional CC BY-NC-ND 4.0 Vinculada
