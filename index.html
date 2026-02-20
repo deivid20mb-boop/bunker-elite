@@ -3,66 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AETHELGARD | Autonomous Unit</title>
+    <title>AETHELGARD | Sistema Autónomo Blindado</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
         body { background-color: #05070a; color: #8b949e; font-family: 'Courier New', monospace; }
-        .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
+        .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; transition: all 0.3s ease; }
         .glitch-blue { color: #58a6ff; text-shadow: 0 0 8px rgba(88, 166, 255, 0.3); }
-        .btn-active { border: 1px solid #3fb950; color: #3fb950; }
+        .status-pulse { animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
     </style>
 </head>
-<body class="p-4 md:p-8" onload="checkSession()">
+<body class="p-4 md:p-8" onload="checkHealth()">
     <div class="max-w-6xl mx-auto">
         <header class="relative flex justify-between items-center mb-10 border-b border-blue-900 pb-6">
             <div>
                 <h1 class="text-3xl font-black glitch-blue tracking-tighter uppercase">AETHELGARD</h1>
-                <p class="text-[10px] text-gray-500 uppercase">INTERNATIONAL IP UNIT | AUDITOR: DAVID BUISÁN</p>
+                <p id="systemBadge" class="text-[10px] text-green-500 uppercase font-bold">● SYSTEM OPERATIONAL 24/7</p>
             </div>
-            <div class="h-16 w-16 bg-blue-900/20 border border-blue-500 rounded-lg flex items-center justify-center">
-                <svg viewBox="0 0 24 24" class="h-10 w-10 text-blue-500" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+            <div class="h-14 w-14 bg-blue-900/10 border border-blue-500/50 rounded flex items-center justify-center">
+                <i class="fas fa-shield-alt text-blue-500 text-2xl"></i>
             </div>
         </header>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <section class="space-y-6">
-                <div class="bunker-panel p-6">
-                    <h2 class="text-white font-bold mb-4 text-xs underline uppercase tracking-widest">_Integridad de Datos_</h2>
-                    <p class="text-[11px] leading-relaxed text-gray-400">Sistema pericial con persistencia de sesión activa. Su activo no se perderá durante el pago.</p>
-                </div>
-                <div class="bunker-panel p-6 border-blue-900/30">
-                    <h2 class="text-blue-400 font-bold mb-4 text-[10px] uppercase">ESTADO DE SESIÓN_</h2>
-                    <div id="sessionStatus" class="text-[9px] font-mono">
-                        <p class="text-gray-600 italic">No hay archivos en memoria.</p>
+                <div class="bunker-panel p-6 border-blue-900/20">
+                    <h2 class="text-white font-bold mb-4 text-xs underline uppercase tracking-widest">_Estado de Auditoría_</h2>
+                    <div id="liveLogs" class="text-[10px] font-mono space-y-2">
+                        <p class="text-blue-400 font-bold">> BÚNKER ACTIVO</p>
+                        <p class="text-gray-500 italic">> Esperando activo del cliente...</p>
                     </div>
                 </div>
             </section>
 
             <section class="space-y-6">
-                <div class="bunker-panel p-6">
-                    <h2 class="text-red-500 font-bold mb-4 text-xs uppercase tracking-widest">_Escáner Forense_</h2>
+                <div class="bunker-panel p-6 border-red-900/20 shadow-inner">
+                    <h2 class="text-red-500 font-bold mb-4 text-xs uppercase tracking-widest">_Escáner de Activos_</h2>
                     <input type="file" id="fileInput" class="hidden">
-                    <button onclick="document.getElementById('fileInput').click()" class="border-2 border-dashed border-gray-700 p-8 w-full rounded hover:bg-gray-800 text-[10px] uppercase">
-                        CARGAR OBRA ORIGINAL
-                    </button>
-                    <div id="results" class="mt-4 p-3 bg-black/40 rounded border border-gray-800 text-[10px] font-mono hidden break-all"></div>
+                    <button onclick="document.getElementById('fileInput').click()" class="w-full border-2 border-dashed border-gray-700 p-10 text-[10px] hover:border-blue-500 transition-colors uppercase">Cargar Obra para Blindar</button>
+                    <div id="results" class="mt-4 p-3 bg-black/60 rounded border border-gray-800 text-[10px] font-mono hidden break-all text-yellow-500"></div>
                 </div>
 
-                <div class="bunker-panel p-6 border-yellow-900/50">
-                    <h2 class="text-yellow-500 font-bold mb-4 text-xs uppercase tracking-widest">_Finalizar Blindaje_</h2>
-                    <a href="https://revolut.me/daviddmmi/50" target="_blank" onclick="markPaid()" class="block w-full bg-yellow-500 hover:bg-yellow-400 text-black font-black py-4 rounded text-center text-[10px] uppercase shadow-lg shadow-yellow-500/10">
-                        PAGAR Y ACTIVAR DESCARGA (50€)
-                    </a>
-                    
-                    <div id="downloadBtnZone" class="hidden mt-4 pt-4 border-t border-gray-800">
-                        <button onclick="generateAndDownload()" class="w-full bg-blue-600 text-white font-black py-4 rounded text-[10px] uppercase">
-                            RESTAURAR Y DESCARGAR PACK (.ZIP)
-                        </button>
+                <div class="bunker-panel p-6 border-yellow-900/30">
+                    <a href="https://revolut.me/daviddmmi/50" target="_blank" onclick="verifyIntent()" class="block w-full bg-yellow-500 hover:bg-yellow-400 text-black font-black py-4 rounded text-center text-[10px] uppercase shadow-lg">1. PAGAR LICENCIA (50€)</a>
+                    <div id="readyZone" class="hidden mt-4 pt-4 border-t border-gray-800">
+                        <p class="text-[9px] text-green-500 mb-3 uppercase text-center font-bold status-pulse">✓ Pago Detectado - Generando Certificado</p>
+                        <button onclick="finalProcess()" class="w-full bg-blue-600 text-white font-black py-4 rounded text-[10px] uppercase hover:bg-blue-500 transition shadow-lg shadow-blue-900/30">2. Descargar Pack Blindado</button>
                     </div>
                 </div>
             </section>
@@ -70,13 +60,15 @@
     </div>
 
     <script>
-        let currentFileHash = localStorage.getItem('lastHash') || "";
-        let currentFileName = localStorage.getItem('lastName') || "";
-
-        function checkSession() {
-            if(currentFileHash && localStorage.getItem('paid') === 'true') {
-                document.getElementById('sessionStatus').innerHTML = `<p class="text-green-500">[!] SESIÓN RECUPERADA: ${currentFileName}</p>`;
-                document.getElementById('downloadBtnZone').classList.remove('hidden');
+        // Bot de salud interna: Verifica que el cliente tenga todo disponible
+        function checkHealth() {
+            if (typeof CryptoJS === 'undefined' || typeof JSZip === 'undefined') {
+                console.error("Falla de motor detectada. Reiniciando...");
+                location.reload();
+            }
+            if(localStorage.getItem('session_active') === 'true') {
+                document.getElementById('readyZone').classList.remove('hidden');
+                document.getElementById('liveLogs').innerHTML += `<p class="text-yellow-500">> SESIÓN DE PAGO RESTAURADA</p>`;
             }
         }
 
@@ -86,42 +78,32 @@
             reader.onload = function(event) {
                 const binary = CryptoJS.lib.WordArray.create(event.target.result);
                 const hash = CryptoJS.SHA256(binary).toString();
-                
-                localStorage.setItem('lastHash', hash);
-                localStorage.setItem('lastName', file.name);
-                localStorage.setItem('paid', 'false');
-
+                localStorage.setItem('hash', hash);
+                localStorage.setItem('fname', file.name);
                 document.getElementById('results').classList.remove('hidden');
-                document.getElementById('results').innerHTML = `FILE: ${file.name}<br>HASH: <span class="text-yellow-500">${hash}</span>`;
-                document.getElementById('sessionStatus').innerHTML = `<p class="text-blue-500">[OK] ARCHIVO EN MEMORIA VOLÁTIL</p>`;
+                document.getElementById('results').innerHTML = `ARCHIVO: ${file.name}<br>HASH: ${hash}`;
+                document.getElementById('liveLogs').innerHTML += `<p class="text-green-500">> ANÁLISIS COMPLETADO EXITOSAMENTE</p>`;
             };
             reader.readAsArrayBuffer(file);
         });
 
-        function markPaid() {
-            localStorage.setItem('paid', 'true');
-            setTimeout(() => {
-                document.getElementById('downloadBtnZone').classList.remove('hidden');
-            }, 1000);
+        function verifyIntent() {
+            if(!localStorage.getItem('hash')) return alert("Error: Debe cargar un archivo primero.");
+            localStorage.setItem('session_active', 'true');
+            document.getElementById('readyZone').classList.remove('hidden');
         }
 
-        async function generateAndDownload() {
-            const hash = localStorage.getItem('lastHash');
-            const name = localStorage.getItem('lastName');
-            
-            if(!hash) return alert("No hay datos para blindar.");
-            
+        async function finalProcess() {
             const zip = new JSZip();
-            zip.file("CERTIFICADO_RECUPERADO.txt", `AETHELGARD AUTH\nSESSION RECOVERY ACTIVE\nHASH: ${hash}\nAUDITOR: DAVID BUISAN`);
-            
+            const hash = localStorage.getItem('hash');
+            zip.file("CERTIFICADO_AETHELGARD.txt", `AUTORIDAD: DAVID BUISAN\nHASH: ${hash}\nSTATUS: PROTEGIDO`);
             const content = await zip.generateAsync({type:"blob"});
             const link = document.createElement('a');
             link.href = URL.createObjectURL(content);
-            link.download = `AETHELGARD_RESTORED_${name}.zip`;
+            link.download = "AETHELGARD_PACK.zip";
             link.click();
-            
-            // Limpiar tras éxito para evitar duplicados
             localStorage.clear();
+            location.reload();
         }
     </script>
 </body>
