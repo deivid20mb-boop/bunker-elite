@@ -1,3 +1,6 @@
 alias aethelgard='/data/data/com.termux/files/home/bunker-elite/menu_aethelgard.sh'
 export AETHELGARD_ELITE_OPS='ghp_lIr9B...'
 alias aethelgard='cd /data/data/com.termux/files/home && ./vender.sh'
+alias aethelgard='python3 ~/bunker-elite/auditor_elite.py && cd ~/bunker-elite && ./vender.sh'
+alias aethelgard='echo -e "\033[1;33m[SISTEMA DE SEGURIDAD AETHELGARD ACTIVADO]\033[0m"; python3 ~/bunker-elite/auditor_elite.py && ./vender.sh'
+alias balance='python3 ~/bunker-elite/cierre_caja.py'

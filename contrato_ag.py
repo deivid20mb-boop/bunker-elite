@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import hashlib
 import datetime
 
 def generar_contrato():
@@ -17,6 +18,7 @@ FECHA DE EMISIÓN: {fecha}
 ID DE CERTIFICACIÓN: {id_activo}
 PROPIETARIO LEGAL: {cliente}
 ACTIVO PROTEGIDO: {obra}
+HUELLA DIGITAL (SHA-256): {hashlib.sha256(obra.encode()).hexdigest()}
 
 NOTA TECNICA: Este certificado actúa como prueba técnica de autoría en la fecha indicada. El cliente acepta que AETHELGARD es un servicio de certificación y no una aseguradora contra robos digitales.
 ESTADO DE PROTECCIÓN:
