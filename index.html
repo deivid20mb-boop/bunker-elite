@@ -12,9 +12,10 @@
         body { background-color: #05070a; color: #8b949e; font-family: 'Courier New', monospace; }
         .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
         .glitch-blue { color: #58a6ff; text-shadow: 0 0 8px rgba(88, 166, 255, 0.3); }
+        .btn-active { border: 1px solid #3fb950; color: #3fb950; }
     </style>
 </head>
-<body class="p-4 md:p-8">
+<body class="p-4 md:p-8" onload="checkSession()">
     <div class="max-w-6xl mx-auto">
         <header class="relative flex justify-between items-center mb-10 border-b border-blue-900 pb-6">
             <div>
@@ -31,13 +32,13 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <section class="space-y-6">
                 <div class="bunker-panel p-6">
-                    <h2 class="text-white font-bold mb-4 text-xs underline uppercase tracking-widest">_Servicios Técnicos_</h2>
-                    <p class="text-[11px] leading-relaxed text-gray-400">Protección pericial basada en la integridad de datos. El SHA-256 es inviolable.</p>
+                    <h2 class="text-white font-bold mb-4 text-xs underline uppercase tracking-widest">_Integridad de Datos_</h2>
+                    <p class="text-[11px] leading-relaxed text-gray-400">Sistema pericial con persistencia de sesión activa. Su activo no se perderá durante el pago.</p>
                 </div>
-                <div class="bunker-panel p-6 border-green-900/30">
-                    <h2 class="text-green-500 font-bold mb-4 text-[10px] uppercase">TRAZABILIDAD DE ACTIVOS_</h2>
-                    <div id="log" class="text-[9px] space-y-1 font-mono">
-                        <p class="text-gray-600 italic">Esperando entrada de datos...</p>
+                <div class="bunker-panel p-6 border-blue-900/30">
+                    <h2 class="text-blue-400 font-bold mb-4 text-[10px] uppercase">ESTADO DE SESIÓN_</h2>
+                    <div id="sessionStatus" class="text-[9px] font-mono">
+                        <p class="text-gray-600 italic">No hay archivos en memoria.</p>
                     </div>
                 </div>
             </section>
@@ -54,13 +55,13 @@
 
                 <div class="bunker-panel p-6 border-yellow-900/50">
                     <h2 class="text-yellow-500 font-bold mb-4 text-xs uppercase tracking-widest">_Finalizar Blindaje_</h2>
-                    <a href="https://revolut.me/daviddmmi/50" target="_blank" onclick="unlockDownload()" class="block w-full bg-yellow-500 hover:bg-yellow-400 text-black font-black py-4 rounded text-center text-[10px] uppercase shadow-lg shadow-yellow-500/10">
-                        REALIZAR PAGO EXPRESS (50€)
+                    <a href="https://revolut.me/daviddmmi/50" target="_blank" onclick="markPaid()" class="block w-full bg-yellow-500 hover:bg-yellow-400 text-black font-black py-4 rounded text-center text-[10px] uppercase shadow-lg shadow-yellow-500/10">
+                        PAGAR Y ACTIVAR DESCARGA (50€)
                     </a>
                     
                     <div id="downloadBtnZone" class="hidden mt-4 pt-4 border-t border-gray-800">
-                        <button onclick="generateAndDownload()" class="w-full bg-blue-600 text-white font-black py-4 rounded text-[10px] uppercase shadow-lg shadow-blue-500/20">
-                            DESCARGAR PACK BLINDADO (.ZIP)
+                        <button onclick="generateAndDownload()" class="w-full bg-blue-600 text-white font-black py-4 rounded text-[10px] uppercase">
+                            RESTAURAR Y DESCARGAR PACK (.ZIP)
                         </button>
                     </div>
                 </div>
@@ -69,48 +70,58 @@
     </div>
 
     <script>
-        let currentFile = null;
-        let currentHash = "";
+        let currentFileHash = localStorage.getItem('lastHash') || "";
+        let currentFileName = localStorage.getItem('lastName') || "";
+
+        function checkSession() {
+            if(currentFileHash && localStorage.getItem('paid') === 'true') {
+                document.getElementById('sessionStatus').innerHTML = `<p class="text-green-500">[!] SESIÓN RECUPERADA: ${currentFileName}</p>`;
+                document.getElementById('downloadBtnZone').classList.remove('hidden');
+            }
+        }
 
         document.getElementById('fileInput').addEventListener('change', function(e) {
-            currentFile = e.target.files[0];
+            const file = e.target.files[0];
             const reader = new FileReader();
             reader.onload = function(event) {
                 const binary = CryptoJS.lib.WordArray.create(event.target.result);
-                currentHash = CryptoJS.SHA256(binary).toString();
-                document.getElementById('results').classList.remove('hidden');
-                document.getElementById('results').innerHTML = `FILE: ${currentFile.name}<br>SHA-256: <span class="text-yellow-500">${currentHash}</span><br><span class="text-red-500 animate-pulse">STATUS: VULNERABLE</span>`;
+                const hash = CryptoJS.SHA256(binary).toString();
                 
-                document.getElementById('log').innerHTML = `<p class="text-green-500">[OK] HASH GENERADO: ${currentHash.substring(0,10)}...</p>`;
+                localStorage.setItem('lastHash', hash);
+                localStorage.setItem('lastName', file.name);
+                localStorage.setItem('paid', 'false');
+
+                document.getElementById('results').classList.remove('hidden');
+                document.getElementById('results').innerHTML = `FILE: ${file.name}<br>HASH: <span class="text-yellow-500">${hash}</span>`;
+                document.getElementById('sessionStatus').innerHTML = `<p class="text-blue-500">[OK] ARCHIVO EN MEMORIA VOLÁTIL</p>`;
             };
-            reader.readAsArrayBuffer(currentFile);
+            reader.readAsArrayBuffer(file);
         });
 
-        function unlockDownload() {
-            if(!currentFile) {
-                alert("ERROR: Sube un archivo antes de pagar.");
-                return;
-            }
-            // Muestra el botón de descarga sin recargar la página
-            document.getElementById('downloadBtnZone').classList.remove('hidden');
+        function markPaid() {
+            localStorage.setItem('paid', 'true');
+            setTimeout(() => {
+                document.getElementById('downloadBtnZone').classList.remove('hidden');
+            }, 1000);
         }
 
         async function generateAndDownload() {
-            if(!currentFile) {
-                alert("Sube un archivo primero");
-                return;
-            }
-            const zip = new JSZip();
-            const cert = `CERTIFICADO AETHELGARD\n===================\nAUDITOR: DAVID BUISAN\nFECHA: ${new Date().toLocaleString()}\nHASH: ${currentHash}\nESTADO: PROTEGIDO`;
+            const hash = localStorage.getItem('lastHash');
+            const name = localStorage.getItem('lastName');
             
-            zip.file("CERTIFICADO_LEGAL.txt", cert);
-            zip.file(`ACTIVO_AUDITADO_${currentFile.name}`, currentFile);
+            if(!hash) return alert("No hay datos para blindar.");
+            
+            const zip = new JSZip();
+            zip.file("CERTIFICADO_RECUPERADO.txt", `AETHELGARD AUTH\nSESSION RECOVERY ACTIVE\nHASH: ${hash}\nAUDITOR: DAVID BUISAN`);
             
             const content = await zip.generateAsync({type:"blob"});
             const link = document.createElement('a');
             link.href = URL.createObjectURL(content);
-            link.download = `AETHELGARD_PACK_${currentFile.name}.zip`;
+            link.download = `AETHELGARD_RESTORED_${name}.zip`;
             link.click();
+            
+            // Limpiar tras éxito para evitar duplicados
+            localStorage.clear();
         }
     </script>
 </body>
