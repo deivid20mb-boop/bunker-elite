@@ -2,7 +2,7 @@
 import datetime
 
 def generar_contrato():
-    print("\n--- GENERADOR DE CONTRATO AETHELGARD ---")
+    print("\n--- GENERADOR DE CERTIFICADO_TECNICO AETHELGARD ---")
     cliente = input("Nombre completo del Cliente: ")
     obra = input("Nombre de la Obra/Activo: ")
     id_activo = input("ID de Activo (ej: AG-001): ")
@@ -18,7 +18,7 @@ ID DE CERTIFICACIÓN: {id_activo}
 PROPIETARIO LEGAL: {cliente}
 ACTIVO PROTEGIDO: {obra}
 
-CLAUSULA LEGAL: Este certificado actúa como prueba técnica de autoría en la fecha indicada. El cliente acepta que AETHELGARD es un servicio de certificación y no una aseguradora contra robos digitales.
+NOTA TECNICA: Este certificado actúa como prueba técnica de autoría en la fecha indicada. El cliente acepta que AETHELGARD es un servicio de certificación y no una aseguradora contra robos digitales.
 ESTADO DE PROTECCIÓN:
 [✔] Cifrado de Autoría Inyectado
 [✔] Licencia Internacional CC BY-NC-ND 4.0 Vinculada
@@ -34,7 +34,7 @@ FIRMA DIGITAL:
 AETHELGARD SYSTEMS - MOTOR ELITE_OPS
 ============================================================
 """
-    filename = f"CONTRATO_{id_activo}.txt"
+    filename = f"CERTIFICADO_TECNICO_{id_activo}.txt"
     with open(filename, "w") as f:
         f.write(contrato)
     
