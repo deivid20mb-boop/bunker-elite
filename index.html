@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AETHELGARD | Global IP Unit</title>
@@ -14,7 +15,7 @@
 <body class="p-4 md:p-8">
     <div class="max-w-6xl mx-auto">
         
-        <header class="flex justify-between items-center mb-10 border-b border-blue-900 pb-6">
+        <header class="relative flex justify-between items-center mb-10 border-b border-blue-900 pb-6">
             <div>
                 <h1 class="text-3xl font-black glitch-blue tracking-tighter">AETHELGARD</h1>
                 <p class="text-[10px] text-gray-500 uppercase">INTERNATIONAL IP UNIT | AUDITOR: DAVID BUISÁN</p>
@@ -22,6 +23,7 @@
             <div class="hidden md:block bg-blue-900/20 text-blue-400 text-[10px] px-3 py-1 rounded border border-blue-800">
                 SYSTEM_STATUS: ACTIVE // MOTOR: ELITE_OPS
             </div>
+            <img src="logo.jpg" alt="AG_LOGO" class="absolute top-0 right-0 h-16 w-16 md:h-20 md:w-20 rounded-lg border border-blue-900 shadow-lg shadow-blue-900/20">
         </header>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -58,7 +60,7 @@
 
             <section class="space-y-6">
                 <div class="bunker-panel p-6 border-red-900/50" id="drop-zone">
-                    <h2 class="text-red-500 font-bold mb-4 text-sm">> ESCÁNER DE VULNERABILIDAD REAL_</h2>
+                    <h2 class="text-red-500 font-bold mb-4 text-sm"><i class="fas fa-microscope mr-2 text-red-500"></i> ESCÁNER DE VULNERABILIDAD REAL_</h2>
                     <p class="text-[10px] mb-4 text-gray-500 italic">Sube tu obra para detectar si tiene huella digital o si es vulnerable a plagio.</p>
                     <input type="file" id="fileInput" class="hidden" accept="image/*">
                     <button onclick="document.getElementById('fileInput').click()" class="border-2 border-dashed border-gray-700 p-8 w-full rounded hover:bg-gray-800 transition-all text-xs">

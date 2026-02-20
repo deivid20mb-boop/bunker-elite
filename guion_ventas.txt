@@ -1,0 +1,16 @@
+=========================================
+      GUION DE VENTAS AETHELGARD
+=========================================
+
+1. BIENVENIDA:
+"Hola, soy David de Aethelgard. Pásame tu obra para una auditoría de riesgo gratuita."
+
+2. RESULTADO (EL SUSTO):
+"Escaneo finalizado. Tu obra es VULNERABLE. No tiene huella SHA-256. La IA puede usarla sin rastro legal."
+
+3. CIERRE (EL PRECIO):
+"El blindaje total son 50€. Incluye certificado técnico, inyección de metadatos y registro en el búnker. ¿Procedemos?"
+
+4. ENTREGA:
+(Aquí ejecutas 'aethelgard' en Termux, generas el certificado y se lo pasas)
+=========================================
