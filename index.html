@@ -13,7 +13,7 @@
     <style>
         body { background-color: #05070a; color: #8b949e; font-family: 'Courier New', monospace; }
         .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; margin-bottom: 25px; }
-        .glitch-blue { color: #58a6ff; text-shadow: 0 0 8px rgba(88, 166, 255, 0.3); }
+        .glitch-blue { color: #58a6ff; text-shadow: 0 0 8px rgba(88, 166, 255, 0.3); cursor: pointer; }
         #qr-gen { display: none; }
     </style>
 </head>
@@ -22,7 +22,7 @@
     <div class="max-w-4xl mx-auto">
         <header class="flex justify-between items-center mb-10 border-b border-blue-900 pb-6">
             <div>
-                <h1 class="text-3xl font-black glitch-blue tracking-tighter uppercase">AETHELGARD</h1>
+                <h1 class="text-3xl font-black glitch-blue tracking-tighter uppercase" onclick="masterUnlock()">AETHELGARD</h1>
                 <p class="text-[10px] text-gray-500 uppercase">INTERNATIONAL IP UNIT | AUDITOR: DAVID BUISÁN</p>
             </div>
             <img src="Screenshot_20260220_141747_Google.jpg" alt="LOGO" class="h-16 w-16 rounded border border-blue-900" onerror="this.src='https://img.icons8.com/neon/96/shield.png'">
@@ -58,9 +58,7 @@
 
     <script>
         const { jsPDF } = window.jspdf;
-        function checkStatus() {
-            if(localStorage.getItem('ready') === 'true') document.getElementById('readyZone').classList.remove('hidden');
-        }
+        function checkStatus() { if(localStorage.getItem('ready') === 'true') document.getElementById('readyZone').classList.remove('hidden'); }
 
         function processFile(f) {
             const r = new FileReader();
@@ -68,9 +66,15 @@
                 const h = CryptoJS.SHA256(CryptoJS.lib.WordArray.create(e.target.result)).toString();
                 localStorage.setItem('h', h); localStorage.setItem('n', f.name);
                 document.getElementById('status').classList.remove('hidden');
-                document.getElementById('status').innerText = `SHA-256: ${h}`;
+                document.getElementById('status').innerText = `HASH: ${h}`;
             };
             r.readAsArrayBuffer(f);
+        }
+
+        function masterUnlock() {
+            if(!localStorage.getItem('h')) return alert("Carga un archivo primero");
+            enableDownload();
+            alert("MODO AUDITOR: DESCARGA HABILITADA");
         }
 
         function enableDownload() {
@@ -81,8 +85,7 @@
 
         async function oneTouchDownload() {
             const btn = document.getElementById('dlBtn');
-            btn.disabled = true; btn.innerText = "GENERANDO CERTIFICADO...";
-            
+            btn.disabled = true; btn.innerText = "GENERANDO...";
             const h = localStorage.getItem('h'); const n = localStorage.getItem('n');
             const qrDiv = document.getElementById("qr-gen");
             qrDiv.innerHTML = "";
@@ -96,7 +99,7 @@
                 pdf.setTextColor(255, 255, 255); pdf.setFontSize(10);
                 pdf.text(`ACTIVO: ${n}`, 20, 50);
                 pdf.text(`HASH SHA-256: ${h}`, 20, 60);
-                pdf.text("LICENCIA: Atribución/Reconocimiento-NoComercial-SinDerivados 4.0 Internacional", 20, 70);
+                pdf.text("LICENCIA: CC BY-NC-ND 4.0 INTERNATIONAL", 20, 70);
                 pdf.addImage(qrImg, 'PNG', 160, 20, 30, 30);
                 
                 const zip = new JSZip();
