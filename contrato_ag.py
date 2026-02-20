@@ -31,6 +31,9 @@ procesado por los sistemas de AETHELGARD para garantizar la
 trazabilidad de su autoría original ante amenazas externas.
 
 FIRMA DIGITAL:
+nENLACE DE VERIFICACIÓN: https://bunker-elite-1.onrender.com
+Escanea este QR para acceder al búnker: https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://bunker-elite-1.onrender.com
+
 AETHELGARD SYSTEMS - MOTOR ELITE_OPS
 ============================================================
 """

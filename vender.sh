@@ -9,6 +9,9 @@ read -p "Obra a proteger: " OBRA
 PRECIO=25
 
 echo -e "\n\033[1;32m--- COPIA EL MENSAJE DE CIERRE ---\033[0m\n"
+VERIFICA NUESTRO BÚNKER: https://bunker-elite-1.onrender.com
+Escanea este QR: https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://bunker-elite-1.onrender.com
+
 echo "Hola $CLIENTE, tengo el slot listo para proteger tu obra '$OBRA'."
 echo "El proceso incluye:"
 echo "1. Cifrado de autoría en el Búnker Aethelgard."
