@@ -12,108 +12,95 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body { background-color: #05070a; color: #8b949e; font-family: 'Courier New', monospace; }
-        .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; margin-bottom: 25px; }
-        .glitch-blue { color: #58a6ff; text-shadow: 0 0 8px rgba(88, 166, 255, 0.3); }
-        #qr-gen { display: none; }
+        .bunker-panel { background: #161b22; border: 1px solid #30363d; border-radius: 12px; margin-bottom: 20px; }
+        .glitch-blue { color: #58a6ff; text-shadow: 0 0 8px rgba(88, 166, 255, 0.4); }
+        #qr-buffer { display: none; }
     </style>
 </head>
 <body class="p-4 md:p-8" onload="checkStatus()">
-    <div id="qr-gen"></div>
-    <div class="max-w-4xl mx-auto">
-        <header class="flex justify-between items-center mb-10 border-b border-blue-900 pb-6">
+    <div id="qr-buffer"></div>
+    <div class="max-w-xl mx-auto">
+        <header class="flex justify-between items-center mb-8 border-b border-blue-900 pb-4">
             <div>
-                <h1 class="text-3xl font-black glitch-blue tracking-tighter uppercase">AETHELGARD</h1>
-                <p class="text-[10px] text-gray-500 uppercase">INTERNATIONAL IP UNIT | AUDITOR: DAVID BUISÁN</p>
+                <h1 class="text-2xl font-black glitch-blue uppercase">AETHELGARD</h1>
+                <p class="text-[9px] text-gray-500 uppercase italic">AUDITOR: DAVID BUISÁN</p>
             </div>
-            <img src="Screenshot_20260220_141747_Google.jpg" alt="LOGO" class="h-16 w-16 rounded border border-blue-900" onerror="this.src='https://img.icons8.com/neon/96/shield.png'">
+            <img src="Screenshot_20260220_141747_Google.jpg" class="h-12 w-12 rounded border border-blue-900" onerror="this.src='https://img.icons8.com/neon/96/shield.png'">
         </header>
 
-        <div class="bunker-panel p-6">
-            <h2 class="text-white font-bold mb-4 text-xs underline uppercase tracking-widest">_PROTOCOLO DE CERTIFICACIÓN IP_</h2>
-            <p class="text-[11px] text-gray-400">CC BY-NC-ND 4.0 INTERNATIONAL. Registro de inmutabilidad pericial mediante sellado de tiempo y Hashing SHA-256.</p>
+        <div class="bunker-panel p-5 border-l-4 border-blue-600">
+            <h2 class="text-white font-bold mb-2 text-xs uppercase tracking-tighter">_ESTADO DE AUDITORÍA_</h2>
+            <p class="text-[10px] text-blue-400 font-bold">• BÚNKER ACTIVO</p>
+            <p class="text-[10px] text-gray-500 italic">> Esperando activo del cliente...</p>
         </div>
 
-        <div class="bunker-panel p-6 border-green-900/20">
-            <h2 class="text-green-500 font-bold mb-4 text-xs uppercase tracking-widest">_REGISTRO ANTI-COPYRIGHT_</h2>
-            <div class="text-[10px] space-y-2 font-mono">
-                <p><span class="text-green-500">[OK]</span> ID: #AG-9905 | VERIFIED</p>
+        <div class="bunker-panel p-5 border-l-4 border-red-600">
+            <h2 class="text-red-500 font-bold mb-2 text-xs uppercase tracking-tighter">_ESCÁNER DE ACTIVOS_</h2>
+            <div class="border border-dashed border-gray-700 p-6 rounded flex flex-col items-center">
+                <input type="file" id="fIn" class="hidden" onchange="hsh(this.files[0])">
+                <button onclick="document.getElementById('fIn').click()" class="text-[9px] text-gray-400 uppercase font-bold">CARGAR OBRA PARA BLINDAR</button>
+                <div id="st" class="mt-2 text-[9px] text-yellow-500 break-all hidden font-mono"></div>
             </div>
         </div>
 
-        <div class="bunker-panel p-6 border-red-900/30">
-            <h2 class="text-red-500 font-bold mb-4 text-xs uppercase tracking-widest">_UNIDAD DE ESCANEO FORENSE_</h2>
-            <input type="file" id="fileIn" class="hidden" onchange="processFile(this.files[0])">
-            <button onclick="document.getElementById('fileIn').click()" class="border-2 border-dashed border-gray-700 p-8 w-full rounded text-[10px] uppercase hover:border-blue-500">CARGAR ACTIVO</button>
-            <div id="status" class="mt-4 p-3 bg-black/40 rounded text-[10px] font-mono hidden text-yellow-500 break-all"></div>
+        <div class="bunker-panel p-5 border-l-4 border-yellow-600">
+            <h2 class="text-yellow-500 font-bold mb-3 text-xs uppercase tracking-tighter">_LICENCIA PERICIAL_</h2>
+            <a href="https://revolut.me/daviddmmi/50" target="_blank" onclick="unlock()" class="block w-full bg-yellow-600 text-black font-black py-3 rounded text-center text-[10px] uppercase shadow-lg">1. PAGAR LICENCIA (50€)</a>
         </div>
 
-        <div class="bunker-panel p-6 border-yellow-900/50">
-            <h2 class="text-yellow-500 font-bold mb-4 text-xs uppercase tracking-widest">_FINALIZAR PROTECCIÓN_</h2>
-            <a href="https://revolut.me/daviddmmi/50" target="_blank" onclick="enableDownload()" class="block w-full bg-yellow-600 text-black font-black py-4 rounded text-center text-[10px] uppercase mb-4 shadow-xl">PAGAR LICENCIA (50€)</a>
-            <div id="readyZone" class="hidden border-t border-gray-800 pt-4">
-                <button id="dlBtn" onclick="oneTouchDownload()" class="w-full bg-blue-700 text-white font-black py-4 rounded text-[10px] uppercase shadow-lg shadow-blue-900/30">DESCARGAR PACK PERICIAL PDF</button>
-            </div>
+        <div id="downZone" class="hidden bunker-panel p-5 border-l-4 border-blue-500">
+            <h2 class="text-blue-400 font-bold mb-3 text-xs uppercase tracking-tighter">_EXPEDIENTE LISTO_</h2>
+            <button id="mainBtn" onclick="fire()" class="w-full bg-blue-700 text-white font-black py-3 rounded text-[10px] uppercase shadow-md hover:bg-blue-600 transition-colors">DESCARGAR PACK PERICIAL</button>
         </div>
     </div>
 
     <script>
         const { jsPDF } = window.jspdf;
-        function checkStatus() {
-            if(localStorage.getItem('ready') === 'true') document.getElementById('readyZone').classList.remove('hidden');
-        }
-
-        function processFile(f) {
-            const r = new FileReader();
-            r.onload = (e) => {
+        function checkStatus() { if(localStorage.getItem('ok') === '1') document.getElementById('downZone').classList.remove('hidden'); }
+        
+        function hsh(f) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
                 const h = CryptoJS.SHA256(CryptoJS.lib.WordArray.create(e.target.result)).toString();
                 localStorage.setItem('h', h); localStorage.setItem('n', f.name);
-                document.getElementById('status').classList.remove('hidden');
-                document.getElementById('status').innerText = `HASH: ${h}`;
+                document.getElementById('st').classList.remove('hidden');
+                document.getElementById('st').innerText = `SHA-256: ${h}`;
             };
-            r.readAsArrayBuffer(f);
+            reader.readAsArrayBuffer(f);
         }
 
-        function enableDownload() {
-            if(!localStorage.getItem('h')) return;
-            localStorage.setItem('ready', 'true');
-            document.getElementById('readyZone').classList.remove('hidden');
-        }
+        function unlock() { if(localStorage.getItem('h')) { localStorage.setItem('ok', '1'); document.getElementById('downZone').classList.remove('hidden'); } }
 
-        async function oneTouchDownload() {
-            const btn = document.getElementById('dlBtn');
-            btn.disabled = true;
-            btn.innerText = "GENERANDO CERTIFICADO...";
+        async function fire() {
+            const b = document.getElementById('mainBtn');
+            b.innerText = "GENERANDO CERTIFICADO..."; b.disabled = true;
             
-            const h = localStorage.getItem('h');
-            const n = localStorage.getItem('n');
-            const qrDiv = document.getElementById("qr-gen");
-            new QRCode(qrDiv, { text: h, width: 100, height: 100 });
+            const h = localStorage.getItem('h'); const n = localStorage.getItem('n');
+            const qD = document.getElementById("qr-buffer"); qD.innerHTML = "";
+            new QRCode(qD, { text: h, width: 100, height: 100 });
 
             setTimeout(async () => {
-                const qrImg = qrDiv.querySelector("img").src;
+                const qI = qD.querySelector("img").src;
                 const pdf = new jsPDF();
-                pdf.setFillColor(15, 15, 15); pdf.rect(0, 0, 210, 297, 'F');
-                pdf.setTextColor(88, 166, 255); pdf.setFontSize(20); pdf.text("AETHELGARD IP UNIT", 20, 30);
-                pdf.setTextColor(255, 255, 255); pdf.setFontSize(10);
-                pdf.text(`ACTIVO: ${n}`, 20, 50);
-                pdf.text(`HASH SHA-256: ${h}`, 20, 60);
-                pdf.text("LICENCIA: CC BY-NC-ND 4.0 INTERNATIONAL", 20, 70);
-                pdf.addImage(qrImg, 'PNG', 160, 20, 30, 30);
+                pdf.setFillColor(10, 10, 10); pdf.rect(0, 0, 210, 297, 'F');
+                pdf.setTextColor(88, 166, 255); pdf.setFontSize(18); pdf.text("AETHELGARD IP UNIT", 20, 30);
+                pdf.setTextColor(255, 255, 255); pdf.setFontSize(9);
+                pdf.text(`CERTIFICADO: ${n}`, 20, 50);
+                pdf.text(`HASH: ${h}`, 20, 58);
+                pdf.text("LICENCIA CC BY-NC-ND 4.0: Atribución-NoComercial-SinDerivados", 20, 66);
+                pdf.addImage(qI, 'PNG', 165, 20, 25, 25);
                 
                 const zip = new JSZip();
-                zip.file("CERTIFICADO_LEGAL.pdf", pdf.output('blob'));
-                zip.file("AUDIT_LOG.txt", `AUDITOR: DAVID BUISAN\nDATE: ${new Date().toISOString()}\nHASH: ${h}`);
+                zip.file("CERTIFICADO.pdf", pdf.output('blob'));
+                zip.file("LEGAL.txt", "Protocolo Internacional de Blindaje de Activos Digitales.\nAuditor: David Buisán.");
                 
                 const blob = await zip.generateAsync({type:"blob"});
-                const link = document.createElement('a');
-                link.href = URL.createObjectURL(blob);
-                link.download = `AETHELGARD_PROTECTED_${n}.zip`;
-                link.click();
+                const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+                a.download = `AETHELGARD_${n}.zip`; a.click();
                 
-                // RESET TOTAL DEL SISTEMA
                 localStorage.clear();
-                setTimeout(() => location.reload(), 1000);
-            }, 600);
+                setTimeout(() => location.reload(), 1200);
+            }, 700);
         }
     </script>
 </body>
