@@ -1,0 +1,288 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.10.0
+2 info using node@v25.3.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/bunker_unificado/.npmrc
+5 silly config load:file:/data/data/com.termux/files/home/.npmrc
+6 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+7 verbose title npm install express @supabase/supabase-js stripe resend dotenv nodemailer
+8 verbose argv "install" "express" "@supabase/supabase-js" "stripe" "resend" "dotenv" "nodemailer"
+9 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-02-16T00_06_20_445Z-
+10 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-02-16T00_06_20_445Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest @supabase/supabase-js@^2.95.3
+16 silly packumentCache full:https://registry.npmjs.org/@supabase%2fsupabase-js cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/@supabase%2fsupabase-js 353ms (cache revalidated)
+18 silly packumentCache full:https://registry.npmjs.org/@supabase%2fsupabase-js set size:2582573 disposed:false
+19 silly fetch manifest dotenv@^17.3.1
+20 silly packumentCache full:https://registry.npmjs.org/dotenv cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/dotenv 649ms (cache revalidated)
+22 silly packumentCache full:https://registry.npmjs.org/dotenv set size:270065 disposed:false
+23 silly fetch manifest express@^4.22.1
+24 silly packumentCache full:https://registry.npmjs.org/express cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/express 65ms (cache revalidated)
+26 silly packumentCache full:https://registry.npmjs.org/express set size:801204 disposed:false
+27 silly fetch manifest stripe@^20.3.1
+28 silly packumentCache full:https://registry.npmjs.org/stripe cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/stripe 323ms (cache revalidated)
+30 silly packumentCache full:https://registry.npmjs.org/stripe set size:2547604 disposed:false
+31 silly fetch manifest @types/node@>=16
+32 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+33 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 132ms (cache revalidated)
+34 silly packumentCache full:https://registry.npmjs.org/@types%2fnode set size:10858893 disposed:false
+35 silly fetch manifest resend@*
+36 silly packumentCache full:https://registry.npmjs.org/resend cache-miss
+37 http fetch GET 200 https://registry.npmjs.org/resend 295ms (cache miss)
+38 silly packumentCache full:https://registry.npmjs.org/resend set size:undefined disposed:false
+39 silly fetch manifest @react-email/render@*
+40 silly packumentCache full:https://registry.npmjs.org/@react-email%2frender cache-miss
+41 http fetch GET 200 https://registry.npmjs.org/@react-email%2frender 394ms (cache miss)
+42 silly packumentCache full:https://registry.npmjs.org/@react-email%2frender set size:undefined disposed:false
+43 silly fetch manifest react@^18.0 || ^19.0 || ^19.0.0-rc
+44 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+45 http fetch GET 200 https://registry.npmjs.org/react 242ms (cache miss)
+46 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+47 silly fetch manifest react-dom@^18.0 || ^19.0 || ^19.0.0-rc
+48 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+49 http fetch GET 200 https://registry.npmjs.org/react-dom 237ms (cache miss)
+50 silly packumentCache full:https://registry.npmjs.org/react-dom set size:undefined disposed:false
+51 silly fetch manifest nodemailer@*
+52 silly packumentCache full:https://registry.npmjs.org/nodemailer cache-miss
+53 http fetch GET 200 https://registry.npmjs.org/nodemailer 68ms (cache revalidated)
+54 silly packumentCache full:https://registry.npmjs.org/nodemailer set size:563069 disposed:false
+55 silly placeDep ROOT @supabase/supabase-js@2.95.3 REPLACE for: bunker-web-v20@1.0.0 want: ^2.95.3
+56 silly placeDep ROOT dotenv@17.3.1 REPLACE for: bunker-web-v20@1.0.0 want: ^17.3.1
+57 silly placeDep ROOT express@4.22.1 REPLACE for: bunker-web-v20@1.0.0 want: ^4.22.1
+58 silly placeDep ROOT nodemailer@8.0.1 OK for: bunker-web-v20@1.0.0 want: *
+59 silly placeDep ROOT resend@6.9.2 OK for: bunker-web-v20@1.0.0 want: *
+60 silly placeDep ROOT stripe@20.3.1 REPLACE for: bunker-web-v20@1.0.0 want: ^20.3.1
+61 silly fetch manifest postal-mime@2.7.3
+62 silly packumentCache full:https://registry.npmjs.org/postal-mime cache-miss
+63 silly fetch manifest svix@1.84.1
+64 silly packumentCache full:https://registry.npmjs.org/svix cache-miss
+65 http fetch GET 200 https://registry.npmjs.org/postal-mime 231ms (cache miss)
+66 silly packumentCache full:https://registry.npmjs.org/postal-mime set size:undefined disposed:false
+67 http fetch GET 200 https://registry.npmjs.org/svix 350ms (cache miss)
+68 silly packumentCache full:https://registry.npmjs.org/svix set size:undefined disposed:false
+69 silly placeDep ROOT postal-mime@2.7.3 OK for: resend@6.9.2 want: 2.7.3
+70 silly placeDep ROOT svix@1.84.1 OK for: resend@6.9.2 want: 1.84.1
+71 silly fetch manifest uuid@^10.0.0
+72 silly packumentCache full:https://registry.npmjs.org/uuid cache-miss
+73 silly fetch manifest standardwebhooks@1.0.0
+74 silly packumentCache full:https://registry.npmjs.org/standardwebhooks cache-miss
+75 http fetch GET 200 https://registry.npmjs.org/uuid 73ms (cache revalidated)
+76 silly packumentCache full:https://registry.npmjs.org/uuid set size:224608 disposed:false
+77 http fetch GET 200 https://registry.npmjs.org/standardwebhooks 347ms (cache miss)
+78 silly packumentCache full:https://registry.npmjs.org/standardwebhooks set size:undefined disposed:false
+79 silly placeDep ROOT standardwebhooks@1.0.0 OK for: svix@1.84.1 want: 1.0.0
+80 silly placeDep ROOT uuid@10.0.0 OK for: svix@1.84.1 want: ^10.0.0
+81 silly fetch manifest @stablelib/base64@^1.0.0
+82 silly packumentCache full:https://registry.npmjs.org/@stablelib%2fbase64 cache-miss
+83 silly fetch manifest fast-sha256@^1.3.0
+84 silly packumentCache full:https://registry.npmjs.org/fast-sha256 cache-miss
+85 http fetch GET 200 https://registry.npmjs.org/@stablelib%2fbase64 102ms (cache miss)
+86 silly packumentCache full:https://registry.npmjs.org/@stablelib%2fbase64 set size:undefined disposed:false
+87 http fetch GET 200 https://registry.npmjs.org/fast-sha256 566ms (cache miss)
+88 silly packumentCache full:https://registry.npmjs.org/fast-sha256 set size:undefined disposed:false
+89 silly placeDep ROOT @stablelib/base64@1.0.1 OK for: standardwebhooks@1.0.0 want: ^1.0.0
+90 silly placeDep ROOT fast-sha256@1.3.0 OK for: standardwebhooks@1.0.0 want: ^1.3.0
+91 silly reify moves {}
+92 silly audit bulk request {
+92 silly audit   '@babel/runtime': [ '7.28.6' ],
+92 silly audit   '@google/generative-ai': [ '0.24.1' ],
+92 silly audit   '@supabase/auth-js': [ '2.95.3' ],
+92 silly audit   '@supabase/functions-js': [ '2.95.3' ],
+92 silly audit   '@supabase/postgrest-js': [ '2.95.3' ],
+92 silly audit   '@supabase/realtime-js': [ '2.95.3' ],
+92 silly audit   '@supabase/storage-js': [ '2.95.3' ],
+92 silly audit   '@types/node': [ '25.2.3' ],
+92 silly audit   '@types/pako': [ '2.0.4' ],
+92 silly audit   '@types/phoenix': [ '1.6.7' ],
+92 silly audit   '@types/raf': [ '3.4.3' ],
+92 silly audit   '@types/trusted-types': [ '2.0.7' ],
+92 silly audit   '@types/ws': [ '8.18.1' ],
+92 silly audit   accepts: [ '1.3.8' ],
+92 silly audit   negotiator: [ '0.6.3', '0.6.4' ],
+92 silly audit   'array-flatten': [ '1.1.1' ],
+92 silly audit   asynckit: [ '0.4.0' ],
+92 silly audit   axios: [ '1.13.5' ],
+92 silly audit   'base64-arraybuffer': [ '1.0.2' ],
+92 silly audit   'basic-auth': [ '2.0.1' ],
+92 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+92 silly audit   'body-parser': [ '1.20.4' ],
+92 silly audit   bytes: [ '3.1.2' ],
+92 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+92 silly audit   'call-bound': [ '1.0.4' ],
+92 silly audit   canvg: [ '3.0.11' ],
+92 silly audit   'combined-stream': [ '1.0.8' ],
+92 silly audit   compressible: [ '2.0.18' ],
+92 silly audit   compression: [ '1.8.1' ],
+92 silly audit   'content-disposition': [ '0.5.4' ],
+92 silly audit   'content-type': [ '1.0.5' ],
+92 silly audit   cookie: [ '0.7.2' ],
+92 silly audit   'cookie-signature': [ '1.0.7' ],
+92 silly audit   'core-js': [ '3.48.0' ],
+92 silly audit   'crypto-js': [ '4.2.0' ],
+92 silly audit   'css-line-break': [ '2.1.0' ],
+92 silly audit   debug: [ '2.6.9' ],
+92 silly audit   'delayed-stream': [ '1.0.0' ],
+92 silly audit   depd: [ '2.0.0' ],
+92 silly audit   destroy: [ '1.2.0' ],
+92 silly audit   dompurify: [ '3.3.1' ],
+92 silly audit   'dunder-proto': [ '1.0.1' ],
+92 silly audit   'ee-first': [ '1.1.1' ],
+92 silly audit   encodeurl: [ '2.0.0' ],
+92 silly audit   'es-define-property': [ '1.0.1' ],
+92 silly audit   'es-errors': [ '1.3.0' ],
+92 silly audit   'es-object-atoms': [ '1.1.1' ],
+92 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+92 silly audit   'escape-html': [ '1.0.3' ],
+92 silly audit   etag: [ '1.8.1' ],
+92 silly audit   'express-basic-auth': [ '1.2.1' ],
+92 silly audit   'express-rate-limit': [ '8.2.1' ],
+92 silly audit   'fast-png': [ '6.4.0' ],
+92 silly audit   fflate: [ '0.8.2' ],
+92 silly audit   finalhandler: [ '1.3.2' ],
+92 silly audit   'follow-redirects': [ '1.15.11' ],
+92 silly audit   'form-data': [ '4.0.5' ],
+92 silly audit   forwarded: [ '0.2.0' ],
+92 silly audit   fresh: [ '0.5.2' ],
+92 silly audit   fs: [ '0.0.1-security' ],
+92 silly audit   'function-bind': [ '1.1.2' ],
+92 silly audit   'get-intrinsic': [ '1.3.0' ],
+92 silly audit   'get-proto': [ '1.0.1' ],
+92 silly audit   gopd: [ '1.2.0' ],
+92 silly audit   'graceful-fs': [ '4.2.11' ],
+92 silly audit   'has-symbols': [ '1.1.0' ],
+92 silly audit   'has-tostringtag': [ '1.0.2' ],
+92 silly audit   hasown: [ '2.0.2' ],
+92 silly audit   helmet: [ '8.1.0' ],
+92 silly audit   html2canvas: [ '1.4.1' ],
+92 silly audit   'http-errors': [ '2.0.1' ],
+92 silly audit   'iceberg-js': [ '0.8.1' ],
+92 silly audit   'iconv-lite': [ '0.4.24' ],
+92 silly audit   inherits: [ '2.0.4', '2.0.3' ],
+92 silly audit   iobuffer: [ '5.4.0' ],
+92 silly audit   'ip-address': [ '10.0.1' ],
+92 silly audit   'ipaddr.js': [ '1.9.1' ],
+92 silly audit   'is-promise': [ '2.2.2' ],
+92 silly audit   jspdf: [ '4.1.0' ],
+92 silly audit   lodash: [ '4.17.23' ],
+92 silly audit   lowdb: [ '1.0.0' ],
+92 silly audit   'math-intrinsics': [ '1.1.0' ],
+92 silly audit   'media-typer': [ '0.3.0' ],
+92 silly audit   'merge-descriptors': [ '1.0.3' ],
+92 silly audit   methods: [ '1.1.2' ],
+92 silly audit   mime: [ '1.6.0' ],
+92 silly audit   'mime-db': [ '1.54.0', '1.52.0' ],
+92 silly audit   'mime-types': [ '2.1.35' ],
+92 silly audit   ms: [ '2.0.0', '2.1.3' ],
+92 silly audit   'object-inspect': [ '1.13.4' ],
+92 silly audit   'on-finished': [ '2.4.1' ],
+92 silly audit   'on-headers': [ '1.1.0' ],
+92 silly audit   pako: [ '2.1.0' ],
+92 silly audit   parseurl: [ '1.3.3' ],
+92 silly audit   path: [ '0.12.7' ],
+92 silly audit   'path-to-regexp': [ '0.1.12' ],
+92 silly audit   'performance-now': [ '2.1.0' ],
+92 silly audit   pg: [ '8.18.0' ],
+92 silly audit   'pg-cloudflare': [ '1.3.0' ],
+92 silly audit   'pg-connection-string': [ '2.11.0' ],
+92 silly audit   'pg-int8': [ '1.0.1' ],
+92 silly audit   'pg-pool': [ '3.11.0' ],
+92 silly audit   'pg-protocol': [ '1.11.0' ],
+92 silly audit   'pg-types': [ '2.2.0' ],
+92 silly audit   pgpass: [ '1.0.5' ],
+92 silly audit   pify: [ '3.0.0' ],
+92 silly audit   'postgres-array': [ '2.0.0' ],
+92 silly audit   'postgres-bytea': [ '1.0.1' ],
+92 silly audit   'postgres-date': [ '1.0.7' ],
+92 silly audit   'postgres-interval': [ '1.2.0' ],
+92 silly audit   process: [ '0.11.10' ],
+92 silly audit   'proxy-addr': [ '2.0.7' ],
+92 silly audit   'proxy-from-env': [ '1.1.0' ],
+92 silly audit   qs: [ '6.14.2' ],
+92 silly audit   raf: [ '3.4.1' ],
+92 silly audit   'range-parser': [ '1.2.1' ],
+92 silly audit   'raw-body': [ '2.5.3' ],
+92 silly audit   'regenerator-runtime': [ '0.13.11' ],
+92 silly audit   rgbcolor: [ '1.0.1' ],
+92 silly audit   'safer-buffer': [ '2.1.2' ],
+92 silly audit   send: [ '0.19.2' ],
+92 silly audit   'serve-static': [ '1.16.3' ],
+92 silly audit   setprototypeof: [ '1.2.0' ],
+92 silly audit   'side-channel': [ '1.1.0' ],
+92 silly audit   'side-channel-list': [ '1.0.0' ],
+92 silly audit   'side-channel-map': [ '1.0.1' ],
+92 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+92 silly audit   split2: [ '4.2.0' ],
+92 silly audit   'stackblur-canvas': [ '2.7.0' ],
+92 silly audit   statuses: [ '2.0.2' ],
+92 silly audit   steno: [ '0.4.4' ],
+92 silly audit   'svg-pathdata': [ '6.0.3' ],
+92 silly audit   'text-segmentation': [ '1.0.3' ],
+92 silly audit   toidentifier: [ '1.0.1' ],
+92 silly audit   tslib: [ '2.8.1' ],
+92 silly audit   'type-is': [ '1.6.18' ],
+92 silly audit   'undici-types': [ '7.16.0' ],
+92 silly audit   unpipe: [ '1.0.0' ],
+92 silly audit   util: [ '0.10.4' ],
+92 silly audit   'utils-merge': [ '1.0.1' ],
+92 silly audit   utrie: [ '1.0.2' ],
+92 silly audit   vary: [ '1.1.2' ],
+92 silly audit   ws: [ '8.19.0' ],
+92 silly audit   xtend: [ '4.0.2' ],
+92 silly audit   '@supabase/supabase-js': [ '2.95.3' ],
+92 silly audit   dotenv: [ '17.3.1' ],
+92 silly audit   express: [ '4.22.1' ],
+92 silly audit   nodemailer: [ '8.0.1' ],
+92 silly audit   resend: [ '6.9.2' ],
+92 silly audit   stripe: [ '20.3.1' ],
+92 silly audit   'postal-mime': [ '2.7.3' ],
+92 silly audit   svix: [ '1.84.1' ],
+92 silly audit   standardwebhooks: [ '1.0.0' ],
+92 silly audit   uuid: [ '10.0.0' ],
+92 silly audit   '@stablelib/base64': [ '1.0.1' ],
+92 silly audit   'fast-sha256': [ '1.3.0' ]
+92 silly audit }
+93 http cache fast-sha256@https://registry.npmjs.org/fast-sha256/-/fast-sha256-1.3.0.tgz 0ms (cache hit)
+94 http cache @stablelib/base64@https://registry.npmjs.org/@stablelib/base64/-/base64-1.0.1.tgz 0ms (cache hit)
+95 http cache uuid@https://registry.npmjs.org/uuid/-/uuid-10.0.0.tgz 0ms (cache hit)
+96 http cache standardwebhooks@https://registry.npmjs.org/standardwebhooks/-/standardwebhooks-1.0.0.tgz 0ms (cache hit)
+97 http cache svix@https://registry.npmjs.org/svix/-/svix-1.84.1.tgz 0ms (cache hit)
+98 http cache postal-mime@https://registry.npmjs.org/postal-mime/-/postal-mime-2.7.3.tgz 0ms (cache hit)
+99 http cache resend@https://registry.npmjs.org/resend/-/resend-6.9.2.tgz 0ms (cache hit)
+100 http cache nodemailer@https://registry.npmjs.org/nodemailer/-/nodemailer-8.0.1.tgz 0ms (cache hit)
+101 silly tarball no local data for fast-sha256@https://registry.npmjs.org/fast-sha256/-/fast-sha256-1.3.0.tgz. Extracting by manifest.
+102 silly tarball no local data for @stablelib/base64@https://registry.npmjs.org/@stablelib/base64/-/base64-1.0.1.tgz. Extracting by manifest.
+103 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-10.0.0.tgz. Extracting by manifest.
+104 silly tarball no local data for standardwebhooks@https://registry.npmjs.org/standardwebhooks/-/standardwebhooks-1.0.0.tgz. Extracting by manifest.
+105 silly tarball no local data for svix@https://registry.npmjs.org/svix/-/svix-1.84.1.tgz. Extracting by manifest.
+106 silly tarball no local data for postal-mime@https://registry.npmjs.org/postal-mime/-/postal-mime-2.7.3.tgz. Extracting by manifest.
+107 silly tarball no local data for resend@https://registry.npmjs.org/resend/-/resend-6.9.2.tgz. Extracting by manifest.
+108 http fetch GET 200 https://registry.npmjs.org/fast-sha256/-/fast-sha256-1.3.0.tgz 61ms (cache miss)
+109 http fetch GET 200 https://registry.npmjs.org/standardwebhooks/-/standardwebhooks-1.0.0.tgz 166ms (cache miss)
+110 http fetch GET 200 https://registry.npmjs.org/resend/-/resend-6.9.2.tgz 172ms (cache miss)
+111 http fetch GET 200 https://registry.npmjs.org/postal-mime/-/postal-mime-2.7.3.tgz 185ms (cache miss)
+112 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 230ms
+113 silly audit report {}
+114 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-10.0.0.tgz 218ms (cache miss)
+115 http fetch GET 200 https://registry.npmjs.org/svix/-/svix-1.84.1.tgz 458ms (cache miss)
+116 http fetch GET 200 https://registry.npmjs.org/@stablelib/base64/-/base64-1.0.1.tgz 630ms (cache miss)
+117 silly ADD node_modules/fast-sha256
+118 silly ADD node_modules/@stablelib/base64
+119 silly ADD node_modules/uuid
+120 silly ADD node_modules/standardwebhooks
+121 silly ADD node_modules/svix
+122 silly ADD node_modules/postal-mime
+123 silly ADD node_modules/resend
+124 silly ADD node_modules/nodemailer
+125 verbose cwd /data/data/com.termux/files/home/bunker_unificado
+126 verbose os Linux 5.15.178-android13-8-31998796-abS918BXXS8EZA1
+127 verbose node v25.3.0
+128 verbose npm  v11.10.0
+129 verbose exit 0
+130 info ok

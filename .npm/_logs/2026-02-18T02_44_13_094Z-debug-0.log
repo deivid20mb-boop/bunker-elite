@@ -1,0 +1,197 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.10.0
+2 info using node@v25.3.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm audit fix
+7 verbose argv "audit" "fix" "--force"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-02-18T02_44_13_094Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-02-18T02_44_13_094Z-debug-0.log
+10 warn using --force Recommended protections disabled.
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+13 silly logfile done cleaning log files
+14 silly audit bulk request {
+14 silly audit   '@google/generative-ai': [ '0.24.1' ],
+14 silly audit   accepts: [ '1.3.8' ],
+14 silly audit   'array-flatten': [ '1.1.1' ],
+14 silly audit   'body-parser': [ '1.20.4' ],
+14 silly audit   debug: [ '2.6.9' ],
+14 silly audit   'iconv-lite': [ '0.4.24' ],
+14 silly audit   ms: [ '2.0.0', '2.1.3' ],
+14 silly audit   bytes: [ '3.1.2' ],
+14 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+14 silly audit   'call-bound': [ '1.0.4' ],
+14 silly audit   'content-disposition': [ '0.5.4' ],
+14 silly audit   'content-type': [ '1.0.5' ],
+14 silly audit   cookie: [ '0.7.2' ],
+14 silly audit   'cookie-signature': [ '1.0.7' ],
+14 silly audit   depd: [ '2.0.0' ],
+14 silly audit   destroy: [ '1.2.0' ],
+14 silly audit   'dunder-proto': [ '1.0.1' ],
+14 silly audit   'ee-first': [ '1.1.1' ],
+14 silly audit   encodeurl: [ '2.0.0' ],
+14 silly audit   'es-define-property': [ '1.0.1' ],
+14 silly audit   'es-errors': [ '1.3.0' ],
+14 silly audit   'es-object-atoms': [ '1.1.1' ],
+14 silly audit   'escape-html': [ '1.0.3' ],
+14 silly audit   etag: [ '1.8.1' ],
+14 silly audit   express: [ '4.22.1' ],
+14 silly audit   finalhandler: [ '1.3.2' ],
+14 silly audit   forwarded: [ '0.2.0' ],
+14 silly audit   fresh: [ '0.5.2' ],
+14 silly audit   'function-bind': [ '1.1.2' ],
+14 silly audit   'get-intrinsic': [ '1.3.0' ],
+14 silly audit   'get-proto': [ '1.0.1' ],
+14 silly audit   gopd: [ '1.2.0' ],
+14 silly audit   'has-symbols': [ '1.1.0' ],
+14 silly audit   hasown: [ '2.0.2' ],
+14 silly audit   'http-errors': [ '2.0.1' ],
+14 silly audit   inherits: [ '2.0.4' ],
+14 silly audit   'ipaddr.js': [ '1.9.1' ],
+14 silly audit   'math-intrinsics': [ '1.1.0' ],
+14 silly audit   'media-typer': [ '0.3.0' ],
+14 silly audit   'merge-descriptors': [ '1.0.3' ],
+14 silly audit   methods: [ '1.1.2' ],
+14 silly audit   mime: [ '1.6.0' ],
+14 silly audit   'mime-db': [ '1.52.0' ],
+14 silly audit   'mime-types': [ '2.1.35' ],
+14 silly audit   negotiator: [ '0.6.3' ],
+14 silly audit   'object-inspect': [ '1.13.4' ],
+14 silly audit   'on-finished': [ '2.4.1' ],
+14 silly audit   parseurl: [ '1.3.3' ],
+14 silly audit   'path-to-regexp': [ '0.1.12' ],
+14 silly audit   'proxy-addr': [ '2.0.7' ],
+14 silly audit   qs: [ '6.14.1' ],
+14 silly audit   'range-parser': [ '1.2.1' ],
+14 silly audit   'raw-body': [ '2.5.3' ],
+14 silly audit   'safe-buffer': [ '5.2.1' ],
+14 silly audit   'safer-buffer': [ '2.1.2' ],
+14 silly audit   send: [ '0.19.2' ],
+14 silly audit   'serve-static': [ '1.16.3' ],
+14 silly audit   setprototypeof: [ '1.2.0' ],
+14 silly audit   'side-channel': [ '1.1.0' ],
+14 silly audit   'side-channel-list': [ '1.0.0' ],
+14 silly audit   'side-channel-map': [ '1.0.1' ],
+14 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+14 silly audit   statuses: [ '2.0.2' ],
+14 silly audit   toidentifier: [ '1.0.1' ],
+14 silly audit   'type-is': [ '1.6.18' ],
+14 silly audit   unpipe: [ '1.0.0' ],
+14 silly audit   'utils-merge': [ '1.0.1' ],
+14 silly audit   vary: [ '1.1.2' ]
+14 silly audit }
+15 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 424ms
+16 silly audit report {
+16 silly audit report   qs: [
+16 silly audit report     {
+16 silly audit report       id: 1113161,
+16 silly audit report       url: 'https://github.com/advisories/GHSA-w7fw-mjwx-w883',
+16 silly audit report       title: "qs's arrayLimit bypass in comma parsing allows denial of service",
+16 silly audit report       severity: 'low',
+16 silly audit report       vulnerable_versions: '>=6.7.0 <=6.14.1',
+16 silly audit report       cwe: [Array],
+16 silly audit report       cvss: [Object]
+16 silly audit report     }
+16 silly audit report   ]
+16 silly audit report }
+17 silly packumentCache corgi:https://registry.npmjs.org/qs cache-miss
+18 http fetch GET 200 https://registry.npmjs.org/qs 74ms (cache revalidated)
+19 silly packumentCache corgi:https://registry.npmjs.org/qs set size:143799 disposed:false
+20 silly packumentCache corgi:https://registry.npmjs.org/body-parser cache-miss
+21 silly packumentCache corgi:https://registry.npmjs.org/express cache-miss
+22 http fetch GET 200 https://registry.npmjs.org/body-parser 61ms (cache revalidated)
+23 silly packumentCache corgi:https://registry.npmjs.org/body-parser set size:77795 disposed:false
+24 http fetch GET 200 https://registry.npmjs.org/express 117ms (cache revalidated)
+25 silly packumentCache corgi:https://registry.npmjs.org/express set size:337735 disposed:false
+26 silly idealTree buildDeps
+27 silly fetch manifest qs@~6.14.0
+28 silly packumentCache full:https://registry.npmjs.org/qs cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/qs 49ms (cache revalidated)
+30 silly packumentCache full:https://registry.npmjs.org/qs set size:350258 disposed:false
+31 silly placeDep ROOT qs@6.14.2 REPLACE for: body-parser@1.20.4 want: ~6.14.0
+32 silly reify mark retired [ '/data/data/com.termux/files/home/node_modules/qs' ]
+33 silly reify moves {
+33 silly reify   '/data/data/com.termux/files/home/node_modules/qs': '/data/data/com.termux/files/home/node_modules/.qs-W0eYfq0U'
+33 silly reify }
+34 silly audit bulk request {
+34 silly audit   '@google/generative-ai': [ '0.24.1' ],
+34 silly audit   accepts: [ '1.3.8' ],
+34 silly audit   'array-flatten': [ '1.1.1' ],
+34 silly audit   'body-parser': [ '1.20.4' ],
+34 silly audit   debug: [ '2.6.9' ],
+34 silly audit   'iconv-lite': [ '0.4.24' ],
+34 silly audit   ms: [ '2.0.0', '2.1.3' ],
+34 silly audit   bytes: [ '3.1.2' ],
+34 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+34 silly audit   'call-bound': [ '1.0.4' ],
+34 silly audit   'content-disposition': [ '0.5.4' ],
+34 silly audit   'content-type': [ '1.0.5' ],
+34 silly audit   cookie: [ '0.7.2' ],
+34 silly audit   'cookie-signature': [ '1.0.7' ],
+34 silly audit   depd: [ '2.0.0' ],
+34 silly audit   destroy: [ '1.2.0' ],
+34 silly audit   'dunder-proto': [ '1.0.1' ],
+34 silly audit   'ee-first': [ '1.1.1' ],
+34 silly audit   encodeurl: [ '2.0.0' ],
+34 silly audit   'es-define-property': [ '1.0.1' ],
+34 silly audit   'es-errors': [ '1.3.0' ],
+34 silly audit   'es-object-atoms': [ '1.1.1' ],
+34 silly audit   'escape-html': [ '1.0.3' ],
+34 silly audit   etag: [ '1.8.1' ],
+34 silly audit   express: [ '4.22.1' ],
+34 silly audit   finalhandler: [ '1.3.2' ],
+34 silly audit   forwarded: [ '0.2.0' ],
+34 silly audit   fresh: [ '0.5.2' ],
+34 silly audit   'function-bind': [ '1.1.2' ],
+34 silly audit   'get-intrinsic': [ '1.3.0' ],
+34 silly audit   'get-proto': [ '1.0.1' ],
+34 silly audit   gopd: [ '1.2.0' ],
+34 silly audit   'has-symbols': [ '1.1.0' ],
+34 silly audit   hasown: [ '2.0.2' ],
+34 silly audit   'http-errors': [ '2.0.1' ],
+34 silly audit   inherits: [ '2.0.4' ],
+34 silly audit   'ipaddr.js': [ '1.9.1' ],
+34 silly audit   'math-intrinsics': [ '1.1.0' ],
+34 silly audit   'media-typer': [ '0.3.0' ],
+34 silly audit   'merge-descriptors': [ '1.0.3' ],
+34 silly audit   methods: [ '1.1.2' ],
+34 silly audit   mime: [ '1.6.0' ],
+34 silly audit   'mime-db': [ '1.52.0' ],
+34 silly audit   'mime-types': [ '2.1.35' ],
+34 silly audit   negotiator: [ '0.6.3' ],
+34 silly audit   'object-inspect': [ '1.13.4' ],
+34 silly audit   'on-finished': [ '2.4.1' ],
+34 silly audit   parseurl: [ '1.3.3' ],
+34 silly audit   'path-to-regexp': [ '0.1.12' ],
+34 silly audit   'proxy-addr': [ '2.0.7' ],
+34 silly audit   'range-parser': [ '1.2.1' ],
+34 silly audit   'raw-body': [ '2.5.3' ],
+34 silly audit   'safe-buffer': [ '5.2.1' ],
+34 silly audit   'safer-buffer': [ '2.1.2' ],
+34 silly audit   send: [ '0.19.2' ],
+34 silly audit   'serve-static': [ '1.16.3' ],
+34 silly audit   setprototypeof: [ '1.2.0' ],
+34 silly audit   'side-channel': [ '1.1.0' ],
+34 silly audit   'side-channel-list': [ '1.0.0' ],
+34 silly audit   'side-channel-map': [ '1.0.1' ],
+34 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+34 silly audit   statuses: [ '2.0.2' ],
+34 silly audit   toidentifier: [ '1.0.1' ],
+34 silly audit   'type-is': [ '1.6.18' ],
+34 silly audit   unpipe: [ '1.0.0' ],
+34 silly audit   'utils-merge': [ '1.0.1' ],
+34 silly audit   vary: [ '1.1.2' ],
+34 silly audit   qs: [ '6.14.2' ]
+34 silly audit }
+35 http cache qs@https://registry.npmjs.org/qs/-/qs-6.14.2.tgz 0ms (cache hit)
+36 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 242ms
+37 silly audit report {}
+38 silly CHANGE node_modules/qs
+39 verbose cwd /data/data/com.termux/files/home/bunker
+40 verbose os Linux 5.15.178-android13-8-31998796-abS918BXXS8EZA1
+41 verbose node v25.3.0
+42 verbose npm  v11.10.0
+43 verbose exit 0
+44 info ok

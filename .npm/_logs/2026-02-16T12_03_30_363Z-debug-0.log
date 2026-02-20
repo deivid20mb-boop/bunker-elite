@@ -1,0 +1,216 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.10.0
+2 info using node@v25.3.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/bunker_unificado/.npmrc
+5 silly config load:file:/data/data/com.termux/files/home/.npmrc
+6 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+7 verbose title npm install @supabase/supabase-js stripe dotenv express
+8 verbose argv "install" "@supabase/supabase-js" "stripe" "dotenv" "express"
+9 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-02-16T12_03_30_363Z-
+10 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-02-16T12_03_30_363Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest @supabase/supabase-js@^2.95.3
+16 silly packumentCache full:https://registry.npmjs.org/@supabase%2fsupabase-js cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/@supabase%2fsupabase-js 450ms (cache revalidated)
+18 silly packumentCache full:https://registry.npmjs.org/@supabase%2fsupabase-js set size:2582573 disposed:false
+19 silly fetch manifest dotenv@^17.3.1
+20 silly packumentCache full:https://registry.npmjs.org/dotenv cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/dotenv 86ms (cache revalidated)
+22 silly packumentCache full:https://registry.npmjs.org/dotenv set size:270065 disposed:false
+23 silly fetch manifest express@^4.22.1
+24 silly packumentCache full:https://registry.npmjs.org/express cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/express 109ms (cache revalidated)
+26 silly packumentCache full:https://registry.npmjs.org/express set size:801204 disposed:false
+27 silly fetch manifest stripe@^20.3.1
+28 silly packumentCache full:https://registry.npmjs.org/stripe cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/stripe 101ms (cache revalidated)
+30 silly packumentCache full:https://registry.npmjs.org/stripe set size:2547604 disposed:false
+31 silly fetch manifest @types/node@>=16
+32 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+33 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 128ms (cache revalidated)
+34 silly packumentCache full:https://registry.npmjs.org/@types%2fnode set size:10858893 disposed:false
+35 silly placeDep ROOT @supabase/supabase-js@2.95.3 REPLACE for: bunker-web-v20@1.0.0 want: ^2.95.3
+36 silly placeDep ROOT dotenv@17.3.1 REPLACE for: bunker-web-v20@1.0.0 want: ^17.3.1
+37 silly placeDep ROOT express@4.22.1 REPLACE for: bunker-web-v20@1.0.0 want: ^4.22.1
+38 silly placeDep ROOT stripe@20.3.1 REPLACE for: bunker-web-v20@1.0.0 want: ^20.3.1
+39 silly reify moves {}
+40 silly audit bulk request {
+40 silly audit   '@babel/runtime': [ '7.28.6' ],
+40 silly audit   '@google/generative-ai': [ '0.24.1' ],
+40 silly audit   '@stablelib/base64': [ '1.0.1' ],
+40 silly audit   '@supabase/auth-js': [ '2.95.3' ],
+40 silly audit   '@supabase/functions-js': [ '2.95.3' ],
+40 silly audit   '@supabase/postgrest-js': [ '2.95.3' ],
+40 silly audit   '@supabase/realtime-js': [ '2.95.3' ],
+40 silly audit   '@supabase/storage-js': [ '2.95.3' ],
+40 silly audit   '@types/node': [ '25.2.3' ],
+40 silly audit   '@types/pako': [ '2.0.4' ],
+40 silly audit   '@types/phoenix': [ '1.6.7' ],
+40 silly audit   '@types/raf': [ '3.4.3' ],
+40 silly audit   '@types/trusted-types': [ '2.0.7' ],
+40 silly audit   '@types/ws': [ '8.18.1' ],
+40 silly audit   accepts: [ '1.3.8' ],
+40 silly audit   negotiator: [ '0.6.3', '0.6.4' ],
+40 silly audit   'array-flatten': [ '1.1.1' ],
+40 silly audit   asynckit: [ '0.4.0' ],
+40 silly audit   axios: [ '1.13.5' ],
+40 silly audit   'base64-arraybuffer': [ '1.0.2' ],
+40 silly audit   'basic-auth': [ '2.0.1' ],
+40 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+40 silly audit   'body-parser': [ '1.20.4' ],
+40 silly audit   bytes: [ '3.1.2' ],
+40 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+40 silly audit   'call-bound': [ '1.0.4' ],
+40 silly audit   canvg: [ '3.0.11' ],
+40 silly audit   'combined-stream': [ '1.0.8' ],
+40 silly audit   compressible: [ '2.0.18' ],
+40 silly audit   compression: [ '1.8.1' ],
+40 silly audit   'content-disposition': [ '0.5.4' ],
+40 silly audit   'content-type': [ '1.0.5' ],
+40 silly audit   cookie: [ '0.7.2' ],
+40 silly audit   'cookie-signature': [ '1.0.7' ],
+40 silly audit   'core-js': [ '3.48.0' ],
+40 silly audit   'core-util-is': [ '1.0.3' ],
+40 silly audit   'crypto-js': [ '4.2.0' ],
+40 silly audit   'css-line-break': [ '2.1.0' ],
+40 silly audit   debug: [ '2.6.9' ],
+40 silly audit   'delayed-stream': [ '1.0.0' ],
+40 silly audit   depd: [ '2.0.0' ],
+40 silly audit   destroy: [ '1.2.0' ],
+40 silly audit   dompurify: [ '3.3.1' ],
+40 silly audit   'dunder-proto': [ '1.0.1' ],
+40 silly audit   'ee-first': [ '1.1.1' ],
+40 silly audit   encodeurl: [ '2.0.0' ],
+40 silly audit   'es-define-property': [ '1.0.1' ],
+40 silly audit   'es-errors': [ '1.3.0' ],
+40 silly audit   'es-object-atoms': [ '1.1.1' ],
+40 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+40 silly audit   'escape-html': [ '1.0.3' ],
+40 silly audit   etag: [ '1.8.1' ],
+40 silly audit   'express-basic-auth': [ '1.2.1' ],
+40 silly audit   'express-rate-limit': [ '8.2.1' ],
+40 silly audit   'fast-png': [ '6.4.0' ],
+40 silly audit   'fast-sha256': [ '1.3.0' ],
+40 silly audit   fflate: [ '0.8.2' ],
+40 silly audit   finalhandler: [ '1.3.2' ],
+40 silly audit   'follow-redirects': [ '1.15.11' ],
+40 silly audit   'form-data': [ '4.0.5' ],
+40 silly audit   forwarded: [ '0.2.0' ],
+40 silly audit   fresh: [ '0.5.2' ],
+40 silly audit   fs: [ '0.0.1-security' ],
+40 silly audit   'function-bind': [ '1.1.2' ],
+40 silly audit   'get-intrinsic': [ '1.3.0' ],
+40 silly audit   'get-proto': [ '1.0.1' ],
+40 silly audit   gopd: [ '1.2.0' ],
+40 silly audit   'graceful-fs': [ '4.2.11' ],
+40 silly audit   'has-symbols': [ '1.1.0' ],
+40 silly audit   'has-tostringtag': [ '1.0.2' ],
+40 silly audit   hasown: [ '2.0.2' ],
+40 silly audit   helmet: [ '8.1.0' ],
+40 silly audit   html2canvas: [ '1.4.1' ],
+40 silly audit   'http-errors': [ '2.0.1' ],
+40 silly audit   'iceberg-js': [ '0.8.1' ],
+40 silly audit   'iconv-lite': [ '0.4.24' ],
+40 silly audit   immediate: [ '3.0.6' ],
+40 silly audit   inherits: [ '2.0.4', '2.0.3' ],
+40 silly audit   iobuffer: [ '5.4.0' ],
+40 silly audit   'ip-address': [ '10.0.1' ],
+40 silly audit   'ipaddr.js': [ '1.9.1' ],
+40 silly audit   'is-promise': [ '2.2.2' ],
+40 silly audit   isarray: [ '1.0.0' ],
+40 silly audit   jspdf: [ '4.1.0' ],
+40 silly audit   jszip: [ '3.10.1' ],
+40 silly audit   pako: [ '1.0.11', '2.1.0' ],
+40 silly audit   lie: [ '3.3.0' ],
+40 silly audit   lodash: [ '4.17.23' ],
+40 silly audit   lowdb: [ '1.0.0' ],
+40 silly audit   'math-intrinsics': [ '1.1.0' ],
+40 silly audit   'media-typer': [ '0.3.0' ],
+40 silly audit   'merge-descriptors': [ '1.0.3' ],
+40 silly audit   methods: [ '1.1.2' ],
+40 silly audit   mime: [ '1.6.0' ],
+40 silly audit   'mime-db': [ '1.54.0', '1.52.0' ],
+40 silly audit   'mime-types': [ '2.1.35' ],
+40 silly audit   ms: [ '2.0.0', '2.1.3' ],
+40 silly audit   nodemailer: [ '8.0.1' ],
+40 silly audit   'object-inspect': [ '1.13.4' ],
+40 silly audit   'on-finished': [ '2.4.1' ],
+40 silly audit   'on-headers': [ '1.1.0' ],
+40 silly audit   parseurl: [ '1.3.3' ],
+40 silly audit   path: [ '0.12.7' ],
+40 silly audit   'path-to-regexp': [ '0.1.12' ],
+40 silly audit   'performance-now': [ '2.1.0' ],
+40 silly audit   pg: [ '8.18.0' ],
+40 silly audit   'pg-cloudflare': [ '1.3.0' ],
+40 silly audit   'pg-connection-string': [ '2.11.0' ],
+40 silly audit   'pg-int8': [ '1.0.1' ],
+40 silly audit   'pg-pool': [ '3.11.0' ],
+40 silly audit   'pg-protocol': [ '1.11.0' ],
+40 silly audit   'pg-types': [ '2.2.0' ],
+40 silly audit   pgpass: [ '1.0.5' ],
+40 silly audit   pify: [ '3.0.0' ],
+40 silly audit   'postal-mime': [ '2.7.3' ],
+40 silly audit   'postgres-array': [ '2.0.0' ],
+40 silly audit   'postgres-bytea': [ '1.0.1' ],
+40 silly audit   'postgres-date': [ '1.0.7' ],
+40 silly audit   'postgres-interval': [ '1.2.0' ],
+40 silly audit   process: [ '0.11.10' ],
+40 silly audit   'process-nextick-args': [ '2.0.1' ],
+40 silly audit   'proxy-addr': [ '2.0.7' ],
+40 silly audit   'proxy-from-env': [ '1.1.0' ],
+40 silly audit   qs: [ '6.14.2' ],
+40 silly audit   raf: [ '3.4.1' ],
+40 silly audit   'range-parser': [ '1.2.1' ],
+40 silly audit   'raw-body': [ '2.5.3' ],
+40 silly audit   'readable-stream': [ '2.3.8' ],
+40 silly audit   'regenerator-runtime': [ '0.13.11' ],
+40 silly audit   resend: [ '6.9.2' ],
+40 silly audit   rgbcolor: [ '1.0.1' ],
+40 silly audit   'safer-buffer': [ '2.1.2' ],
+40 silly audit   send: [ '0.19.2' ],
+40 silly audit   'serve-static': [ '1.16.3' ],
+40 silly audit   setimmediate: [ '1.0.5' ],
+40 silly audit   setprototypeof: [ '1.2.0' ],
+40 silly audit   'side-channel': [ '1.1.0' ],
+40 silly audit   'side-channel-list': [ '1.0.0' ],
+40 silly audit   'side-channel-map': [ '1.0.1' ],
+40 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+40 silly audit   split2: [ '4.2.0' ],
+40 silly audit   'stackblur-canvas': [ '2.7.0' ],
+40 silly audit   standardwebhooks: [ '1.0.0' ],
+40 silly audit   statuses: [ '2.0.2' ],
+40 silly audit   steno: [ '0.4.4' ],
+40 silly audit   string_decoder: [ '1.1.1' ],
+40 silly audit   'svg-pathdata': [ '6.0.3' ],
+40 silly audit   svix: [ '1.84.1' ],
+40 silly audit   'text-segmentation': [ '1.0.3' ],
+40 silly audit   toidentifier: [ '1.0.1' ],
+40 silly audit   tslib: [ '2.8.1' ],
+40 silly audit   'type-is': [ '1.6.18' ],
+40 silly audit   'undici-types': [ '7.16.0' ],
+40 silly audit   unpipe: [ '1.0.0' ],
+40 silly audit   util: [ '0.10.4' ],
+40 silly audit   'util-deprecate': [ '1.0.2' ],
+40 silly audit   'utils-merge': [ '1.0.1' ],
+40 silly audit   utrie: [ '1.0.2' ],
+40 silly audit   uuid: [ '10.0.0' ],
+40 silly audit   vary: [ '1.1.2' ],
+40 silly audit   ws: [ '8.19.0' ],
+40 silly audit   xtend: [ '4.0.2' ],
+40 silly audit   '@supabase/supabase-js': [ '2.95.3' ],
+40 silly audit   dotenv: [ '17.3.1' ],
+40 silly audit   express: [ '4.22.1' ],
+40 silly audit   stripe: [ '20.3.1' ]
+40 silly audit }
+41 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 360ms
+42 silly audit report {}
+43 verbose cwd /data/data/com.termux/files/home/bunker_unificado
+44 verbose os Linux 5.15.178-android13-8-31998796-abS918BXXS8EZA1
+45 verbose node v25.3.0
+46 verbose npm  v11.10.0
+47 verbose exit 0
+48 info ok

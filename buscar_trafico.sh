@@ -1,0 +1,17 @@
+#!/bin/bash
+clear
+echo -e "\033[1;36m--- ESTRATEGIA DE TRÁFICO AETHELGARD ---\033[0m"
+echo ""
+echo "OPCIÓN 1: REDDIT (r/espanol)"
+echo "Mensaje: 'He creado una herramienta en Python para blindar la autoría de obras digitales. ¿Qué os parece el búnker de muestra?'"
+echo "Link: https://www.reddit.com/r/espanol/submit"
+echo ""
+echo "OPCIÓN 2: DISCORD (Servidores de Arte)"
+echo "Mensaje: 'Si alguno necesita proteger su portfolio de la IA, echadle un ojo a AETHELGARD. Es despliegue puro en Bash/Python.'"
+echo "Link: https://discord.com/invite/artistas-hispanos (Busca canales de #recursos)"
+echo ""
+echo "OPCIÓN 3: FOROCOCHES"
+echo "Link: https://forocoches.com/foro/forumdisplay.php?f=44"
+echo ""
+echo "----------------------------------------------------"
+echo "CONSEJO: Ejecuta 'aethelgard' después de publicar para ver subir tus visitas."

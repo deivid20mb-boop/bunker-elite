@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AETHELGARD | WAR ROOM</title>
+    <style>
+        :root { --neon: #00ff41; --alert: #ff0000; --bg: #000; }
+        body { background: var(--bg); color: var(--neon); font-family: 'Courier New', monospace; padding: 20px; }
+        .bunker-frame { border: 3px solid var(--neon); padding: 20px; box-shadow: 0 0 30px rgba(0,255,65,0.3); }
+        .header { text-align: center; border-bottom: 2px solid var(--neon); margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .card { border: 1px solid #222; padding: 15px; background: #050505; }
+        .alert-box { border: 1px solid var(--alert); color: var(--alert); padding: 10px; margin-top: 20px; text-align: center; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+        .revolut { font-size: 2em; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="bunker-frame">
+        <div class="header">
+            <h1>AETHELGARD SYSTEMS: MANDO DE GUERRA</h1>
+            <p>ESTADO: DEFENSA EXTREMA & REPRESALIA ACTIVA</p>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <strong>FINANZAS REVOLUT</strong>
+                <div class="revolut">1.650,00€</div>
+                <small>VINCULADO A STRIPE</small>
+            </div>
+            <div class="card">
+                <strong>EJÉRCITO CENTINELA</strong>
+                <p>PATRULLAS: ALFA, BETA, GAMMA</p>
+                <p>ESTADO: <span style="color:var(--neon)">EN COMBATE</span></p>
+            </div>
+        </div>
+
+        <div class="alert-box">
+            SISTEMA DE CONTRAATAQUE CARGADO - LISTO PARA DEVOLVER EL FUEGO
+        </div>
+        
+        <div style="margin-top: 20px; font-size: 0.7em; color: #444; text-align: center;">
+            PROPIEDAD DE AETHELGARD SYSTEMS | CC BY-NC-ND 4.0
+        </div>
+    </div>
+</body>
+</html>
+
+

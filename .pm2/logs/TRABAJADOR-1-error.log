@@ -1,0 +1,1122 @@
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}
+Error: Unknown column 'accion' in 'INSERT INTO'
+    at PromiseConnection.execute (/data/data/com.termux/files/home/node_modules/mysql2/lib/promise/connection.js:47:22)
+    at Timeout._onTimeout (/data/data/com.termux/files/home/Auditor_NB.js:4:26)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: 'INSERT INTO auditoria (accion) VALUES ("AUTO")',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'accion' in 'INSERT INTO'"
+}

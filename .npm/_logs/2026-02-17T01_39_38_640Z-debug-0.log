@@ -1,0 +1,37 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.10.0
+2 info using node@v25.3.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm install @google/generative-ai@latest en tu terminal. No asumas que tienes la última versión
+7 verbose argv "install" "@google/generative-ai@latest" "en" "tu" "terminal." "No" "asumas" "que" "tienes" "la" "última" "versión"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-02-17T01_39_38_640Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-02-17T01_39_38_640Z-debug-0.log
+10 silly logfile start cleaning logs, removing 1 files
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+13 silly packumentCache corgi:https://registry.npmjs.org/@google%2fgenerative-ai cache-miss
+14 verbose stack Error: Invalid tag name "última" of package "última": Tags may not have any characters that encodeURIComponent encodes.
+14 verbose stack     at invalidTagName (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/npm-package-arg/lib/npa.js:141:15)
+14 verbose stack     at fromRegistry (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/npm-package-arg/lib/npa.js:469:13)
+14 verbose stack     at resolve (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/npm-package-arg/lib/npa.js:112:12)
+14 verbose stack     at npa (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/npm-package-arg/lib/npa.js:56:10)
+14 verbose stack     at /data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:516:18
+14 verbose stack     at Array.map (<anonymous>)
+14 verbose stack     at #add (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:514:27)
+14 verbose stack     at #applyUserRequestsToNode (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:485:22)
+14 verbose stack     at #applyUserRequests (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:421:42)
+14 verbose stack     at Arborist.buildIdealTree (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:169:36)
+15 error code EINVALIDTAGNAME
+16 error Invalid tag name "última" of package "última": Tags may not have any characters that encodeURIComponent encodes.
+17 silly unfinished npm timer reify 1771292379551
+18 silly unfinished npm timer reify:loadTrees 1771292379552
+19 silly unfinished npm timer idealTree:userRequests 1771292379590
+20 verbose cwd /data/data/com.termux/files/home/bot_final
+21 verbose os Linux 5.15.178-android13-8-31998796-abS918BXXS8EZA1
+22 verbose node v25.3.0
+23 verbose npm  v11.10.0
+24 verbose exit 1
+25 verbose code 1
+26 error A complete log of this run can be found in: /data/data/com.termux/files/home/.npm/_logs/2026-02-17T01_39_38_640Z-debug-0.log

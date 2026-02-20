@@ -1,0 +1,623 @@
+2026-02-13T00:20:40: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:21:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:21:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:21:50: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:21:50: PM2 log: Stopping app:T1 id:1
+2026-02-13T00:21:50: PM2 log: App [T1:1] exited with code [0] via signal [SIGINT]
+2026-02-13T00:21:50: PM2 log: pid=2650 msg=process killed
+2026-02-13T00:21:50: PM2 log: App [T1:1] starting in -fork mode-
+2026-02-13T00:21:50: PM2 log: App [T1:1] online
+2026-02-13T00:21:50: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:22:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:22:30: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:22:30: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T00:22:30: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T00:22:30: PM2 log: pid=31514 msg=process killed
+2026-02-13T00:22:30: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T00:22:30: PM2 log: App [CABEZA:0] online
+2026-02-13T00:22:30: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:22:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:23:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:23:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:23:45: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:23:45: PM2 log: Stopping app:T2 id:2
+2026-02-13T00:23:45: PM2 log: App [T2:2] exited with code [0] via signal [SIGINT]
+2026-02-13T00:23:45: PM2 log: pid=1022 msg=process killed
+2026-02-13T00:23:45: PM2 log: App [T2:2] starting in -fork mode-
+2026-02-13T00:23:45: PM2 log: App [T2:2] online
+2026-02-13T00:23:45: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:24:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:24:04: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:24:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:24:45: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:24:45: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T00:24:45: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T00:24:45: PM2 log: pid=5296 msg=process killed
+2026-02-13T00:24:45: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T00:24:45: PM2 log: App [CABEZA:0] online
+2026-02-13T00:24:45: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:25:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:25:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:26:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:26:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:26:43: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:27:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:27:13: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:27:13: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:27:13: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:27:13: PM2 log: App [T4_ARCHIVO:4] starting in -fork mode-
+2026-02-13T00:27:13: PM2 log: App [T4_ARCHIVO:4] online
+2026-02-13T00:27:13: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:27:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:28:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:28:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:29:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:29:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:30:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:30:24: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:30:24: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T00:30:24: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T00:30:25: PM2 log: pid=7250 msg=process killed
+2026-02-13T00:30:25: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T00:30:25: PM2 log: App [CABEZA:0] online
+2026-02-13T00:30:25: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:30:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:31:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:31:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:32:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:32:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:33:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:33:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:34:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:34:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:35:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:35:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:36:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:36:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:37:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:37:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:37:43: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:37:43: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T00:37:43: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T00:37:43: PM2 log: pid=10616 msg=process killed
+2026-02-13T00:37:43: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T00:37:43: PM2 log: App [CABEZA:0] online
+2026-02-13T00:37:43: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:38:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:38:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:39:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:39:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:39:39: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:39:39: PM2 log: Stopping app:T3 id:3
+2026-02-13T00:39:39: PM2 log: App [T3:3] exited with code [0] via signal [SIGINT]
+2026-02-13T00:39:39: PM2 log: pid=30982 msg=process killed
+2026-02-13T00:39:39: PM2 log: App [T3:3] starting in -fork mode-
+2026-02-13T00:39:39: PM2 log: App [T3:3] online
+2026-02-13T00:39:39: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:39:49: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:39:49: PM2 log: Stopping app:T2 id:2
+2026-02-13T00:39:49: PM2 log: App [T2:2] exited with code [0] via signal [SIGINT]
+2026-02-13T00:39:49: PM2 log: pid=6104 msg=process killed
+2026-02-13T00:39:49: PM2 log: App [T2:2] starting in -fork mode-
+2026-02-13T00:39:49: PM2 log: App [T2:2] online
+2026-02-13T00:39:49: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:40:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:40:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:40:49: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:40:49: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T00:40:49: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T00:40:49: PM2 log: pid=15312 msg=process killed
+2026-02-13T00:40:49: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T00:40:49: PM2 log: App [CABEZA:0] online
+2026-02-13T00:40:49: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:41:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:41:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:42:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:42:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:43:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:43:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:44:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:44:03: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:44:03: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T00:44:03: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T00:44:04: PM2 log: pid=17303 msg=process killed
+2026-02-13T00:44:04: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T00:44:04: PM2 log: App [CABEZA:0] online
+2026-02-13T00:44:04: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:44:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:44:52: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:44:52: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T00:44:52: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T00:44:52: PM2 log: pid=19376 msg=process killed
+2026-02-13T00:44:52: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T00:44:52: PM2 log: App [CABEZA:0] online
+2026-02-13T00:44:52: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:45:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:45:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:46:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:46:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:47:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:47:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:48:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:48:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:49:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:49:23: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:49:23: PM2 log: Stopping app:T3 id:3
+2026-02-13T00:49:23: PM2 log: App [T3:3] exited with code [0] via signal [SIGINT]
+2026-02-13T00:49:23: PM2 log: pid=16218 msg=process killed
+2026-02-13T00:49:23: PM2 log: App [T3:3] starting in -fork mode-
+2026-02-13T00:49:23: PM2 log: App [T3:3] online
+2026-02-13T00:49:23: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:49:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:49:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:49:31: PM2 log: Stopping app:T2 id:2
+2026-02-13T00:49:31: PM2 log: App [T2:2] exited with code [0] via signal [SIGINT]
+2026-02-13T00:49:31: PM2 log: pid=16395 msg=process killed
+2026-02-13T00:49:31: PM2 log: App [T2:2] starting in -fork mode-
+2026-02-13T00:49:31: PM2 log: App [T2:2] online
+2026-02-13T00:49:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:50:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:50:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:50:38: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:50:38: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T00:50:38: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T00:50:38: PM2 log: pid=19863 msg=process killed
+2026-02-13T00:50:38: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T00:50:38: PM2 log: App [CABEZA:0] online
+2026-02-13T00:50:38: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:51:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:51:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:51:39: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:51:39: PM2 log: Stopping app:T2 id:2
+2026-02-13T00:51:39: PM2 log: App [T2:2] exited with code [0] via signal [SIGINT]
+2026-02-13T00:51:39: PM2 log: pid=22824 msg=process killed
+2026-02-13T00:51:39: PM2 log: App [T2:2] starting in -fork mode-
+2026-02-13T00:51:39: PM2 log: App [T2:2] online
+2026-02-13T00:51:39: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:51:49: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:51:49: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T00:51:49: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T00:51:49: PM2 log: pid=23342 msg=process killed
+2026-02-13T00:51:49: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T00:51:49: PM2 log: App [CABEZA:0] online
+2026-02-13T00:51:49: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:52:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:52:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:52:58: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:52:58: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T00:52:58: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T00:52:58: PM2 log: pid=23964 msg=process killed
+2026-02-13T00:52:58: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T00:52:58: PM2 log: App [CABEZA:0] online
+2026-02-13T00:52:58: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:53:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:53:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:54:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:54:19: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:54:19: PM2 log: Stopping app:T2 id:2
+2026-02-13T00:54:19: PM2 log: App [T2:2] exited with code [0] via signal [SIGINT]
+2026-02-13T00:54:19: PM2 log: pid=23835 msg=process killed
+2026-02-13T00:54:19: PM2 log: App [T2:2] starting in -fork mode-
+2026-02-13T00:54:19: PM2 log: App [T2:2] online
+2026-02-13T00:54:20: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:54:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:55:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:55:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:56:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:56:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:57:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:57:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:58:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:58:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:59:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T00:59:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:00:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:00:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:01:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:01:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:02:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:02:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:03:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:03:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:03:56: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:03:56: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T01:03:56: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T01:03:56: PM2 log: pid=24425 msg=process killed
+2026-02-13T01:03:56: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T01:03:56: PM2 log: App [CABEZA:0] online
+2026-02-13T01:03:56: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:04:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:04:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:05:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:05:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:06:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:06:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:07:00: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:07:00: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T01:07:00: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T01:07:00: PM2 log: pid=30355 msg=process killed
+2026-02-13T01:07:00: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T01:07:00: PM2 log: App [CABEZA:0] online
+2026-02-13T01:07:00: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:07:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:07:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:08:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:08:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:08:49: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:08:49: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T01:08:49: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T01:08:49: PM2 log: pid=31840 msg=process killed
+2026-02-13T01:08:49: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T01:08:49: PM2 log: App [CABEZA:0] online
+2026-02-13T01:08:49: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:09:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:09:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:10:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:10:19: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:10:19: PM2 log: Stopping app:T1 id:1
+2026-02-13T01:10:19: PM2 log: App [T1:1] exited with code [0] via signal [SIGINT]
+2026-02-13T01:10:19: PM2 log: pid=4640 msg=process killed
+2026-02-13T01:10:19: PM2 log: App [T1:1] starting in -fork mode-
+2026-02-13T01:10:19: PM2 log: App [T1:1] online
+2026-02-13T01:10:19: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:10:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:11:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:11:23: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:11:23: PM2 log: Stopping app:T3 id:3
+2026-02-13T01:11:23: PM2 log: App [T3:3] exited with code [0] via signal [SIGINT]
+2026-02-13T01:11:23: PM2 log: pid=22672 msg=process killed
+2026-02-13T01:11:23: PM2 log: App [T3:3] starting in -fork mode-
+2026-02-13T01:11:23: PM2 log: App [T3:3] online
+2026-02-13T01:11:23: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:11:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:12:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:12:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:13:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:13:10: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:13:10: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:13:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:13:34: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:13:34: PM2 log: App [T4:5] starting in -fork mode-
+2026-02-13T01:13:34: PM2 log: App [T4:5] online
+2026-02-13T01:13:34: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:13:34: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:13:48: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:13:48: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T01:13:48: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T01:13:48: PM2 log: pid=32657 msg=process killed
+2026-02-13T01:13:48: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T01:13:48: PM2 log: App [CABEZA:0] online
+2026-02-13T01:13:48: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:14:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:14:09: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:14:09: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:14:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:14:32: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:14:32: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T01:14:32: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T01:14:33: PM2 log: pid=8295 msg=process killed
+2026-02-13T01:14:33: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T01:14:33: PM2 log: App [CABEZA:0] online
+2026-02-13T01:14:33: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:15:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:15:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:15:38: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:15:38: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T01:15:38: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T01:15:38: PM2 log: pid=8670 msg=process killed
+2026-02-13T01:15:38: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T01:15:38: PM2 log: App [CABEZA:0] online
+2026-02-13T01:15:38: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:15:47: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:15:47: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:16:01: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:16:03: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:16:03: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:16:03: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T01:16:03: PM2 log: Stopping app:T1 id:1
+2026-02-13T01:16:03: PM2 log: Stopping app:T2 id:2
+2026-02-13T01:16:03: PM2 log: Stopping app:T3 id:3
+2026-02-13T01:16:03: PM2 log: Stopping app:T4_ARCHIVO id:4
+2026-02-13T01:16:03: PM2 log: Stopping app:T4 id:5
+2026-02-13T01:16:03: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T01:16:03: PM2 log: App [T3:3] exited with code [0] via signal [SIGINT]
+2026-02-13T01:16:03: PM2 log: App [T2:2] exited with code [0] via signal [SIGINT]
+2026-02-13T01:16:03: PM2 log: App [T1:1] exited with code [0] via signal [SIGINT]
+2026-02-13T01:16:03: PM2 log: App [T4:5] exited with code [0] via signal [SIGINT]
+2026-02-13T01:16:03: PM2 log: App [T4_ARCHIVO:4] exited with code [0] via signal [SIGINT]
+2026-02-13T01:16:03: PM2 log: pid=5095 msg=process killed
+2026-02-13T01:16:03: PM2 log: pid=25009 msg=process killed
+2026-02-13T01:16:03: PM2 log: pid=2821 msg=process killed
+2026-02-13T01:16:03: PM2 log: pid=9536 msg=process killed
+2026-02-13T01:16:03: PM2 log: pid=8812 msg=process killed
+2026-02-13T01:16:03: PM2 log: pid=7972 msg=process killed
+2026-02-13T01:16:03: PM2 log: PM2 successfully stopped
+2026-02-13T01:16:03: PM2 log: ===============================================================================
+2026-02-13T01:16:03: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-02-13T01:16:03: PM2 log: Time                 : Fri Feb 13 2026 01:16:03 GMT+0100 (Central European Standard Time)
+2026-02-13T01:16:03: PM2 log: PM2 version          : 6.0.14
+2026-02-13T01:16:03: PM2 log: Node.js version      : 24.13.0
+2026-02-13T01:16:03: PM2 log: Current arch         : arm64
+2026-02-13T01:16:03: PM2 log: PM2 home             : /data/data/com.termux/files/home/.pm2
+2026-02-13T01:16:03: PM2 log: PM2 PID file         : /data/data/com.termux/files/home/.pm2/pm2.pid
+2026-02-13T01:16:03: PM2 log: RPC socket file      : /data/data/com.termux/files/home/.pm2/rpc.sock
+2026-02-13T01:16:03: PM2 log: BUS socket file      : /data/data/com.termux/files/home/.pm2/pub.sock
+2026-02-13T01:16:03: PM2 log: Application log path : /data/data/com.termux/files/home/.pm2/logs
+2026-02-13T01:16:03: PM2 log: Worker Interval      : 30000
+2026-02-13T01:16:03: PM2 log: Process dump file    : /data/data/com.termux/files/home/.pm2/dump.pm2
+2026-02-13T01:16:03: PM2 log: Concurrent actions   : 2
+2026-02-13T01:16:03: PM2 log: SIGTERM timeout      : 1600
+2026-02-13T01:16:03: PM2 log: Runtime Binary       : /data/data/com.termux/files/usr/bin/node
+2026-02-13T01:16:03: PM2 log: ===============================================================================
+2026-02-13T01:16:03: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T01:16:03: PM2 log: App [T1:1] starting in -fork mode-
+2026-02-13T01:16:03: PM2 log: App [CABEZA:0] online
+2026-02-13T01:16:03: PM2 log: App [T1:1] online
+2026-02-13T01:16:03: PM2 log: App [T2:2] starting in -fork mode-
+2026-02-13T01:16:03: PM2 log: App [T3:3] starting in -fork mode-
+2026-02-13T01:16:03: PM2 log: App [T2:2] online
+2026-02-13T01:16:03: PM2 log: App [T3:3] online
+2026-02-13T01:16:03: PM2 log: App [T4_ARCHIVO:4] starting in -fork mode-
+2026-02-13T01:16:03: PM2 log: App [T4:5] starting in -fork mode-
+2026-02-13T01:16:03: PM2 log: App [T4_ARCHIVO:4] online
+2026-02-13T01:16:03: PM2 log: App [T4:5] online
+2026-02-13T01:16:04: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:16:04: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:16:05: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:16:34: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:17:04: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:17:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:17:31: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T01:17:31: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T01:17:31: PM2 log: pid=10090 msg=process killed
+2026-02-13T01:17:31: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T01:17:31: PM2 log: App [CABEZA:0] online
+2026-02-13T01:17:31: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:17:34: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:18:04: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:18:10: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:18:10: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T01:18:10: PM2 log: Stopping app:T1 id:1
+2026-02-13T01:18:10: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T01:18:10: PM2 log: App [T1:1] exited with code [0] via signal [SIGINT]
+2026-02-13T01:18:11: PM2 log: pid=11323 msg=process killed
+2026-02-13T01:18:11: PM2 log: pid=10091 msg=process killed
+2026-02-13T01:18:11: PM2 log: Stopping app:T2 id:2
+2026-02-13T01:18:11: PM2 log: Stopping app:T3 id:3
+2026-02-13T01:18:11: PM2 log: App [T2:2] exited with code [0] via signal [SIGINT]
+2026-02-13T01:18:11: PM2 log: App [T3:3] exited with code [0] via signal [SIGINT]
+2026-02-13T01:18:11: PM2 log: pid=10106 msg=process killed
+2026-02-13T01:18:11: PM2 log: pid=10107 msg=process killed
+2026-02-13T01:18:11: PM2 log: Stopping app:T4_ARCHIVO id:4
+2026-02-13T01:18:11: PM2 log: Stopping app:T4 id:5
+2026-02-13T01:18:11: PM2 log: App [T4_ARCHIVO:4] exited with code [0] via signal [SIGINT]
+2026-02-13T01:18:11: PM2 log: App [T4:5] exited with code [0] via signal [SIGINT]
+2026-02-13T01:18:11: PM2 log: pid=10125 msg=process killed
+2026-02-13T01:18:11: PM2 log: pid=10132 msg=process killed
+2026-02-13T01:18:19: PM2 log: App [CABEZA:0] starting in -fork mode-
+2026-02-13T01:18:19: PM2 log: App [CABEZA:0] online
+2026-02-13T01:18:19: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:18:34: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:19:04: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:19:34: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:20:03: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+2026-02-13T01:20:03: PM2 log: Stopping app:CABEZA id:0
+2026-02-13T01:20:03: PM2 log: App [CABEZA:0] exited with code [0] via signal [SIGINT]
+2026-02-13T01:20:03: PM2 log: pid=12013 msg=process killed
+2026-02-13T01:20:03: PM2 log: PM2 successfully stopped
+2026-02-13T01:22:12: PM2 log: ===============================================================================
+2026-02-13T01:22:12: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-02-13T01:22:12: PM2 log: Time                 : Fri Feb 13 2026 01:22:12 GMT+0100 (Central European Standard Time)
+2026-02-13T01:22:12: PM2 log: PM2 version          : 6.0.14
+2026-02-13T01:22:12: PM2 log: Node.js version      : 24.13.0
+2026-02-13T01:22:12: PM2 log: Current arch         : arm64
+2026-02-13T01:22:12: PM2 log: PM2 home             : /data/data/com.termux/files/home/.pm2
+2026-02-13T01:22:12: PM2 log: PM2 PID file         : /data/data/com.termux/files/home/.pm2/pm2.pid
+2026-02-13T01:22:12: PM2 log: RPC socket file      : /data/data/com.termux/files/home/.pm2/rpc.sock
+2026-02-13T01:22:12: PM2 log: BUS socket file      : /data/data/com.termux/files/home/.pm2/pub.sock
+2026-02-13T01:22:12: PM2 log: Application log path : /data/data/com.termux/files/home/.pm2/logs
+2026-02-13T01:22:12: PM2 log: Worker Interval      : 30000
+2026-02-13T01:22:12: PM2 log: Process dump file    : /data/data/com.termux/files/home/.pm2/dump.pm2
+2026-02-13T01:22:12: PM2 log: Concurrent actions   : 2
+2026-02-13T01:22:12: PM2 log: SIGTERM timeout      : 1600
+2026-02-13T01:22:12: PM2 log: Runtime Binary       : /data/data/com.termux/files/usr/bin/node
+2026-02-13T01:22:12: PM2 log: ===============================================================================
+2026-02-13T01:22:12: PM2 log: PM2 successfully stopped
+2026-02-13T01:28:24: PM2 log: ===============================================================================
+2026-02-13T01:28:24: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-02-13T01:28:24: PM2 log: Time                 : Fri Feb 13 2026 01:28:24 GMT+0100 (Central European Standard Time)
+2026-02-13T01:28:24: PM2 log: PM2 version          : 6.0.14
+2026-02-13T01:28:24: PM2 log: Node.js version      : 24.13.0
+2026-02-13T01:28:24: PM2 log: Current arch         : arm64
+2026-02-13T01:28:24: PM2 log: PM2 home             : /data/data/com.termux/files/home/.pm2
+2026-02-13T01:28:24: PM2 log: PM2 PID file         : /data/data/com.termux/files/home/.pm2/pm2.pid
+2026-02-13T01:28:24: PM2 log: RPC socket file      : /data/data/com.termux/files/home/.pm2/rpc.sock
+2026-02-13T01:28:24: PM2 log: BUS socket file      : /data/data/com.termux/files/home/.pm2/pub.sock
+2026-02-13T01:28:24: PM2 log: Application log path : /data/data/com.termux/files/home/.pm2/logs
+2026-02-13T01:28:24: PM2 log: Worker Interval      : 30000
+2026-02-13T01:28:24: PM2 log: Process dump file    : /data/data/com.termux/files/home/.pm2/dump.pm2
+2026-02-13T01:28:24: PM2 log: Concurrent actions   : 2
+2026-02-13T01:28:24: PM2 log: SIGTERM timeout      : 1600
+2026-02-13T01:28:24: PM2 log: Runtime Binary       : /data/data/com.termux/files/usr/bin/node
+2026-02-13T01:28:24: PM2 log: ===============================================================================
+2026-02-13T01:28:24: PM2 log: PM2 successfully stopped
+2026-02-13T01:32:51: PM2 log: ===============================================================================
+2026-02-13T01:32:51: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-02-13T01:32:51: PM2 log: Time                 : Fri Feb 13 2026 01:32:51 GMT+0100 (Central European Standard Time)
+2026-02-13T01:32:51: PM2 log: PM2 version          : 6.0.14
+2026-02-13T01:32:51: PM2 log: Node.js version      : 24.13.0
+2026-02-13T01:32:51: PM2 log: Current arch         : arm64
+2026-02-13T01:32:51: PM2 log: PM2 home             : /data/data/com.termux/files/home/.pm2
+2026-02-13T01:32:51: PM2 log: PM2 PID file         : /data/data/com.termux/files/home/.pm2/pm2.pid
+2026-02-13T01:32:51: PM2 log: RPC socket file      : /data/data/com.termux/files/home/.pm2/rpc.sock
+2026-02-13T01:32:51: PM2 log: BUS socket file      : /data/data/com.termux/files/home/.pm2/pub.sock
+2026-02-13T01:32:51: PM2 log: Application log path : /data/data/com.termux/files/home/.pm2/logs
+2026-02-13T01:32:51: PM2 log: Worker Interval      : 30000
+2026-02-13T01:32:51: PM2 log: Process dump file    : /data/data/com.termux/files/home/.pm2/dump.pm2
+2026-02-13T01:32:51: PM2 log: Concurrent actions   : 2
+2026-02-13T01:32:51: PM2 log: SIGTERM timeout      : 1600
+2026-02-13T01:32:51: PM2 log: Runtime Binary       : /data/data/com.termux/files/usr/bin/node
+2026-02-13T01:32:51: PM2 log: ===============================================================================
+2026-02-13T01:32:52: PM2 log: PM2 successfully stopped
+2026-02-13T01:34:37: PM2 log: ===============================================================================
+2026-02-13T01:34:37: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-02-13T01:34:37: PM2 log: Time                 : Fri Feb 13 2026 01:34:37 GMT+0100 (Central European Standard Time)
+2026-02-13T01:34:37: PM2 log: PM2 version          : 6.0.14
+2026-02-13T01:34:37: PM2 log: Node.js version      : 24.13.0
+2026-02-13T01:34:37: PM2 log: Current arch         : arm64
+2026-02-13T01:34:37: PM2 log: PM2 home             : /data/data/com.termux/files/home/.pm2
+2026-02-13T01:34:37: PM2 log: PM2 PID file         : /data/data/com.termux/files/home/.pm2/pm2.pid
+2026-02-13T01:34:37: PM2 log: RPC socket file      : /data/data/com.termux/files/home/.pm2/rpc.sock
+2026-02-13T01:34:37: PM2 log: BUS socket file      : /data/data/com.termux/files/home/.pm2/pub.sock
+2026-02-13T01:34:37: PM2 log: Application log path : /data/data/com.termux/files/home/.pm2/logs
+2026-02-13T01:34:37: PM2 log: Worker Interval      : 30000
+2026-02-13T01:34:37: PM2 log: Process dump file    : /data/data/com.termux/files/home/.pm2/dump.pm2
+2026-02-13T01:34:37: PM2 log: Concurrent actions   : 2
+2026-02-13T01:34:37: PM2 log: SIGTERM timeout      : 1600
+2026-02-13T01:34:37: PM2 log: Runtime Binary       : /data/data/com.termux/files/usr/bin/node
+2026-02-13T01:34:37: PM2 log: ===============================================================================
+2026-02-13T01:34:37: PM2 log: PM2 successfully stopped
+2026-02-13T01:37:34: PM2 log: ===============================================================================
+2026-02-13T01:37:34: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-02-13T01:37:34: PM2 log: Time                 : Fri Feb 13 2026 01:37:34 GMT+0100 (Central European Standard Time)
+2026-02-13T01:37:34: PM2 log: PM2 version          : 6.0.14
+2026-02-13T01:37:34: PM2 log: Node.js version      : 24.13.0
+2026-02-13T01:37:34: PM2 log: Current arch         : arm64
+2026-02-13T01:37:34: PM2 log: PM2 home             : /data/data/com.termux/files/home/.pm2
+2026-02-13T01:37:34: PM2 log: PM2 PID file         : /data/data/com.termux/files/home/.pm2/pm2.pid
+2026-02-13T01:37:34: PM2 log: RPC socket file      : /data/data/com.termux/files/home/.pm2/rpc.sock
+2026-02-13T01:37:34: PM2 log: BUS socket file      : /data/data/com.termux/files/home/.pm2/pub.sock
+2026-02-13T01:37:34: PM2 log: Application log path : /data/data/com.termux/files/home/.pm2/logs
+2026-02-13T01:37:34: PM2 log: Worker Interval      : 30000
+2026-02-13T01:37:34: PM2 log: Process dump file    : /data/data/com.termux/files/home/.pm2/dump.pm2
+2026-02-13T01:37:34: PM2 log: Concurrent actions   : 2
+2026-02-13T01:37:34: PM2 log: SIGTERM timeout      : 1600
+2026-02-13T01:37:34: PM2 log: Runtime Binary       : /data/data/com.termux/files/usr/bin/node
+2026-02-13T01:37:34: PM2 log: ===============================================================================
+2026-02-13T01:37:34: PM2 log: PM2 successfully stopped
+2026-02-13T01:38:29: PM2 log: ===============================================================================
+2026-02-13T01:38:29: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-02-13T01:38:29: PM2 log: Time                 : Fri Feb 13 2026 01:38:29 GMT+0100 (Central European Standard Time)
+2026-02-13T01:38:29: PM2 log: PM2 version          : 6.0.14
+2026-02-13T01:38:29: PM2 log: Node.js version      : 24.13.0
+2026-02-13T01:38:29: PM2 log: Current arch         : arm64
+2026-02-13T01:38:29: PM2 log: PM2 home             : /data/data/com.termux/files/home/.pm2
+2026-02-13T01:38:29: PM2 log: PM2 PID file         : /data/data/com.termux/files/home/.pm2/pm2.pid
+2026-02-13T01:38:29: PM2 log: RPC socket file      : /data/data/com.termux/files/home/.pm2/rpc.sock
+2026-02-13T01:38:29: PM2 log: BUS socket file      : /data/data/com.termux/files/home/.pm2/pub.sock
+2026-02-13T01:38:29: PM2 log: Application log path : /data/data/com.termux/files/home/.pm2/logs
+2026-02-13T01:38:29: PM2 log: Worker Interval      : 30000
+2026-02-13T01:38:29: PM2 log: Process dump file    : /data/data/com.termux/files/home/.pm2/dump.pm2
+2026-02-13T01:38:29: PM2 log: Concurrent actions   : 2
+2026-02-13T01:38:29: PM2 log: SIGTERM timeout      : 1600
+2026-02-13T01:38:29: PM2 log: Runtime Binary       : /data/data/com.termux/files/usr/bin/node
+2026-02-13T01:38:29: PM2 log: ===============================================================================
+2026-02-13T01:38:30: PM2 log: PM2 successfully stopped
+2026-02-13T01:38:30: PM2 log: ===============================================================================
+2026-02-13T01:38:30: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-02-13T01:38:30: PM2 log: Time                 : Fri Feb 13 2026 01:38:30 GMT+0100 (Central European Standard Time)
+2026-02-13T01:38:30: PM2 log: PM2 version          : 6.0.14
+2026-02-13T01:38:30: PM2 log: Node.js version      : 24.13.0
+2026-02-13T01:38:30: PM2 log: Current arch         : arm64
+2026-02-13T01:38:30: PM2 log: PM2 home             : /data/data/com.termux/files/home/.pm2
+2026-02-13T01:38:30: PM2 log: PM2 PID file         : /data/data/com.termux/files/home/.pm2/pm2.pid
+2026-02-13T01:38:30: PM2 log: RPC socket file      : /data/data/com.termux/files/home/.pm2/rpc.sock
+2026-02-13T01:38:30: PM2 log: BUS socket file      : /data/data/com.termux/files/home/.pm2/pub.sock
+2026-02-13T01:38:30: PM2 log: Application log path : /data/data/com.termux/files/home/.pm2/logs
+2026-02-13T01:38:30: PM2 log: Worker Interval      : 30000
+2026-02-13T01:38:30: PM2 log: Process dump file    : /data/data/com.termux/files/home/.pm2/dump.pm2
+2026-02-13T01:38:30: PM2 log: Concurrent actions   : 2
+2026-02-13T01:38:30: PM2 log: SIGTERM timeout      : 1600
+2026-02-13T01:38:30: PM2 log: Runtime Binary       : /data/data/com.termux/files/usr/bin/node
+2026-02-13T01:38:30: PM2 log: ===============================================================================
+2026-02-13T01:38:31: PM2 log: PM2 successfully stopped
+2026-02-13T01:39:27: PM2 log: ===============================================================================
+2026-02-13T01:39:27: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-02-13T01:39:27: PM2 log: Time                 : Fri Feb 13 2026 01:39:27 GMT+0100 (Central European Standard Time)
+2026-02-13T01:39:27: PM2 log: PM2 version          : 6.0.14
+2026-02-13T01:39:27: PM2 log: Node.js version      : 24.13.0
+2026-02-13T01:39:27: PM2 log: Current arch         : arm64
+2026-02-13T01:39:27: PM2 log: PM2 home             : /data/data/com.termux/files/home/.pm2
+2026-02-13T01:39:27: PM2 log: PM2 PID file         : /data/data/com.termux/files/home/.pm2/pm2.pid
+2026-02-13T01:39:27: PM2 log: RPC socket file      : /data/data/com.termux/files/home/.pm2/rpc.sock
+2026-02-13T01:39:27: PM2 log: BUS socket file      : /data/data/com.termux/files/home/.pm2/pub.sock
+2026-02-13T01:39:27: PM2 log: Application log path : /data/data/com.termux/files/home/.pm2/logs
+2026-02-13T01:39:27: PM2 log: Worker Interval      : 30000
+2026-02-13T01:39:27: PM2 log: Process dump file    : /data/data/com.termux/files/home/.pm2/dump.pm2
+2026-02-13T01:39:27: PM2 log: Concurrent actions   : 2
+2026-02-13T01:39:27: PM2 log: SIGTERM timeout      : 1600
+2026-02-13T01:39:27: PM2 log: Runtime Binary       : /data/data/com.termux/files/usr/bin/node
+2026-02-13T01:39:27: PM2 log: ===============================================================================
+2026-02-13T01:39:28: PM2 log: PM2 successfully stopped
+2026-02-13T01:40:54: PM2 log: ===============================================================================
+2026-02-13T01:40:54: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-02-13T01:40:54: PM2 log: Time                 : Fri Feb 13 2026 01:40:54 GMT+0100 (Central European Standard Time)
+2026-02-13T01:40:54: PM2 log: PM2 version          : 6.0.14
+2026-02-13T01:40:54: PM2 log: Node.js version      : 24.13.0
+2026-02-13T01:40:54: PM2 log: Current arch         : arm64
+2026-02-13T01:40:54: PM2 log: PM2 home             : /data/data/com.termux/files/home/.pm2
+2026-02-13T01:40:54: PM2 log: PM2 PID file         : /data/data/com.termux/files/home/.pm2/pm2.pid
+2026-02-13T01:40:54: PM2 log: RPC socket file      : /data/data/com.termux/files/home/.pm2/rpc.sock
+2026-02-13T01:40:54: PM2 log: BUS socket file      : /data/data/com.termux/files/home/.pm2/pub.sock
+2026-02-13T01:40:54: PM2 log: Application log path : /data/data/com.termux/files/home/.pm2/logs
+2026-02-13T01:40:54: PM2 log: Worker Interval      : 30000
+2026-02-13T01:40:54: PM2 log: Process dump file    : /data/data/com.termux/files/home/.pm2/dump.pm2
+2026-02-13T01:40:54: PM2 log: Concurrent actions   : 2
+2026-02-13T01:40:54: PM2 log: SIGTERM timeout      : 1600
+2026-02-13T01:40:54: PM2 log: Runtime Binary       : /data/data/com.termux/files/usr/bin/node
+2026-02-13T01:40:54: PM2 log: ===============================================================================
+2026-02-13T01:40:55: PM2 log: PM2 successfully stopped
+2026-02-13T01:42:17: PM2 log: ===============================================================================
+2026-02-13T01:42:17: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-02-13T01:42:17: PM2 log: Time                 : Fri Feb 13 2026 01:42:17 GMT+0100 (Central European Standard Time)
+2026-02-13T01:42:17: PM2 log: PM2 version          : 6.0.14
+2026-02-13T01:42:17: PM2 log: Node.js version      : 24.13.0
+2026-02-13T01:42:17: PM2 log: Current arch         : arm64
+2026-02-13T01:42:17: PM2 log: PM2 home             : /data/data/com.termux/files/home/.pm2
+2026-02-13T01:42:17: PM2 log: PM2 PID file         : /data/data/com.termux/files/home/.pm2/pm2.pid
+2026-02-13T01:42:17: PM2 log: RPC socket file      : /data/data/com.termux/files/home/.pm2/rpc.sock
+2026-02-13T01:42:17: PM2 log: BUS socket file      : /data/data/com.termux/files/home/.pm2/pub.sock
+2026-02-13T01:42:17: PM2 log: Application log path : /data/data/com.termux/files/home/.pm2/logs
+2026-02-13T01:42:17: PM2 log: Worker Interval      : 30000
+2026-02-13T01:42:17: PM2 log: Process dump file    : /data/data/com.termux/files/home/.pm2/dump.pm2
+2026-02-13T01:42:17: PM2 log: Concurrent actions   : 2
+2026-02-13T01:42:17: PM2 log: SIGTERM timeout      : 1600
+2026-02-13T01:42:17: PM2 log: Runtime Binary       : /data/data/com.termux/files/usr/bin/node
+2026-02-13T01:42:17: PM2 log: ===============================================================================
+2026-02-13T01:42:17: PM2 log: PM2 successfully stopped
+2026-02-13T01:43:53: PM2 log: ===============================================================================
+2026-02-13T01:43:53: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-02-13T01:43:53: PM2 log: Time                 : Fri Feb 13 2026 01:43:53 GMT+0100 (Central European Standard Time)
+2026-02-13T01:43:53: PM2 log: PM2 version          : 6.0.14
+2026-02-13T01:43:53: PM2 log: Node.js version      : 24.13.0
+2026-02-13T01:43:53: PM2 log: Current arch         : arm64
+2026-02-13T01:43:53: PM2 log: PM2 home             : /data/data/com.termux/files/home/.pm2
+2026-02-13T01:43:53: PM2 log: PM2 PID file         : /data/data/com.termux/files/home/.pm2/pm2.pid
+2026-02-13T01:43:53: PM2 log: RPC socket file      : /data/data/com.termux/files/home/.pm2/rpc.sock
+2026-02-13T01:43:53: PM2 log: BUS socket file      : /data/data/com.termux/files/home/.pm2/pub.sock
+2026-02-13T01:43:53: PM2 log: Application log path : /data/data/com.termux/files/home/.pm2/logs
+2026-02-13T01:43:53: PM2 log: Worker Interval      : 30000
+2026-02-13T01:43:53: PM2 log: Process dump file    : /data/data/com.termux/files/home/.pm2/dump.pm2
+2026-02-13T01:43:53: PM2 log: Concurrent actions   : 2
+2026-02-13T01:43:53: PM2 log: SIGTERM timeout      : 1600
+2026-02-13T01:43:53: PM2 log: Runtime Binary       : /data/data/com.termux/files/usr/bin/node
+2026-02-13T01:43:53: PM2 log: ===============================================================================
+2026-02-13T01:43:53: PM2 log: PM2 successfully stopped
+2026-02-13T01:45:09: PM2 log: ===============================================================================
+2026-02-13T01:45:09: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-02-13T01:45:09: PM2 log: Time                 : Fri Feb 13 2026 01:45:09 GMT+0100 (Central European Standard Time)
+2026-02-13T01:45:09: PM2 log: PM2 version          : 6.0.14
+2026-02-13T01:45:09: PM2 log: Node.js version      : 24.13.0
+2026-02-13T01:45:09: PM2 log: Current arch         : arm64
+2026-02-13T01:45:09: PM2 log: PM2 home             : /data/data/com.termux/files/home/.pm2
+2026-02-13T01:45:09: PM2 log: PM2 PID file         : /data/data/com.termux/files/home/.pm2/pm2.pid
+2026-02-13T01:45:09: PM2 log: RPC socket file      : /data/data/com.termux/files/home/.pm2/rpc.sock
+2026-02-13T01:45:09: PM2 log: BUS socket file      : /data/data/com.termux/files/home/.pm2/pub.sock
+2026-02-13T01:45:09: PM2 log: Application log path : /data/data/com.termux/files/home/.pm2/logs
+2026-02-13T01:45:09: PM2 log: Worker Interval      : 30000
+2026-02-13T01:45:09: PM2 log: Process dump file    : /data/data/com.termux/files/home/.pm2/dump.pm2
+2026-02-13T01:45:09: PM2 log: Concurrent actions   : 2
+2026-02-13T01:45:09: PM2 log: SIGTERM timeout      : 1600
+2026-02-13T01:45:09: PM2 log: Runtime Binary       : /data/data/com.termux/files/usr/bin/node
+2026-02-13T01:45:09: PM2 log: ===============================================================================
+2026-02-13T01:45:10: PM2 log: PM2 successfully stopped

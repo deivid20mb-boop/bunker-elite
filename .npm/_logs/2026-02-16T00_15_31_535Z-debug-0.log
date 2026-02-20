@@ -1,0 +1,291 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.10.0
+2 info using node@v25.3.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/bunker_unificado/.npmrc
+5 silly config load:file:/data/data/com.termux/files/home/.npmrc
+6 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+7 verbose title npm install jszip
+8 verbose argv "install" "jszip"
+9 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-02-16T00_15_31_535Z-
+10 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-02-16T00_15_31_535Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest jszip@*
+16 silly packumentCache full:https://registry.npmjs.org/jszip cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/jszip 247ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/jszip set size:undefined disposed:false
+19 silly placeDep ROOT jszip@3.10.1 OK for: bunker-web-v20@1.0.0 want: *
+20 silly fetch manifest lie@~3.3.0
+21 silly packumentCache full:https://registry.npmjs.org/lie cache-miss
+22 silly fetch manifest pako@~1.0.2
+23 silly packumentCache full:https://registry.npmjs.org/pako cache-miss
+24 silly fetch manifest setimmediate@^1.0.5
+25 silly packumentCache full:https://registry.npmjs.org/setimmediate cache-miss
+26 silly fetch manifest readable-stream@~2.3.6
+27 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-miss
+28 http fetch GET 200 https://registry.npmjs.org/setimmediate 110ms (cache miss)
+29 silly packumentCache full:https://registry.npmjs.org/setimmediate set size:undefined disposed:false
+30 http fetch GET 200 https://registry.npmjs.org/readable-stream 121ms (cache revalidated)
+31 silly packumentCache full:https://registry.npmjs.org/readable-stream set size:261096 disposed:false
+32 http fetch GET 200 https://registry.npmjs.org/lie 211ms (cache miss)
+33 silly packumentCache full:https://registry.npmjs.org/lie set size:undefined disposed:false
+34 http fetch GET 200 https://registry.npmjs.org/pako 298ms (cache revalidated)
+35 silly packumentCache full:https://registry.npmjs.org/pako set size:74234 disposed:false
+36 silly placeDep ROOT lie@3.3.0 OK for: jszip@3.10.1 want: ~3.3.0
+37 silly placeDep node_modules/jszip pako@1.0.11 OK for: jszip@3.10.1 want: ~1.0.2
+38 silly placeDep ROOT readable-stream@2.3.8 OK for: jszip@3.10.1 want: ~2.3.6
+39 silly placeDep ROOT setimmediate@1.0.5 OK for: jszip@3.10.1 want: ^1.0.5
+40 silly fetch manifest immediate@~3.0.5
+41 silly packumentCache full:https://registry.npmjs.org/immediate cache-miss
+42 silly fetch manifest isarray@~1.0.0
+43 silly packumentCache full:https://registry.npmjs.org/isarray cache-miss
+44 silly fetch manifest safe-buffer@~5.1.1
+45 silly packumentCache full:https://registry.npmjs.org/safe-buffer cache-miss
+46 silly fetch manifest core-util-is@~1.0.0
+47 silly packumentCache full:https://registry.npmjs.org/core-util-is cache-miss
+48 silly fetch manifest string_decoder@~1.1.1
+49 silly packumentCache full:https://registry.npmjs.org/string_decoder cache-miss
+50 http fetch GET 200 https://registry.npmjs.org/string_decoder 70ms (cache revalidated)
+51 silly packumentCache full:https://registry.npmjs.org/string_decoder set size:28441 disposed:false
+52 silly fetch manifest util-deprecate@~1.0.1
+53 silly packumentCache full:https://registry.npmjs.org/util-deprecate cache-miss
+54 http fetch GET 200 https://registry.npmjs.org/core-util-is 75ms (cache revalidated)
+55 silly packumentCache full:https://registry.npmjs.org/core-util-is set size:7163 disposed:false
+56 silly fetch manifest process-nextick-args@~2.0.0
+57 silly packumentCache full:https://registry.npmjs.org/process-nextick-args cache-miss
+58 http fetch GET 200 https://registry.npmjs.org/isarray 82ms (cache revalidated)
+59 silly packumentCache full:https://registry.npmjs.org/isarray set size:17392 disposed:false
+60 http fetch GET 200 https://registry.npmjs.org/immediate 91ms (cache miss)
+61 silly packumentCache full:https://registry.npmjs.org/immediate set size:undefined disposed:false
+62 http fetch GET 200 https://registry.npmjs.org/process-nextick-args 49ms (cache revalidated)
+63 silly packumentCache full:https://registry.npmjs.org/process-nextick-args set size:15428 disposed:false
+64 http fetch GET 200 https://registry.npmjs.org/util-deprecate 56ms (cache revalidated)
+65 silly packumentCache full:https://registry.npmjs.org/util-deprecate set size:6674 disposed:false
+66 http fetch GET 200 https://registry.npmjs.org/safe-buffer 134ms (cache revalidated)
+67 silly packumentCache full:https://registry.npmjs.org/safe-buffer set size:41183 disposed:false
+68 silly placeDep ROOT immediate@3.0.6 OK for: lie@3.3.0 want: ~3.0.5
+69 silly placeDep ROOT core-util-is@1.0.3 OK for: readable-stream@2.3.8 want: ~1.0.0
+70 silly placeDep ROOT isarray@1.0.0 OK for: readable-stream@2.3.8 want: ~1.0.0
+71 silly placeDep ROOT process-nextick-args@2.0.1 OK for: readable-stream@2.3.8 want: ~2.0.0
+72 silly placeDep node_modules/readable-stream safe-buffer@5.1.2 OK for: readable-stream@2.3.8 want: ~5.1.1
+73 silly placeDep ROOT string_decoder@1.1.1 OK for: readable-stream@2.3.8 want: ~1.1.1
+74 silly placeDep ROOT util-deprecate@1.0.2 OK for: readable-stream@2.3.8 want: ~1.0.1
+75 silly fetch manifest safe-buffer@~5.1.0
+76 silly packumentCache full:https://registry.npmjs.org/safe-buffer cache-hit
+77 silly placeDep node_modules/string_decoder safe-buffer@5.1.2 OK for: string_decoder@1.1.1 want: ~5.1.0
+78 silly reify moves {}
+79 silly audit bulk request {
+79 silly audit   '@babel/runtime': [ '7.28.6' ],
+79 silly audit   '@google/generative-ai': [ '0.24.1' ],
+79 silly audit   '@stablelib/base64': [ '1.0.1' ],
+79 silly audit   '@supabase/auth-js': [ '2.95.3' ],
+79 silly audit   '@supabase/functions-js': [ '2.95.3' ],
+79 silly audit   '@supabase/postgrest-js': [ '2.95.3' ],
+79 silly audit   '@supabase/realtime-js': [ '2.95.3' ],
+79 silly audit   '@supabase/storage-js': [ '2.95.3' ],
+79 silly audit   '@supabase/supabase-js': [ '2.95.3' ],
+79 silly audit   '@types/node': [ '25.2.3' ],
+79 silly audit   '@types/pako': [ '2.0.4' ],
+79 silly audit   '@types/phoenix': [ '1.6.7' ],
+79 silly audit   '@types/raf': [ '3.4.3' ],
+79 silly audit   '@types/trusted-types': [ '2.0.7' ],
+79 silly audit   '@types/ws': [ '8.18.1' ],
+79 silly audit   accepts: [ '1.3.8' ],
+79 silly audit   negotiator: [ '0.6.3', '0.6.4' ],
+79 silly audit   'array-flatten': [ '1.1.1' ],
+79 silly audit   asynckit: [ '0.4.0' ],
+79 silly audit   axios: [ '1.13.5' ],
+79 silly audit   'base64-arraybuffer': [ '1.0.2' ],
+79 silly audit   'basic-auth': [ '2.0.1' ],
+79 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+79 silly audit   'body-parser': [ '1.20.4' ],
+79 silly audit   bytes: [ '3.1.2' ],
+79 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+79 silly audit   'call-bound': [ '1.0.4' ],
+79 silly audit   canvg: [ '3.0.11' ],
+79 silly audit   'combined-stream': [ '1.0.8' ],
+79 silly audit   compressible: [ '2.0.18' ],
+79 silly audit   compression: [ '1.8.1' ],
+79 silly audit   'content-disposition': [ '0.5.4' ],
+79 silly audit   'content-type': [ '1.0.5' ],
+79 silly audit   cookie: [ '0.7.2' ],
+79 silly audit   'cookie-signature': [ '1.0.7' ],
+79 silly audit   'core-js': [ '3.48.0' ],
+79 silly audit   'crypto-js': [ '4.2.0' ],
+79 silly audit   'css-line-break': [ '2.1.0' ],
+79 silly audit   debug: [ '2.6.9' ],
+79 silly audit   'delayed-stream': [ '1.0.0' ],
+79 silly audit   depd: [ '2.0.0' ],
+79 silly audit   destroy: [ '1.2.0' ],
+79 silly audit   dompurify: [ '3.3.1' ],
+79 silly audit   dotenv: [ '17.3.1' ],
+79 silly audit   'dunder-proto': [ '1.0.1' ],
+79 silly audit   'ee-first': [ '1.1.1' ],
+79 silly audit   encodeurl: [ '2.0.0' ],
+79 silly audit   'es-define-property': [ '1.0.1' ],
+79 silly audit   'es-errors': [ '1.3.0' ],
+79 silly audit   'es-object-atoms': [ '1.1.1' ],
+79 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+79 silly audit   'escape-html': [ '1.0.3' ],
+79 silly audit   etag: [ '1.8.1' ],
+79 silly audit   express: [ '4.22.1' ],
+79 silly audit   'express-basic-auth': [ '1.2.1' ],
+79 silly audit   'express-rate-limit': [ '8.2.1' ],
+79 silly audit   'fast-png': [ '6.4.0' ],
+79 silly audit   'fast-sha256': [ '1.3.0' ],
+79 silly audit   fflate: [ '0.8.2' ],
+79 silly audit   finalhandler: [ '1.3.2' ],
+79 silly audit   'follow-redirects': [ '1.15.11' ],
+79 silly audit   'form-data': [ '4.0.5' ],
+79 silly audit   forwarded: [ '0.2.0' ],
+79 silly audit   fresh: [ '0.5.2' ],
+79 silly audit   fs: [ '0.0.1-security' ],
+79 silly audit   'function-bind': [ '1.1.2' ],
+79 silly audit   'get-intrinsic': [ '1.3.0' ],
+79 silly audit   'get-proto': [ '1.0.1' ],
+79 silly audit   gopd: [ '1.2.0' ],
+79 silly audit   'graceful-fs': [ '4.2.11' ],
+79 silly audit   'has-symbols': [ '1.1.0' ],
+79 silly audit   'has-tostringtag': [ '1.0.2' ],
+79 silly audit   hasown: [ '2.0.2' ],
+79 silly audit   helmet: [ '8.1.0' ],
+79 silly audit   html2canvas: [ '1.4.1' ],
+79 silly audit   'http-errors': [ '2.0.1' ],
+79 silly audit   'iceberg-js': [ '0.8.1' ],
+79 silly audit   'iconv-lite': [ '0.4.24' ],
+79 silly audit   inherits: [ '2.0.4', '2.0.3' ],
+79 silly audit   iobuffer: [ '5.4.0' ],
+79 silly audit   'ip-address': [ '10.0.1' ],
+79 silly audit   'ipaddr.js': [ '1.9.1' ],
+79 silly audit   'is-promise': [ '2.2.2' ],
+79 silly audit   jspdf: [ '4.1.0' ],
+79 silly audit   lodash: [ '4.17.23' ],
+79 silly audit   lowdb: [ '1.0.0' ],
+79 silly audit   'math-intrinsics': [ '1.1.0' ],
+79 silly audit   'media-typer': [ '0.3.0' ],
+79 silly audit   'merge-descriptors': [ '1.0.3' ],
+79 silly audit   methods: [ '1.1.2' ],
+79 silly audit   mime: [ '1.6.0' ],
+79 silly audit   'mime-db': [ '1.54.0', '1.52.0' ],
+79 silly audit   'mime-types': [ '2.1.35' ],
+79 silly audit   ms: [ '2.0.0', '2.1.3' ],
+79 silly audit   nodemailer: [ '8.0.1' ],
+79 silly audit   'object-inspect': [ '1.13.4' ],
+79 silly audit   'on-finished': [ '2.4.1' ],
+79 silly audit   'on-headers': [ '1.1.0' ],
+79 silly audit   pako: [ '2.1.0', '1.0.11' ],
+79 silly audit   parseurl: [ '1.3.3' ],
+79 silly audit   path: [ '0.12.7' ],
+79 silly audit   'path-to-regexp': [ '0.1.12' ],
+79 silly audit   'performance-now': [ '2.1.0' ],
+79 silly audit   pg: [ '8.18.0' ],
+79 silly audit   'pg-cloudflare': [ '1.3.0' ],
+79 silly audit   'pg-connection-string': [ '2.11.0' ],
+79 silly audit   'pg-int8': [ '1.0.1' ],
+79 silly audit   'pg-pool': [ '3.11.0' ],
+79 silly audit   'pg-protocol': [ '1.11.0' ],
+79 silly audit   'pg-types': [ '2.2.0' ],
+79 silly audit   pgpass: [ '1.0.5' ],
+79 silly audit   pify: [ '3.0.0' ],
+79 silly audit   'postal-mime': [ '2.7.3' ],
+79 silly audit   'postgres-array': [ '2.0.0' ],
+79 silly audit   'postgres-bytea': [ '1.0.1' ],
+79 silly audit   'postgres-date': [ '1.0.7' ],
+79 silly audit   'postgres-interval': [ '1.2.0' ],
+79 silly audit   process: [ '0.11.10' ],
+79 silly audit   'proxy-addr': [ '2.0.7' ],
+79 silly audit   'proxy-from-env': [ '1.1.0' ],
+79 silly audit   qs: [ '6.14.2' ],
+79 silly audit   raf: [ '3.4.1' ],
+79 silly audit   'range-parser': [ '1.2.1' ],
+79 silly audit   'raw-body': [ '2.5.3' ],
+79 silly audit   'regenerator-runtime': [ '0.13.11' ],
+79 silly audit   resend: [ '6.9.2' ],
+79 silly audit   rgbcolor: [ '1.0.1' ],
+79 silly audit   'safer-buffer': [ '2.1.2' ],
+79 silly audit   send: [ '0.19.2' ],
+79 silly audit   'serve-static': [ '1.16.3' ],
+79 silly audit   setprototypeof: [ '1.2.0' ],
+79 silly audit   'side-channel': [ '1.1.0' ],
+79 silly audit   'side-channel-list': [ '1.0.0' ],
+79 silly audit   'side-channel-map': [ '1.0.1' ],
+79 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+79 silly audit   split2: [ '4.2.0' ],
+79 silly audit   'stackblur-canvas': [ '2.7.0' ],
+79 silly audit   standardwebhooks: [ '1.0.0' ],
+79 silly audit   statuses: [ '2.0.2' ],
+79 silly audit   steno: [ '0.4.4' ],
+79 silly audit   stripe: [ '20.3.1' ],
+79 silly audit   'svg-pathdata': [ '6.0.3' ],
+79 silly audit   svix: [ '1.84.1' ],
+79 silly audit   'text-segmentation': [ '1.0.3' ],
+79 silly audit   toidentifier: [ '1.0.1' ],
+79 silly audit   tslib: [ '2.8.1' ],
+79 silly audit   'type-is': [ '1.6.18' ],
+79 silly audit   'undici-types': [ '7.16.0' ],
+79 silly audit   unpipe: [ '1.0.0' ],
+79 silly audit   util: [ '0.10.4' ],
+79 silly audit   'utils-merge': [ '1.0.1' ],
+79 silly audit   utrie: [ '1.0.2' ],
+79 silly audit   uuid: [ '10.0.0' ],
+79 silly audit   vary: [ '1.1.2' ],
+79 silly audit   ws: [ '8.19.0' ],
+79 silly audit   xtend: [ '4.0.2' ],
+79 silly audit   jszip: [ '3.10.1' ],
+79 silly audit   lie: [ '3.3.0' ],
+79 silly audit   'readable-stream': [ '2.3.8' ],
+79 silly audit   setimmediate: [ '1.0.5' ],
+79 silly audit   immediate: [ '3.0.6' ],
+79 silly audit   'core-util-is': [ '1.0.3' ],
+79 silly audit   isarray: [ '1.0.0' ],
+79 silly audit   'process-nextick-args': [ '2.0.1' ],
+79 silly audit   string_decoder: [ '1.1.1' ],
+79 silly audit   'util-deprecate': [ '1.0.2' ]
+79 silly audit }
+80 http cache util-deprecate@https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 0ms (cache hit)
+81 http cache process-nextick-args@https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz 0ms (cache hit)
+82 http cache string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz 0ms (cache hit)
+83 http cache isarray@https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz 0ms (cache hit)
+84 http cache core-util-is@https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz 0ms (cache hit)
+85 http cache setimmediate@https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz 0ms (cache hit)
+86 http cache readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz 0ms (cache hit)
+87 http cache lie@https://registry.npmjs.org/lie/-/lie-3.3.0.tgz 0ms (cache hit)
+88 http cache jszip@https://registry.npmjs.org/jszip/-/jszip-3.10.1.tgz 0ms (cache hit)
+89 http cache safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz 0ms (cache hit)
+90 http cache safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz 0ms (cache hit)
+91 http cache pako@https://registry.npmjs.org/pako/-/pako-1.0.11.tgz 0ms (cache hit)
+92 http cache immediate@https://registry.npmjs.org/immediate/-/immediate-3.0.6.tgz 0ms (cache hit)
+93 silly tarball no local data for setimmediate@https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz. Extracting by manifest.
+94 silly tarball no local data for lie@https://registry.npmjs.org/lie/-/lie-3.3.0.tgz. Extracting by manifest.
+95 silly tarball no local data for jszip@https://registry.npmjs.org/jszip/-/jszip-3.10.1.tgz. Extracting by manifest.
+96 silly tarball no local data for pako@https://registry.npmjs.org/pako/-/pako-1.0.11.tgz. Extracting by manifest.
+97 silly tarball no local data for immediate@https://registry.npmjs.org/immediate/-/immediate-3.0.6.tgz. Extracting by manifest.
+98 http fetch GET 200 https://registry.npmjs.org/lie/-/lie-3.3.0.tgz 52ms (cache miss)
+99 http fetch GET 200 https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz 132ms (cache miss)
+100 http fetch GET 200 https://registry.npmjs.org/pako/-/pako-1.0.11.tgz 168ms (cache miss)
+101 http fetch GET 200 https://registry.npmjs.org/jszip/-/jszip-3.10.1.tgz 171ms (cache miss)
+102 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 204ms
+103 silly audit report {}
+104 http fetch GET 200 https://registry.npmjs.org/immediate/-/immediate-3.0.6.tgz 198ms (cache miss)
+105 silly ADD node_modules/util-deprecate
+106 silly ADD node_modules/string_decoder
+107 silly ADD node_modules/string_decoder/node_modules/safe-buffer
+108 silly ADD node_modules/process-nextick-args
+109 silly ADD node_modules/isarray
+110 silly ADD node_modules/core-util-is
+111 silly ADD node_modules/immediate
+112 silly ADD node_modules/setimmediate
+113 silly ADD node_modules/readable-stream
+114 silly ADD node_modules/readable-stream/node_modules/safe-buffer
+115 silly ADD node_modules/lie
+116 silly ADD node_modules/jszip
+117 silly ADD node_modules/jszip/node_modules/pako
+118 verbose cwd /data/data/com.termux/files/home/bunker_unificado
+119 verbose os Linux 5.15.178-android13-8-31998796-abS918BXXS8EZA1
+120 verbose node v25.3.0
+121 verbose npm  v11.10.0
+122 verbose exit 0
+123 info ok
