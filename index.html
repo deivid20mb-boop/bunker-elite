@@ -7,56 +7,61 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #0d1117; color: #c9d1d9; font-family: 'Courier New', monospace; }
-        .bunker-border { border: 1px solid #30363d; border-radius: 6px; }
-        .glitch-text { color: #58a6ff; text-shadow: 0 0 5px rgba(88, 166, 255, 0.5); }
+        .glass-panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
+        .status-glow { color: #58a6ff; text-shadow: 0 0 8px rgba(88, 166, 255, 0.4); }
     </style>
 </head>
-<body class="p-4 md:p-10">
-    <div class="max-w-6xl mx-auto">
-        <header class="mb-10 border-b border-blue-900 pb-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<body class="p-4 md:p-8">
+    <div class="max-w-5xl mx-auto">
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 border-b border-blue-900 pb-4 gap-4">
             <div>
-                <h1 class="text-3xl font-bold glitch-text">AETHELGARD</h1>
-                <p class="text-xs text-gray-500">INTERNATIONAL BÜNKER UNIT | AUDITOR: DAVID BUISÁN</p>
+                <h1 class="text-3xl font-bold status-glow">AETHELGARD</h1>
+                <p class="text-[10px] text-gray-500 uppercase">International IP Unit | Auditor: David Buisán</p>
             </div>
-            <div class="text-right text-[10px] text-blue-500">STATUS: ONLINE // MOTOR: ELITE_OPS</div>
+            <div class="bg-blue-900/20 text-blue-400 text-[10px] px-3 py-1 rounded border border-blue-800">
+                SYSTEM_STATUS: ACTIVE // MOTOR: ELITE_OPS
+            </div>
         </header>
 
-        <main class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="flex flex-col lg:flex-row gap-6">
             
-            <section class="space-y-6">
-                <div class="p-6 bunker-border bg-[#161b22]">
-                    <h2 class="text-blue-400 mb-4">> SERVICIOS DE CERTIFICACIÓN TÉCNICA_</h2>
-                    <p class="text-sm leading-relaxed mb-4">
-                        Documentación profesional de activos internacionales bajo licencia **Creative Commons 4.0**. 
-                        Blindaje técnico y trazabilidad de autoría inyectada.
+            <main class="flex-1 space-y-6">
+                <section class="glass-panel p-6">
+                    <h2 class="text-blue-400 text-lg mb-4">> SERVICIOS TÉCNICOS_</h2>
+                    <p class="text-sm leading-relaxed text-gray-400">
+                        Implementación profesional de licencias internacionales **Creative Commons 4.0**. 
+                        Blindaje visual y técnico para activos digitales bajo normativa de autoría.
                     </p>
-                    <a href="https://wa.me/tu_numero" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded transition-all w-full text-center">
-                        SOLICITAR AUDITORÍA (WHATSAPP)
-                    </a>
-                </div>
-            </section>
+                    <div class="mt-6">
+                        <a href="https://wa.me/tu_numero" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-4 rounded transition-all">
+                            SOLICITAR AUDITORÍA (WHATSAPP)
+                        </a>
+                    </div>
+                </section>
+            </main>
 
-            <section class="p-6 bunker-border bg-[#0d1117]">
-                <h2 class="text-green-500 mb-4">> ÚLTIMOS ACTIVOS BLINDADOS_</h2>
-                <div class="space-y-4 text-[11px] md:text-xs">
-                    <div class="border-l-2 border-green-900 pl-3">
-                        <span class="text-green-500">[CONFIRMADO]</span> ID: #AG-7721<br>Artista: @NeoVandal | Licencia: CC 4.0
+            <aside class="w-full lg:w-80 space-y-4">
+                <section class="glass-panel p-5 border-blue-900/50">
+                    <h2 class="text-green-500 text-sm mb-4 font-bold">> ÚLTIMOS ACTIVOS_</h2>
+                    <div class="space-y-3 text-[10px]">
+                        <div class="p-2 border-l border-green-800 bg-green-900/5">
+                            <span class="text-green-500">[OK]</span> ID: #AG-7721 | @NeoVandal
+                        </div>
+                        <div class="p-2 border-l border-green-800 bg-green-900/5">
+                            <span class="text-green-500">[OK]</span> ID: #AG-8842 | @Elena_Pixel
+                        </div>
+                        <div class="p-2 border-l border-green-800 bg-green-900/5">
+                            <span class="text-green-500">[OK]</span> ID: #AG-9550 | @Buisan_Ops
+                        </div>
                     </div>
-                    <div class="border-l-2 border-green-900 pl-3">
-                        <span class="text-green-500">[CONFIRMADO]</span> ID: #AG-8842<br>Artista: @Elena_Pixel | Licencia: CC 4.0
-                    </div>
-                    <div class="border-l-2 border-green-900 pl-3">
-                        <span class="text-green-500">[CONFIRMADO]</span> ID: #AG-9550<br>Artista: @Buisan_Ops | Licencia: CC 4.0
-                    </div>
-                </div>
-            </section>
-        </main>
+                </section>
+            </aside>
+        </div>
 
-        <footer class="mt-16 pt-8 border-t border-gray-800 text-center">
-            <p class="text-[10px] text-gray-500 uppercase tracking-widest">© 2026 AETHELGARD SYSTEMS - Servicio de Consultoría Técnica</p>
-            <p class="text-[9px] text-gray-600 mt-2 max-w-2xl mx-auto italic">
-                AVISO: Este es un servicio de certificación informática y trazabilidad digital. No constituye asesoría legal oficial. 
-                Protección basada en la normativa internacional de Propiedad Intelectual.
+        <footer class="mt-12 pt-6 border-t border-gray-800 flex flex-col items-center text-center">
+            <p class="text-[10px] text-gray-500 tracking-tighter">© 2026 AETHELGARD SYSTEMS - TODOS LOS DERECHOS RESERVADOS</p>
+            <p class="text-[9px] text-gray-600 mt-2 max-w-md italic">
+                Aviso: Servicio de certificación técnica privada. No constituye asesoría legal oficial.
             </p>
         </footer>
     </div>
