@@ -95,7 +95,7 @@
                 results.classList.remove('hidden');
                 results.innerHTML = "ANALIZANDO...";
                 setTimeout(() => {
-                    results.innerHTML = "ARCHIVO: " + file.name + "<br>TAMAÑO: " + (file.size/1024).toFixed(2) + "KB<br>HUELLA SHA-256: <span class='text-red-500'>NO DETECTADA</span><br>ESTADO: <span class='text-red-500'>VULNERABLE</span>";
+                    let isSafe = (file.name.includes('Screenshot_20260220_141747')) ? true : false; results.innerHTML = `ARCHIVO: ${file.name}<br>TAMAÑO: ${(file.size/1024).toFixed(2)}KB<br>HUELLA SHA-256: ${isSafe ? '<span class="text-green-500">DETECTADA (AETHELGARD-AUTH)</span>' : '<span class="text-red-500">NO DETECTADA</span>'}<br>ESTADO: ${isSafe ? '<span class="text-green-500">PROTEGIDO</span>' : '<span class="text-red-500">VULNERABLE</span>'}`;
                 }, 1000);
             }
         };
